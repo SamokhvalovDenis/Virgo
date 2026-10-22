@@ -1,0 +1,73 @@
+@layer components {
+  .contact-section { position: relative; isolation: isolate; overflow: hidden; background: radial-gradient(ellipse at 2% 90%, #f4dfce80, transparent 48%), radial-gradient(ellipse at 100% 5%, #f7e4d680, transparent 42%), #fcf8f2; }
+  .contact-section::before, .contact-section::after { content: ''; position: absolute; z-index: -1; pointer-events: none; background: #f3d9ce55; border-radius: 48% 52% 65% 35%; }
+  .contact-section::before { width: 420px; height: 290px; top: -210px; left: -100px; transform: rotate(-25deg); }
+  .contact-section::after { width: 800px; height: 300px; bottom: -230px; right: 10%; transform: rotate(-15deg); }
+  .contact-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 38px; align-items: start; }
+  .contact-copy { min-width: 0; }
+  .contact-copy .eyebrow { display: flex; align-items: center; gap: 15px; color: #946828; }
+  .contact-copy .eyebrow::after { content: ''; width: 48px; height: 1px; background: #c79b5d; }
+  .contact-copy .section-subtitle { max-width: 570px; }
+  .contact-botanical { position: absolute; z-index: -1; pointer-events: none; color: #bd8c47; opacity: .48; }
+  .contact-botanical-top { top: -95px; right: -30px; transform: rotate(-40deg); }
+  .contact-botanical-bottom { bottom: -48px; left: -55px; transform: rotate(165deg); }
+  .contact-info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .contact-info-card { min-width: 0; padding: 18px 14px 14px; border: 1px solid #fffaf4; border-radius: 16px; background: #fffdf9e8; box-shadow: 0 8px 28px #73472606; }
+  .contact-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #fae4dc; color: var(--color-burgundy); }
+  .contact-icon svg { width: 20px; height: 20px; }
+  .contact-info-card h3 { margin-block: 12px 8px; color: var(--color-burgundy); font: 600 16px/1.4 var(--font-sans); }
+  .contact-info-card address, .contact-info-card a { font-size: 14px; font-style: normal; line-height: 1.7; color: #5d414c; overflow-wrap: anywhere; }
+  .contact-info-card a { display: inline-flex; align-items: center; min-height: 44px; }
+  .contact-info-card a:hover { color: var(--color-burgundy-deep); text-decoration: underline; text-underline-offset: 4px; }
+  .contact-info-card .contact-card-map { gap: 4px; margin-top: 7px; color: var(--color-burgundy); text-decoration: underline; text-underline-offset: 3px; }
+  .contact-hours-card { margin-top: 20px; padding: 20px; border: 1px solid #e8cbae80; border-radius: 16px; background: linear-gradient(120deg, #fbefdfb3, #fcf1e4a6); }
+  .contact-hours-heading { display: flex; align-items: center; gap: 12px; }
+  .contact-hours-heading .contact-icon { background: radial-gradient(circle at 35% 30%, #fff8e5, #efd19a); }
+  .contact-hours-heading h3 { color: var(--color-burgundy); }
+  .contact-hours-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-flow: column; grid-template-rows: repeat(4, auto); gap: 0 32px; margin: 16px 0 0; }
+  .contact-hours-grid > div { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding-block: 5px; border-bottom: 1px solid #dfbd9740; color: #5d414c; font-size: 14px; }
+  .contact-hours-grid dd { margin: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .contact-hours-note { color: var(--color-muted); font-size: 14px; line-height: 1.7; margin-top: 16px; }
+  .contact-booking { margin-top: 20px; }
+  .contact-booking .contact-booking-button { width: 100%; color: var(--color-burgundy); border: 1px solid #e3bd7b; background: linear-gradient(115deg, #fff0d0, #f4d398 60%, #e8bf7d); box-shadow: inset 0 0 0 2px #fff7e5a6, 0 8px 20px #b5864126; }
+  .contact-booking .contact-booking-button:hover { background: linear-gradient(115deg, #fce6b8, #edc481 60%, #dfb16c); box-shadow: inset 0 0 0 2px #fff7e5a6, 0 10px 25px #b5864138; }
+  .contact-booking p { font-size: 14px; text-align: center; color: var(--color-muted); margin: 15px 12px 0; }
+  /* The compact list is also used in the footer. */
+  .contact-item { display: flex; align-items: flex-start; gap: 15px; margin-top: 24px; color: var(--color-burgundy); }
+  .contact-item > svg { margin-top: 2px; }
+  .contact-item h3 { font-family: var(--font-sans); font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  .contact-item p { color: var(--color-muted); }
+  .contact-item > div { min-width: 0; }
+  .contact-item address { font-style: normal; color: var(--color-muted); overflow-wrap: anywhere; }
+  .contact-item > a { min-width: 0; overflow-wrap: anywhere; }
+  .contact-item .contact-map-link { font-size: 14px; margin-top: 8px; text-decoration: underline; }
+  .contact-hours { flex: 1; }
+  .opening-hours { margin: 12px 0 0; max-width: 340px; font-size: 14px; }
+  .opening-hours > div { display: flex; justify-content: space-between; gap: 20px; padding-block: 5px; border-bottom: 1px solid var(--color-border); }
+  .opening-hours dd { margin: 0; color: var(--color-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .contact-item .opening-hours-note { font-size: 14px; line-height: 1.7; margin-top: 14px; max-width: 360px; }
+  .contact-item a { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; }
+  .contact-item a:hover { text-decoration: underline; }
+  .contact-item p + a { font-size: 14px; margin-top: 8px; text-decoration: underline; }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  .contact-section .contact-grid { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
+  .contact-copy { padding-top: 0; }
+  .contact-info-card { padding: 20px; }
+}
+@media (max-width: 767px) {
+  .contact-copy { padding-top: 0; }
+  .contact-info-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .contact-info-card { display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; }
+  .contact-info-card > div { min-width: 0; }
+  .contact-info-card h3 { margin-block: 0 5px; }
+  .contact-info-card .contact-icon { flex-shrink: 0; }
+  .contact-hours-grid { gap: 0 24px; }
+  .contact-botanical-top { right: -85px; opacity: .3; }
+  .contact-botanical-bottom { opacity: .25; }
+}
+@media (max-width: 479px) {
+  .contact-hours-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; }
+  .contact-hours-heading { gap: 12px; }
+}

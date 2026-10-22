@@ -1,0 +1,28 @@
+{
+  "removedSelectors": [
+    ".service-details",
+    ".service-details summary",
+    ".service-procedures",
+    ".service-procedures > div",
+    ".service-procedures h4",
+    ".service-procedures p",
+    ".gift-validity span",
+    ".benefits-copy p"
+  ],
+  "mergedDuplicate": ".hero-bottom > a at max-width: 479px",
+  "componentStyles": [
+    "src/styles/shared.css",
+    "src/components/layout/Header.css",
+    "src/components/sections/Hero.css",
+    "src/components/sections/Services.css",
+    "src/components/sections/PriceList.css",
+    "src/components/sections/About.css",
+    "src/components/sections/GiftCards.css",
+    "src/components/sections/Benefits.css",
+    "src/components/sections/Faq.css",
+    "src/components/sections/Contact.css",
+    "src/components/sections/ContactForm.css",
+    "src/components/layout/Footer.css"
+  ],
+  "preservedCascadeRule": ".about-grid > .section-heading inside max-width: 767px"
+}

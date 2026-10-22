@@ -1,0 +1,1728 @@
+{
+  "inventory": [
+    {
+      "src": "/images/logo.png",
+      "bytes": 13191,
+      "width": 250,
+      "height": 200,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0094c9afdd3c.jpg",
+      "bytes": 16140,
+      "width": 403,
+      "height": 202,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-00c4d6e8a67c.jpg",
+      "bytes": 44967,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-00cad37d37f4.jpg",
+      "bytes": 26798,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-01a3f1ea8a47.jpg",
+      "bytes": 14965,
+      "width": 403,
+      "height": 202,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-02926ce9bcce.jpg",
+      "bytes": 174039,
+      "width": 1023,
+      "height": 1478,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-04aa20c10c49.jpg",
+      "bytes": 19079,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-058eed8b21a6.webp",
+      "bytes": 4096,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-05beda091c66.jpg",
+      "bytes": 13562,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-06636d5a2204.jpg",
+      "bytes": 166867,
+      "width": 1209,
+      "height": 1747,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-069a17cbcc91.jpg",
+      "bytes": 236976,
+      "width": 1438,
+      "height": 2077,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-074b65fe863d.jpg",
+      "bytes": 173953,
+      "width": 1160,
+      "height": 1676,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0a945d585147.jpg",
+      "bytes": 55702,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0bef5c89d725.jpg",
+      "bytes": 106676,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0d9eb7910850.jpg",
+      "bytes": 56244,
+      "width": 600,
+      "height": 800,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-0e492b13d521.jpg",
+      "bytes": 24309,
+      "width": 403,
+      "height": 303,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0ef84432ac4a.jpg",
+      "bytes": 229067,
+      "width": 1280,
+      "height": 1849,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-0f0fb8661ddc.jpg",
+      "bytes": 18902,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-0f27ff10db58.jpg",
+      "bytes": 74356,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-10f7cef32080.jpg",
+      "bytes": 51019,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-11d51b2b1352.jpg",
+      "bytes": 77498,
+      "width": 1280,
+      "height": 640,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-12d8cc1ec8a5.jpg",
+      "bytes": 96495,
+      "width": 886,
+      "height": 1280,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-136c7c11c099.jpg",
+      "bytes": 73781,
+      "width": 1209,
+      "height": 605,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-13db208d6b5e.jpg",
+      "bytes": 33270,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-167621a75824.jpg",
+      "bytes": 73398,
+      "width": 872,
+      "height": 1162,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-1a1a8b2c68a7.jpg",
+      "bytes": 19720,
+      "width": 526,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-1b9efb22c938.png",
+      "bytes": 2228,
+      "width": 48,
+      "height": 48,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-1d773a971214.jpg",
+      "bytes": 31193,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-1f37907e1f13.jpg",
+      "bytes": 75301,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-1f583b4bac3c.jpg",
+      "bytes": 106317,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-2061a0817fbb.jpg",
+      "bytes": 15782,
+      "width": 403,
+      "height": 202,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-223014d5223f.webp",
+      "bytes": 11100,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-24dae6c5529c.jpg",
+      "bytes": 49268,
+      "width": 600,
+      "height": 300,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-261ef75b9711.jpg",
+      "bytes": 42952,
+      "width": 800,
+      "height": 400,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-28c5c18cb30d.jpg",
+      "bytes": 147019,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-291868b11987.jpg",
+      "bytes": 428695,
+      "width": 1772,
+      "height": 2560,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-2bf96d4ee16e.jpg",
+      "bytes": 112275,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-2cc0564a73ad.jpg",
+      "bytes": 48124,
+      "width": 806,
+      "height": 403,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-2f9b0067a53f.jpg",
+      "bytes": 11730,
+      "width": 403,
+      "height": 201,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-3165d2a791a3.jpg",
+      "bytes": 49208,
+      "width": 1000,
+      "height": 499,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-33035f7847f4.jpg",
+      "bytes": 110355,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-335ef23d7032.jpg",
+      "bytes": 177808,
+      "width": 1160,
+      "height": 1676,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-3412bd2be737.jpg",
+      "bytes": 43324,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-34796f993498.png",
+      "bytes": 303,
+      "width": 600,
+      "height": 300,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-34e267d7bff4.jpg",
+      "bytes": 46325,
+      "width": 806,
+      "height": 402,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-36d0ce4d8c4c.jpg",
+      "bytes": 13508,
+      "width": 391,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-387433b8ac03.jpg",
+      "bytes": 145533,
+      "width": 984,
+      "height": 1422,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-389f1c14d6e5.jpg",
+      "bytes": 73411,
+      "width": 1200,
+      "height": 600,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-3c06e8b3513e.jpg",
+      "bytes": 314954,
+      "width": 1772,
+      "height": 2560,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-41e234a040ec.jpg",
+      "bytes": 233210,
+      "width": 1160,
+      "height": 1676,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-43f2e04ae07f.jpg",
+      "bytes": 44428,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-447647711b2a.webp",
+      "bytes": 2844,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-47b0357880a7.jpg",
+      "bytes": 193968,
+      "width": 1209,
+      "height": 605,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-489994991249.webp",
+      "bytes": 12372,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-494307ff0210.jpg",
+      "bytes": 210785,
+      "width": 1280,
+      "height": 640,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4a25f8336781.jpg",
+      "bytes": 37486,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4a75f4bb414a.jpg",
+      "bytes": 87579,
+      "width": 806,
+      "height": 403,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4abcdc71343c.png",
+      "bytes": 392,
+      "width": 600,
+      "height": 451,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4b2844eaf0d4.jpg",
+      "bytes": 31322,
+      "width": 600,
+      "height": 600,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4b8d258d715f.jpg",
+      "bytes": 28587,
+      "width": 403,
+      "height": 537,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-4dd8230ea308.png",
+      "bytes": 350,
+      "width": 26,
+      "height": 37,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-502a15dc4066.jpg",
+      "bytes": 45097,
+      "width": 600,
+      "height": 451,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-54184a382cba.jpg",
+      "bytes": 300276,
+      "width": 1438,
+      "height": 2077,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-57e4e1920ab5.jpg",
+      "bytes": 24805,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-57e5d3a951a4.jpg",
+      "bytes": 64459,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-5975db14610e.jpg",
+      "bytes": 16593,
+      "width": 403,
+      "height": 201,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-5aa46707244f.jpg",
+      "bytes": 162826,
+      "width": 984,
+      "height": 1422,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-5dbbd607e293.webp",
+      "bytes": 4526,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-5e46a6a8e504.jpg",
+      "bytes": 13791,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-611b0534e91f.jpg",
+      "bytes": 199472,
+      "width": 1023,
+      "height": 1478,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-642eb2d5a5b9.jpg",
+      "bytes": 124652,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6467ce9f22b9.jpg",
+      "bytes": 8123,
+      "width": 598,
+      "height": 300,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-657c18b6eed6.jpg",
+      "bytes": 206250,
+      "width": 1280,
+      "height": 1849,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-682278953d6d.jpg",
+      "bytes": 15080,
+      "width": 403,
+      "height": 201,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6bfd4941f274.jpg",
+      "bytes": 28752,
+      "width": 623,
+      "height": 311,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6cb07884943e.jpg",
+      "bytes": 263823,
+      "width": 1438,
+      "height": 2077,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6cf14e6b8d1f.jpg",
+      "bytes": 85331,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6e4abe8a08f7.jpg",
+      "bytes": 190042,
+      "width": 984,
+      "height": 1422,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-6fe049d7d58f.jpg",
+      "bytes": 27297,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-702253769d78.jpg",
+      "bytes": 24771,
+      "width": 403,
+      "height": 537,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-70f0154793fa.jpg",
+      "bytes": 34478,
+      "width": 806,
+      "height": 402,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-71c9bd8999fc.jpg",
+      "bytes": 47175,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-71d8d090fce4.jpg",
+      "bytes": 45523,
+      "width": 866,
+      "height": 433,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-746668dd96be.jpg",
+      "bytes": 24172,
+      "width": 403,
+      "height": 202,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-771478f543a7.jpg",
+      "bytes": 201662,
+      "width": 1160,
+      "height": 1676,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-77408baa69c4.jpg",
+      "bytes": 96876,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-796753ce8f3b.jpg",
+      "bytes": 126705,
+      "width": 984,
+      "height": 1422,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-7a0afde4a633.webp",
+      "bytes": 2658,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-7a916673a4fa.jpg",
+      "bytes": 84757,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-7efdad7a018a.jpg",
+      "bytes": 70518,
+      "width": 806,
+      "height": 606,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-81258d87a116.jpg",
+      "bytes": 70342,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-822fa23c1df2.jpg",
+      "bytes": 17528,
+      "width": 600,
+      "height": 298,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-829b4c221453.jpg",
+      "bytes": 86009,
+      "width": 1209,
+      "height": 604,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-82d85b09084e.jpg",
+      "bytes": 65909,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-83708213915e.webp",
+      "bytes": 6656,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-83c0aab8a97a.jpg",
+      "bytes": 111426,
+      "width": 1079,
+      "height": 811,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-840e7c327512.jpg",
+      "bytes": 108502,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-84fd4a010073.webp",
+      "bytes": 5572,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-8505d6a20e52.jpg",
+      "bytes": 43165,
+      "width": 600,
+      "height": 800,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-86e6d1611ef6.jpg",
+      "bytes": 148295,
+      "width": 1023,
+      "height": 1478,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-877d9b2a1504.jpg",
+      "bytes": 33442,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-8b06e6967a1f.jpg",
+      "bytes": 72385,
+      "width": 540,
+      "height": 780,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-8b69fadb9830.jpg",
+      "bytes": 210538,
+      "width": 1209,
+      "height": 1747,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-8e3a1a28b192.jpg",
+      "bytes": 347674,
+      "width": 1772,
+      "height": 2560,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-93e2db7cda04.jpg",
+      "bytes": 317563,
+      "width": 1772,
+      "height": 2560,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-941bef5d4e2b.jpg",
+      "bytes": 18780,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-945bb0014d8e.jpg",
+      "bytes": 12665,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-95f3ba0b8e8e.jpg",
+      "bytes": 93842,
+      "width": 1280,
+      "height": 639,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-9b04ddfed63c.jpg",
+      "bytes": 122727,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-9e6b415d9318.jpg",
+      "bytes": 84335,
+      "width": 1200,
+      "height": 599,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-9ea1bbfd66de.jpg",
+      "bytes": 140436,
+      "width": 984,
+      "height": 1422,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-9f3e933515fe.jpg",
+      "bytes": 18408,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-9f52b9d94a33.jpg",
+      "bytes": 123045,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-a287c4ea635c.jpg",
+      "bytes": 55326,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-a37fce1ecdc4.jpg",
+      "bytes": 158650,
+      "width": 1160,
+      "height": 1676,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-a53088bb859c.jpg",
+      "bytes": 66134,
+      "width": 806,
+      "height": 1074,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ac33ddb63061.jpg",
+      "bytes": 97275,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ad46cdec38ca.jpg",
+      "bytes": 26804,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-ad65645d223f.jpg",
+      "bytes": 225348,
+      "width": 1438,
+      "height": 2077,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-af29782d1bbe.jpg",
+      "bytes": 182447,
+      "width": 1209,
+      "height": 1747,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-b3ac8b382ca3.png",
+      "bytes": 168426,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-b934e444b0ef.jpg",
+      "bytes": 93272,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ba1f643a1c3b.jpg",
+      "bytes": 85483,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-baf7c285f53b.webp",
+      "bytes": 2894,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-becadaa5816c.jpg",
+      "bytes": 145266,
+      "width": 886,
+      "height": 1280,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-c76dfaf39cee.jpg",
+      "bytes": 262087,
+      "width": 1280,
+      "height": 1849,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-c8ada820ab86.jpg",
+      "bytes": 128766,
+      "width": 806,
+      "height": 1164,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-c9d9f27b8669.webp",
+      "bytes": 9366,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ca43f53a11d2.jpg",
+      "bytes": 72924,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-cc4f36a2336a.jpg",
+      "bytes": 278087,
+      "width": 1772,
+      "height": 2560,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d457a4c4ee32.jpg",
+      "bytes": 50246,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d4e7458b47ef.jpg",
+      "bytes": 28873,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-d54aaffba837.jpg",
+      "bytes": 180380,
+      "width": 1280,
+      "height": 1849,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d59fa96e39d3.png",
+      "bytes": 595,
+      "width": 600,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d65c367ca605.jpg",
+      "bytes": 96918,
+      "width": 886,
+      "height": 1280,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d6fbdbc57125.jpg",
+      "bytes": 245190,
+      "width": 1209,
+      "height": 1747,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d84293d1f647.webp",
+      "bytes": 15874,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-d88cd29c2203.jpg",
+      "bytes": 81056,
+      "width": 768,
+      "height": 1024,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-da583ee0addc.jpg",
+      "bytes": 41638,
+      "width": 806,
+      "height": 403,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-dbd93de349e2.jpg",
+      "bytes": 189346,
+      "width": 1209,
+      "height": 1747,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-e08883f6e9ba.jpg",
+      "bytes": 21117,
+      "width": 600,
+      "height": 299,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-e102de0da53a.jpg",
+      "bytes": 63844,
+      "width": 980,
+      "height": 490,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-e43ce29b48a7.jpg",
+      "bytes": 46865,
+      "width": 403,
+      "height": 582,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-e462497b5730.jpg",
+      "bytes": 29433,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-eaa14c406fb2.jpg",
+      "bytes": 84100,
+      "width": 719,
+      "height": 1039,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ed1dd2234a02.jpg",
+      "bytes": 139680,
+      "width": 886,
+      "height": 1280,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ee239b84c2ab.png",
+      "bytes": 445070,
+      "width": 789,
+      "height": 630,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-ee80aa93c99a.jpg",
+      "bytes": 15074,
+      "width": 403,
+      "height": 202,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f04a78ef8962.jpg",
+      "bytes": 6229,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f23305624b6f.jpg",
+      "bytes": 133677,
+      "width": 1023,
+      "height": 1478,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f297ba44b58f.jpg",
+      "bytes": 190141,
+      "width": 1200,
+      "height": 600,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f39a8a85b2b1.jpg",
+      "bytes": 27901,
+      "width": 600,
+      "height": 451,
+      "selected": true
+    },
+    {
+      "src": "/images/virgo-original/virgo-f3d37f72f73b.jpg",
+      "bytes": 152283,
+      "width": 1023,
+      "height": 1478,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f4f90a89e6d7.jpg",
+      "bytes": 72393,
+      "width": 553,
+      "height": 800,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-f7cffb8a8cbe.webp",
+      "bytes": 5328,
+      "width": 256,
+      "height": 256,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-fb1e81b9e08b.png",
+      "bytes": 13191,
+      "width": 250,
+      "height": 200,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-fcf0342ce4e2.jpg",
+      "bytes": 196364,
+      "width": 1280,
+      "height": 1849,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-fe2708236a89.jpg",
+      "bytes": 211231,
+      "width": 1438,
+      "height": 2077,
+      "selected": false
+    },
+    {
+      "src": "/images/virgo-original/virgo-fef14527bcb9.jpg",
+      "bytes": 41068,
+      "width": 806,
+      "height": 403,
+      "selected": false
+    },
+    {
+      "src": "/images/services/brows-lashes.jpg",
+      "bytes": 111426,
+      "width": 1079,
+      "height": 811,
+      "selected": true
+    },
+    {
+      "src": "/images/services/depilation.jpg",
+      "bytes": 18902,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/services/hair-removal.jpg",
+      "bytes": 81056,
+      "width": 768,
+      "height": 1024,
+      "selected": true
+    },
+    {
+      "src": "/images/services/massage.jpg",
+      "bytes": 24805,
+      "width": 600,
+      "height": 300,
+      "selected": true
+    },
+    {
+      "src": "/images/hero/hero-studio.jpg",
+      "bytes": 18780,
+      "width": 370,
+      "height": 278,
+      "selected": false
+    },
+    {
+      "src": "/images/gifts/gift-certificates.jpg",
+      "bytes": 210785,
+      "width": 1280,
+      "height": 640,
+      "selected": true
+    },
+    {
+      "src": "/images/about/studio-main.jpg",
+      "bytes": 13562,
+      "width": 370,
+      "height": 278,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-05beda091c66.jpg",
+      "bytes": 94008,
+      "width": 1280,
+      "height": 960,
+      "selected": false
+    },
+    {
+      "src": "/images/about/gallery/virgo-05beda091c66.webp",
+      "bytes": 59504,
+      "width": 1280,
+      "height": 960,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+      "bytes": 129064,
+      "width": 1280,
+      "height": 960,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-5e46a6a8e504.webp",
+      "bytes": 118678,
+      "width": 1280,
+      "height": 960,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-941bef5d4e2b.jpg",
+      "bytes": 148815,
+      "width": 1280,
+      "height": 960,
+      "selected": false
+    },
+    {
+      "src": "/images/about/gallery/virgo-941bef5d4e2b.webp",
+      "bytes": 115940,
+      "width": 1280,
+      "height": 960,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-945bb0014d8e.jpg",
+      "bytes": 84033,
+      "width": 1280,
+      "height": 780,
+      "selected": false
+    },
+    {
+      "src": "/images/about/gallery/virgo-945bb0014d8e.webp",
+      "bytes": 57728,
+      "width": 1280,
+      "height": 780,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-b3ac8b382ca3.png",
+      "bytes": 796907,
+      "width": 960,
+      "height": 1280,
+      "selected": false
+    },
+    {
+      "src": "/images/about/gallery/virgo-b3ac8b382ca3.webp",
+      "bytes": 52710,
+      "width": 960,
+      "height": 1280,
+      "selected": true
+    },
+    {
+      "src": "/images/about/gallery/virgo-f04a78ef8962.jpg",
+      "bytes": 32347,
+      "width": 1280,
+      "height": 960,
+      "selected": false
+    },
+    {
+      "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+      "bytes": 19738,
+      "width": 1280,
+      "height": 960,
+      "selected": true
+    }
+  ],
+  "variants": {
+    "/images/about/gallery/virgo-5e46a6a8e504.jpg": [
+      {
+        "src": "/images/optimized/4fd8f15d2286-400.webp",
+        "width": 400,
+        "height": 300,
+        "bytes": 12834
+      },
+      {
+        "src": "/images/optimized/4fd8f15d2286-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 49272
+      },
+      {
+        "src": "/images/optimized/4fd8f15d2286-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 123650
+      }
+    ],
+    "/images/services/massage.jpg": [
+      {
+        "src": "/images/optimized/57e4e1920ab5-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 11212
+      },
+      {
+        "src": "/images/optimized/57e4e1920ab5-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 19148
+      }
+    ],
+    "/images/services/depilation.jpg": [
+      {
+        "src": "/images/optimized/0f0fb8661ddc-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 7994
+      },
+      {
+        "src": "/images/optimized/0f0fb8661ddc-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 13480
+      }
+    ],
+    "/images/services/hair-removal.jpg": [
+      {
+        "src": "/images/optimized/d88cd29c2203-400.webp",
+        "width": 400,
+        "height": 533,
+        "bytes": 24736
+      },
+      {
+        "src": "/images/optimized/d88cd29c2203-768.webp",
+        "width": 768,
+        "height": 1024,
+        "bytes": 69628
+      }
+    ],
+    "/images/services/brows-lashes.jpg": [
+      {
+        "src": "/images/optimized/83c0aab8a97a-400.webp",
+        "width": 400,
+        "height": 301,
+        "bytes": 21424
+      },
+      {
+        "src": "/images/optimized/83c0aab8a97a-800.webp",
+        "width": 800,
+        "height": 601,
+        "bytes": 54000
+      },
+      {
+        "src": "/images/optimized/83c0aab8a97a-1079.webp",
+        "width": 1079,
+        "height": 811,
+        "bytes": 86884
+      }
+    ],
+    "/images/about/studio-main.jpg": [
+      {
+        "src": "/images/optimized/05beda091c66-370.webp",
+        "width": 370,
+        "height": 278,
+        "bytes": 10734
+      }
+    ],
+    "/images/gifts/gift-certificates.jpg": [
+      {
+        "src": "/images/optimized/494307ff0210-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 25886
+      },
+      {
+        "src": "/images/optimized/494307ff0210-800.webp",
+        "width": 800,
+        "height": 400,
+        "bytes": 95864
+      },
+      {
+        "src": "/images/optimized/494307ff0210-1280.webp",
+        "width": 1280,
+        "height": 640,
+        "bytes": 226536
+      }
+    ],
+    "/images/about/gallery/virgo-941bef5d4e2b.webp": [
+      {
+        "src": "/images/optimized/82118d84a994-400.webp",
+        "width": 400,
+        "height": 300,
+        "bytes": 18616
+      },
+      {
+        "src": "/images/optimized/82118d84a994-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 52390
+      },
+      {
+        "src": "/images/optimized/82118d84a994-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 111252
+      }
+    ],
+    "/images/about/gallery/virgo-5e46a6a8e504.webp": [
+      {
+        "src": "/images/optimized/e18ded09baf0-400.webp",
+        "width": 400,
+        "height": 300,
+        "bytes": 12486
+      },
+      {
+        "src": "/images/optimized/e18ded09baf0-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 46940
+      },
+      {
+        "src": "/images/optimized/e18ded09baf0-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 115244
+      }
+    ],
+    "/images/about/gallery/virgo-b3ac8b382ca3.webp": [
+      {
+        "src": "/images/optimized/9a270d190511-400.webp",
+        "width": 400,
+        "height": 533,
+        "bytes": 12626
+      },
+      {
+        "src": "/images/optimized/9a270d190511-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 35430
+      },
+      {
+        "src": "/images/optimized/9a270d190511-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 51392
+      }
+    ],
+    "/images/about/gallery/virgo-05beda091c66.webp": [
+      {
+        "src": "/images/optimized/ee7b2f135d17-400.webp",
+        "width": 400,
+        "height": 300,
+        "bytes": 10866
+      },
+      {
+        "src": "/images/optimized/ee7b2f135d17-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 27474
+      },
+      {
+        "src": "/images/optimized/ee7b2f135d17-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 53922
+      }
+    ],
+    "/images/about/gallery/virgo-f04a78ef8962.webp": [
+      {
+        "src": "/images/optimized/ee07e2c6146d-400.webp",
+        "width": 400,
+        "height": 300,
+        "bytes": 4300
+      },
+      {
+        "src": "/images/optimized/ee07e2c6146d-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 10160
+      },
+      {
+        "src": "/images/optimized/ee07e2c6146d-1280.webp",
+        "width": 1280,
+        "height": 960,
+        "bytes": 18976
+      }
+    ],
+    "/images/about/gallery/virgo-945bb0014d8e.webp": [
+      {
+        "src": "/images/optimized/db116cc18ac7-400.webp",
+        "width": 400,
+        "height": 244,
+        "bytes": 9242
+      },
+      {
+        "src": "/images/optimized/db116cc18ac7-800.webp",
+        "width": 800,
+        "height": 488,
+        "bytes": 25758
+      },
+      {
+        "src": "/images/optimized/db116cc18ac7-1280.webp",
+        "width": 1280,
+        "height": 780,
+        "bytes": 54790
+      }
+    ],
+    "/images/virgo-original/virgo-57e4e1920ab5.jpg": [
+      {
+        "src": "/images/optimized/57e4e1920ab5-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 11212
+      },
+      {
+        "src": "/images/optimized/57e4e1920ab5-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 19148
+      }
+    ],
+    "/images/virgo-original/virgo-e08883f6e9ba.jpg": [
+      {
+        "src": "/images/optimized/e08883f6e9ba-400.webp",
+        "width": 400,
+        "height": 199,
+        "bytes": 9270
+      },
+      {
+        "src": "/images/optimized/e08883f6e9ba-600.webp",
+        "width": 600,
+        "height": 299,
+        "bytes": 16556
+      }
+    ],
+    "/images/virgo-original/virgo-e462497b5730.jpg": [
+      {
+        "src": "/images/optimized/e462497b5730-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 14240
+      },
+      {
+        "src": "/images/optimized/e462497b5730-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 24926
+      }
+    ],
+    "/images/virgo-original/virgo-ad46cdec38ca.jpg": [
+      {
+        "src": "/images/optimized/ad46cdec38ca-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 12046
+      },
+      {
+        "src": "/images/optimized/ad46cdec38ca-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 21554
+      }
+    ],
+    "/images/virgo-original/virgo-04aa20c10c49.jpg": [
+      {
+        "src": "/images/optimized/04aa20c10c49-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 8418
+      },
+      {
+        "src": "/images/optimized/04aa20c10c49-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 14052
+      }
+    ],
+    "/images/virgo-original/virgo-9f3e933515fe.jpg": [
+      {
+        "src": "/images/optimized/9f3e933515fe-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 7364
+      },
+      {
+        "src": "/images/optimized/9f3e933515fe-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 12540
+      }
+    ],
+    "/images/virgo-original/virgo-1a1a8b2c68a7.jpg": [
+      {
+        "src": "/images/optimized/1a1a8b2c68a7-400.webp",
+        "width": 400,
+        "height": 228,
+        "bytes": 10356
+      },
+      {
+        "src": "/images/optimized/1a1a8b2c68a7-526.webp",
+        "width": 526,
+        "height": 300,
+        "bytes": 14772
+      }
+    ],
+    "/images/virgo-original/virgo-36d0ce4d8c4c.jpg": [
+      {
+        "src": "/images/optimized/36d0ce4d8c4c-391.webp",
+        "width": 391,
+        "height": 300,
+        "bytes": 10054
+      }
+    ],
+    "/images/virgo-original/virgo-1d773a971214.jpg": [
+      {
+        "src": "/images/optimized/1d773a971214-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 14604
+      },
+      {
+        "src": "/images/optimized/1d773a971214-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 30466
+      }
+    ],
+    "/images/virgo-original/virgo-822fa23c1df2.jpg": [
+      {
+        "src": "/images/optimized/822fa23c1df2-400.webp",
+        "width": 400,
+        "height": 199,
+        "bytes": 7372
+      },
+      {
+        "src": "/images/optimized/822fa23c1df2-600.webp",
+        "width": 600,
+        "height": 298,
+        "bytes": 12150
+      }
+    ],
+    "/images/virgo-original/virgo-0f0fb8661ddc.jpg": [
+      {
+        "src": "/images/optimized/0f0fb8661ddc-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 7994
+      },
+      {
+        "src": "/images/optimized/0f0fb8661ddc-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 13480
+      }
+    ],
+    "/images/virgo-original/virgo-d4e7458b47ef.jpg": [
+      {
+        "src": "/images/optimized/d4e7458b47ef-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 13568
+      },
+      {
+        "src": "/images/optimized/d4e7458b47ef-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 23664
+      }
+    ],
+    "/images/virgo-original/virgo-00cad37d37f4.jpg": [
+      {
+        "src": "/images/optimized/00cad37d37f4-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 12114
+      },
+      {
+        "src": "/images/optimized/00cad37d37f4-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 21416
+      }
+    ],
+    "/images/virgo-original/virgo-0d9eb7910850.jpg": [
+      {
+        "src": "/images/optimized/0d9eb7910850-400.webp",
+        "width": 400,
+        "height": 533,
+        "bytes": 23718
+      },
+      {
+        "src": "/images/optimized/0d9eb7910850-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 49342
+      }
+    ],
+    "/images/virgo-original/virgo-8505d6a20e52.jpg": [
+      {
+        "src": "/images/optimized/8505d6a20e52-400.webp",
+        "width": 400,
+        "height": 533,
+        "bytes": 17094
+      },
+      {
+        "src": "/images/optimized/8505d6a20e52-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 29750
+      }
+    ],
+    "/images/virgo-original/virgo-502a15dc4066.jpg": [
+      {
+        "src": "/images/optimized/502a15dc4066-400.webp",
+        "width": 400,
+        "height": 301,
+        "bytes": 21564
+      },
+      {
+        "src": "/images/optimized/502a15dc4066-600.webp",
+        "width": 600,
+        "height": 451,
+        "bytes": 39668
+      }
+    ],
+    "/images/virgo-original/virgo-6fe049d7d58f.jpg": [
+      {
+        "src": "/images/optimized/6fe049d7d58f-400.webp",
+        "width": 400,
+        "height": 200,
+        "bytes": 14052
+      },
+      {
+        "src": "/images/optimized/6fe049d7d58f-600.webp",
+        "width": 600,
+        "height": 300,
+        "bytes": 23978
+      }
+    ],
+    "/images/virgo-original/virgo-f39a8a85b2b1.jpg": [
+      {
+        "src": "/images/optimized/f39a8a85b2b1-400.webp",
+        "width": 400,
+        "height": 301,
+        "bytes": 12052
+      },
+      {
+        "src": "/images/optimized/f39a8a85b2b1-600.webp",
+        "width": 600,
+        "height": 451,
+        "bytes": 20454
+      }
+    ]
+  }
+}

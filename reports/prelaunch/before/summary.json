@@ -1,0 +1,146 @@
+{
+  "phase": "before",
+  "lighthouseVersion": "13.5.0",
+  "lighthouse": [
+    {
+      "name": "home-mobile",
+      "route": "/",
+      "scores": {
+        "performance": 65,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 6096.4125,
+        "cumulative-layout-shift": 0.0007615226132667569,
+        "total-blocking-time": 165.5,
+        "first-contentful-paint": 4364.275000000001,
+        "speed-index": 4364.275000000001
+      },
+      "warnings": []
+    },
+    {
+      "name": "masaze-mobile",
+      "route": "/sluzby/masaze",
+      "scores": {
+        "performance": 77,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 4242.9388500000005,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 50.500000000000455,
+        "first-contentful-paint": 3778.6259,
+        "speed-index": 3778.6259
+      },
+      "warnings": []
+    },
+    {
+      "name": "home-desktop",
+      "route": "/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 1150.3204,
+        "cumulative-layout-shift": 0.001022457882702801,
+        "total-blocking-time": 13.5,
+        "first-contentful-paint": 860.2135999999999,
+        "speed-index": 860.2135999999999
+      },
+      "warnings": []
+    }
+  ],
+  "axe": [
+    {
+      "name": "home-320",
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "count": 8
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "count": 1
+        },
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ],
+      "nonGetRequests": []
+    },
+    {
+      "name": "masaze-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "depilace-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "trvale-odstraneni-chloupku-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "oboci-a-rasy-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "home-1440",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "count": 1
+        },
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ],
+      "nonGetRequests": []
+    },
+    {
+      "name": "masaze-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "depilace-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "trvale-odstraneni-chloupku-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "oboci-a-rasy-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    }
+  ]
+}

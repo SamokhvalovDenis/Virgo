@@ -1,0 +1,219 @@
+{
+  "sourceModules": 47,
+  "entry": "src/main.tsx",
+  "unattached": [
+    "src/data/index.ts"
+  ],
+  "cycles": [],
+  "explanation": "src/data/index.ts is the public barrel loaded directly by the test suites; application modules use direct domain imports.",
+  "graph": {
+    "src/main.tsx": [
+      "src/app/App.tsx"
+    ],
+    "src/app/App.tsx": [
+      "src/components/layout/Header.tsx",
+      "src/components/layout/Footer.tsx",
+      "src/components/ui/BookingButton.tsx",
+      "src/data/content.ts",
+      "src/data/serviceDetails.ts",
+      "src/pages/HomePage.tsx",
+      "src/pages/ServiceDetailPage.tsx",
+      "src/pages/NotFoundPage.tsx"
+    ],
+    "src/data/assets.ts": [],
+    "src/data/benefits.ts": [],
+    "src/data/categories.ts": [
+      "src/data/assets.ts"
+    ],
+    "src/data/content.ts": [],
+    "src/data/faq.ts": [],
+    "src/data/giftCertificates.ts": [],
+    "src/data/index.ts": [],
+    "src/data/navigation.ts": [
+      "src/data/content.ts",
+      "src/data/reviews.ts",
+      "src/data/giftCertificates.ts"
+    ],
+    "src/data/prices.ts": [
+      "src/data/prices.types.ts",
+      "src/data/content.ts",
+      "src/data/site.ts"
+    ],
+    "src/data/prices.types.ts": [
+      "src/data/categories.ts"
+    ],
+    "src/data/reviews.ts": [],
+    "src/data/serviceDetails.ts": [
+      "src/data/categories.ts"
+    ],
+    "src/data/services.ts": [
+      "src/data/assets.ts",
+      "src/data/categories.ts"
+    ],
+    "src/data/settings.ts": [],
+    "src/data/site.ts": [],
+    "src/lib/analytics.ts": [
+      "src/data/settings.ts"
+    ],
+    "src/lib/contact.ts": [
+      "src/data/content.ts",
+      "src/lib/contactSchema.ts",
+      "src/lib/contactSchema.ts"
+    ],
+    "src/lib/contactSchema.ts": [
+      "src/data/categories.ts",
+      "src/data/content.ts",
+      "src/data/giftCertificates.ts",
+      "src/data/services.ts"
+    ],
+    "src/lib/priceCatalog.ts": [
+      "src/data/prices.types.ts"
+    ],
+    "src/pages/HomePage.tsx": [
+      "src/components/sections/Hero.tsx",
+      "src/components/sections/Services.tsx",
+      "src/components/sections/PriceList.tsx",
+      "src/components/sections/About.tsx",
+      "src/components/sections/Reviews.tsx",
+      "src/components/sections/GiftCards.tsx",
+      "src/components/sections/Benefits.tsx",
+      "src/components/sections/Faq.tsx",
+      "src/components/sections/Contact.tsx"
+    ],
+    "src/pages/NotFoundPage.tsx": [
+      "src/data/serviceDetails.ts"
+    ],
+    "src/pages/ServiceDetailPage.tsx": [
+      "src/data/site.ts",
+      "src/data/serviceDetails.ts",
+      "src/data/serviceDetails.ts",
+      "src/components/sections/ServiceDetailBlocks.tsx"
+    ],
+    "src/components/layout/Footer.tsx": [
+      "src/data/content.ts",
+      "src/data/settings.ts",
+      "src/data/site.ts",
+      "src/data/navigation.ts",
+      "src/components/ui/Brand.tsx",
+      "src/components/ui/BookingButton.tsx",
+      "src/components/ui/ContactDetails.tsx"
+    ],
+    "src/components/layout/Header.tsx": [
+      "src/data/content.ts",
+      "src/data/navigation.ts",
+      "src/components/ui/Brand.tsx",
+      "src/components/ui/BookingButton.tsx"
+    ],
+    "src/components/sections/About.tsx": [
+      "src/data/assets.ts",
+      "src/data/content.ts",
+      "src/components/ui/AboutGallery.tsx",
+      "src/components/ui/BookingButton.tsx",
+      "src/components/ui/SectionHeading.tsx"
+    ],
+    "src/components/sections/Benefits.tsx": [
+      "src/data/benefits.ts",
+      "src/data/content.ts"
+    ],
+    "src/components/sections/Contact.tsx": [
+      "src/data/content.ts",
+      "src/components/ui/BookingButton.tsx",
+      "src/components/ui/SectionHeading.tsx",
+      "src/components/sections/ContactForm.tsx",
+      "src/components/ui/ContactDetails.tsx"
+    ],
+    "src/components/sections/ContactForm.tsx": [
+      "src/data/content.ts",
+      "src/data/giftCertificates.ts",
+      "src/data/settings.ts",
+      "src/lib/contactSchema.ts",
+      "src/lib/contactSchema.ts",
+      "src/lib/contact.ts"
+    ],
+    "src/components/sections/Faq.tsx": [
+      "src/data/content.ts",
+      "src/data/faq.ts",
+      "src/components/ui/SectionHeading.tsx"
+    ],
+    "src/components/sections/GiftCards.tsx": [
+      "src/data/content.ts",
+      "src/data/giftCertificates.ts",
+      "src/components/ui/Botanical.tsx",
+      "src/components/ui/StudioImage.tsx",
+      "src/components/ui/SectionHeading.tsx"
+    ],
+    "src/components/sections/Hero.tsx": [
+      "src/data/content.ts",
+      "src/data/site.ts",
+      "src/components/ui/BookingButton.tsx",
+      "src/components/ui/StudioImage.tsx"
+    ],
+    "src/components/sections/PriceList.tsx": [
+      "src/data/categories.ts",
+      "src/data/content.ts",
+      "src/data/prices.ts",
+      "src/data/prices.types.ts",
+      "src/data/categories.ts",
+      "src/lib/priceCatalog.ts",
+      "src/components/ui/SectionHeading.tsx",
+      "src/components/ui/BookingButton.tsx",
+      "src/components/ui/PriceTable.tsx"
+    ],
+    "src/components/sections/Reviews.tsx": [
+      "src/data/content.ts",
+      "src/data/reviews.ts",
+      "src/components/ui/SectionHeading.tsx",
+      "src/components/ui/ReviewsCarousel.tsx"
+    ],
+    "src/components/sections/ServiceDetailBlocks.tsx": [
+      "src/data/serviceDetails.ts",
+      "src/data/serviceDetails.ts"
+    ],
+    "src/components/sections/Services.tsx": [
+      "src/data/categories.ts",
+      "src/data/content.ts",
+      "src/data/services.ts",
+      "src/data/serviceDetails.ts",
+      "src/data/categories.ts",
+      "src/components/ui/SectionHeading.tsx",
+      "src/components/ui/StudioImage.tsx",
+      "src/components/ui/BookingButton.tsx"
+    ],
+    "src/components/ui/AboutGallery.tsx": [
+      "src/data/assets.ts"
+    ],
+    "src/components/ui/BookingButton.tsx": [
+      "src/data/content.ts",
+      "src/data/site.ts",
+      "src/lib/analytics.ts"
+    ],
+    "src/components/ui/Botanical.tsx": [],
+    "src/components/ui/Brand.tsx": [
+      "src/data/content.ts",
+      "src/data/site.ts"
+    ],
+    "src/components/ui/ContactDetails.tsx": [
+      "src/data/content.ts",
+      "src/data/site.ts"
+    ],
+    "src/components/ui/PriceTable.tsx": [
+      "src/data/content.ts",
+      "src/data/prices.ts",
+      "src/lib/priceCatalog.ts",
+      "src/components/ui/BookingButton.tsx"
+    ],
+    "src/components/ui/ReviewCard.tsx": [
+      "src/data/content.ts",
+      "src/data/reviews.ts"
+    ],
+    "src/components/ui/ReviewsCarousel.tsx": [
+      "src/data/content.ts",
+      "src/data/reviews.ts",
+      "src/components/ui/ReviewCard.tsx"
+    ],
+    "src/components/ui/SectionHeading.tsx": [],
+    "src/components/ui/StudioImage.tsx": [
+      "src/data/assets.ts"
+    ]
+  }
+}

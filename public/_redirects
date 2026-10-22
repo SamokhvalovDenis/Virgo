@@ -1,0 +1,5 @@
+# Static HTML routes are generated at build time. Do not add an SPA wildcard rewrite.
+/sluzby/masaze/ /sluzby/masaze 301
+/sluzby/depilace/ /sluzby/depilace 301
+/sluzby/trvale-odstraneni-chloupku/ /sluzby/trvale-odstraneni-chloupku 301
+/sluzby/oboci-a-rasy/ /sluzby/oboci-a-rasy 301

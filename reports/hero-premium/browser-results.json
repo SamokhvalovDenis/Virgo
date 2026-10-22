@@ -1,0 +1,966 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "width": 320,
+      "overflow": false,
+      "headingLines": 2,
+      "copy": {
+        "x": 20,
+        "y": 109,
+        "width": 280,
+        "height": 310.5,
+        "right": 300,
+        "bottom": 419.5
+      },
+      "photos": {
+        "x": 20,
+        "y": 455.5,
+        "width": 280,
+        "height": 322.515625,
+        "right": 300,
+        "bottom": 778.015625
+      },
+      "highlights": {
+        "x": 20,
+        "y": 806.015625,
+        "width": 280,
+        "height": 93.28125,
+        "right": 300,
+        "bottom": 899.296875
+      },
+      "mainPhoto": {
+        "x": 20,
+        "y": 455.5,
+        "width": 280,
+        "height": 210,
+        "right": 300,
+        "bottom": 665.5
+      },
+      "bottom": {
+        "x": 20,
+        "y": 931.296875,
+        "width": 280,
+        "height": 107,
+        "right": 300,
+        "bottom": 1038.296875
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-400.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 278,
+          "height": 208
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 131,
+          "height": 97
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 131,
+          "height": 97
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "headingLines": 2,
+      "copy": {
+        "x": 20,
+        "y": 109,
+        "width": 335,
+        "height": 312,
+        "right": 355,
+        "bottom": 421
+      },
+      "photos": {
+        "x": 20,
+        "y": 457,
+        "width": 335,
+        "height": 384.125,
+        "right": 355,
+        "bottom": 841.125
+      },
+      "highlights": {
+        "x": 20,
+        "y": 869.125,
+        "width": 335,
+        "height": 60.1875,
+        "right": 355,
+        "bottom": 929.3125
+      },
+      "mainPhoto": {
+        "x": 20,
+        "y": 457,
+        "width": 335,
+        "height": 251.25,
+        "right": 355,
+        "bottom": 708.25
+      },
+      "bottom": {
+        "x": 20,
+        "y": 961.3125,
+        "width": 335,
+        "height": 107,
+        "right": 355,
+        "bottom": 1068.3125
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-400.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 333,
+          "height": 249
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 159,
+          "height": 117
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 159,
+          "height": 117
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "headingLines": 2,
+      "copy": {
+        "x": 20,
+        "y": 109,
+        "width": 350,
+        "height": 312,
+        "right": 370,
+        "bottom": 421
+      },
+      "photos": {
+        "x": 20,
+        "y": 457,
+        "width": 350,
+        "height": 400.9375,
+        "right": 370,
+        "bottom": 857.9375
+      },
+      "highlights": {
+        "x": 20,
+        "y": 885.9375,
+        "width": 350,
+        "height": 60.1875,
+        "right": 370,
+        "bottom": 946.125
+      },
+      "mainPhoto": {
+        "x": 20,
+        "y": 457,
+        "width": 350,
+        "height": 262.5,
+        "right": 370,
+        "bottom": 719.5
+      },
+      "bottom": {
+        "x": 20,
+        "y": 978.125,
+        "width": 350,
+        "height": 107,
+        "right": 370,
+        "bottom": 1085.125
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-400.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 348,
+          "height": 261
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 166,
+          "height": 122
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 166,
+          "height": 122
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 767,
+      "overflow": false,
+      "headingLines": 1.9996279761904763,
+      "copy": {
+        "x": 63.5,
+        "y": 109,
+        "width": 640,
+        "height": 280.78125,
+        "right": 703.5,
+        "bottom": 389.78125
+      },
+      "photos": {
+        "x": 63.5,
+        "y": 425.78125,
+        "width": 640,
+        "height": 725.84375,
+        "right": 703.5,
+        "bottom": 1151.625
+      },
+      "highlights": {
+        "x": 63.5,
+        "y": 1179.625,
+        "width": 640,
+        "height": 23.09375,
+        "right": 703.5,
+        "bottom": 1202.71875
+      },
+      "mainPhoto": {
+        "x": 63.5,
+        "y": 425.78125,
+        "width": 640,
+        "height": 480,
+        "right": 703.5,
+        "bottom": 905.78125
+      },
+      "bottom": {
+        "x": 63.5,
+        "y": 1234.71875,
+        "width": 640,
+        "height": 69,
+        "right": 703.5,
+        "bottom": 1303.71875
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-800.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 638,
+          "height": 478
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 311,
+          "height": 230
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 311,
+          "height": 230
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "headingLines": 1.99951171875,
+      "copy": {
+        "x": 40,
+        "y": 139.109375,
+        "width": 310.1875,
+        "height": 323.78125,
+        "right": 350.1875,
+        "bottom": 462.890625
+      },
+      "photos": {
+        "x": 378.1875,
+        "y": 161.078125,
+        "width": 349.8125,
+        "height": 279.84375,
+        "right": 728,
+        "bottom": 440.921875
+      },
+      "highlights": {
+        "x": 40,
+        "y": 490.890625,
+        "width": 688,
+        "height": 24,
+        "right": 728,
+        "bottom": 514.890625
+      },
+      "mainPhoto": {
+        "x": 378.1875,
+        "y": 186.25,
+        "width": 272.84375,
+        "height": 231.21875,
+        "right": 651.03125,
+        "bottom": 417.46875
+      },
+      "bottom": {
+        "x": 40,
+        "y": 567,
+        "width": 688,
+        "height": 69,
+        "right": 728,
+        "bottom": 636
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-400.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 271,
+          "height": 229
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 96,
+          "height": 121
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 96,
+          "height": 121
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "headingLines": 1.999704461348684,
+      "copy": {
+        "x": 40,
+        "y": 183,
+        "width": 430.515625,
+        "height": 340.375,
+        "right": 470.515625,
+        "bottom": 523.375
+      },
+      "photos": {
+        "x": 498.515625,
+        "y": 135,
+        "width": 485.46875,
+        "height": 388.375,
+        "right": 983.984375,
+        "bottom": 523.375
+      },
+      "highlights": {
+        "x": 40,
+        "y": 551.375,
+        "width": 943.984375,
+        "height": 24,
+        "right": 983.984375,
+        "bottom": 575.375
+      },
+      "mainPhoto": {
+        "x": 498.515625,
+        "y": 169.953125,
+        "width": 378.65625,
+        "height": 320.890625,
+        "right": 877.171875,
+        "bottom": 490.84375
+      },
+      "bottom": {
+        "x": 40,
+        "y": 623.375,
+        "width": 944,
+        "height": 69,
+        "right": 984,
+        "bottom": 692.375
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-400.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 377,
+          "height": 319
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 134,
+          "height": 169
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 134,
+          "height": 169
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "overflow": false,
+      "headingLines": 1.9997829861111112,
+      "copy": {
+        "x": 88,
+        "y": 175.65625,
+        "width": 462.46875,
+        "height": 304.6875,
+        "right": 550.46875,
+        "bottom": 480.34375
+      },
+      "photos": {
+        "x": 590.46875,
+        "y": 164.390625,
+        "width": 521.53125,
+        "height": 417.21875,
+        "right": 1112,
+        "bottom": 581.609375
+      },
+      "highlights": {
+        "x": 88,
+        "y": 508.34375,
+        "width": 462.46875,
+        "height": 62,
+        "right": 550.46875,
+        "bottom": 570.34375
+      },
+      "mainPhoto": {
+        "x": 590.46875,
+        "y": 201.9375,
+        "width": 406.78125,
+        "height": 344.71875,
+        "right": 997.25,
+        "bottom": 546.65625
+      },
+      "bottom": {
+        "x": 88,
+        "y": 647,
+        "width": 1024,
+        "height": 69,
+        "right": 1112,
+        "bottom": 716
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-800.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 405,
+          "height": 343
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 144,
+          "height": 182
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 144,
+          "height": 182
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "headingLines": 1.9999186197916667,
+      "copy": {
+        "x": 40,
+        "y": 190.8125,
+        "width": 545.1875,
+        "height": 312.375,
+        "right": 585.1875,
+        "bottom": 503.1875
+      },
+      "photos": {
+        "x": 700,
+        "y": 157,
+        "width": 540,
+        "height": 432,
+        "right": 1240,
+        "bottom": 589
+      },
+      "highlights": {
+        "x": 40,
+        "y": 531.1875,
+        "width": 545.1875,
+        "height": 24,
+        "right": 585.1875,
+        "bottom": 555.1875
+      },
+      "mainPhoto": {
+        "x": 700,
+        "y": 195.875,
+        "width": 421.1875,
+        "height": 356.9375,
+        "right": 1121.1875,
+        "bottom": 552.8125
+      },
+      "bottom": {
+        "x": 40,
+        "y": 647,
+        "width": 1200,
+        "height": 69,
+        "right": 1240,
+        "bottom": 716
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-800.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 419,
+          "height": 355
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "headingLines": 1.999627976190476,
+      "copy": {
+        "x": 120,
+        "y": 185.0625,
+        "width": 545.1875,
+        "height": 323.875,
+        "right": 665.1875,
+        "bottom": 508.9375
+      },
+      "photos": {
+        "x": 780,
+        "y": 157,
+        "width": 540,
+        "height": 432,
+        "right": 1320,
+        "bottom": 589
+      },
+      "highlights": {
+        "x": 120,
+        "y": 536.9375,
+        "width": 545.1875,
+        "height": 24,
+        "right": 665.1875,
+        "bottom": 560.9375
+      },
+      "mainPhoto": {
+        "x": 780,
+        "y": 195.875,
+        "width": 421.1875,
+        "height": 356.9375,
+        "right": 1201.1875,
+        "bottom": 552.8125
+      },
+      "bottom": {
+        "x": 120,
+        "y": 647,
+        "width": 1200,
+        "height": 69,
+        "right": 1320,
+        "bottom": 716
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-800.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 419,
+          "height": 355
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    },
+    {
+      "width": 1672,
+      "overflow": false,
+      "headingLines": 1.999627976190476,
+      "copy": {
+        "x": 236,
+        "y": 185.0625,
+        "width": 545.1875,
+        "height": 323.875,
+        "right": 781.1875,
+        "bottom": 508.9375
+      },
+      "photos": {
+        "x": 896,
+        "y": 157,
+        "width": 540,
+        "height": 432,
+        "right": 1436,
+        "bottom": 589
+      },
+      "highlights": {
+        "x": 236,
+        "y": 536.9375,
+        "width": 545.1875,
+        "height": 24,
+        "right": 781.1875,
+        "bottom": 560.9375
+      },
+      "mainPhoto": {
+        "x": 896,
+        "y": 195.875,
+        "width": 421.1875,
+        "height": 356.9375,
+        "right": 1317.1875,
+        "bottom": 552.8125
+      },
+      "bottom": {
+        "x": 236,
+        "y": 647,
+        "width": 1200,
+        "height": 69,
+        "right": 1436,
+        "bottom": 716
+      },
+      "clipped": [],
+      "images": [
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:53807/images/optimized/4fd8f15d2286-800.webp",
+          "loaded": true,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "loading": "eager",
+          "priority": "high",
+          "width": 419,
+          "height": 355
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee07e2c6146d-400.webp",
+          "loaded": true,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:53807/images/optimized/ee7b2f135d17-400.webp",
+          "loaded": true,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "loading": "lazy",
+          "priority": "auto",
+          "width": 149,
+          "height": 188
+        }
+      ],
+      "cls": 0,
+      "focusChecks": [
+        {
+          "selector": ".hero-actions .button-gold",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-actions .button-outline",
+          "focusContrast": 12.98
+        },
+        {
+          "selector": ".hero-bottom a",
+          "focusContrast": 12.98
+        }
+      ],
+      "bookingClick": true,
+      "bothServiceLinks": true,
+      "errors": []
+    }
+  ],
+  "reducedMotion": true
+}

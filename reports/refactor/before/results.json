@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "320-home",
+      "route": "/",
+      "width": 320,
+      "sha256": "b139edf921722c38d7daf877bccb95210d9cd45071e981dc74d0acdf76c23d04"
+    },
+    {
+      "name": "320-masaze",
+      "route": "/sluzby/masaze",
+      "width": 320,
+      "sha256": "53da3535f9b6f91ac29b9ecb97eea9f3bdbb1fa50c4907861a6f9fcfa1d735a7"
+    },
+    {
+      "name": "320-depilace",
+      "route": "/sluzby/depilace",
+      "width": 320,
+      "sha256": "e932aa341b82a32c3a359f2404471c8ca2eab534677882958cc2213cf5ccbc08"
+    },
+    {
+      "name": "320-trvale-odstraneni-chloupku",
+      "route": "/sluzby/trvale-odstraneni-chloupku",
+      "width": 320,
+      "sha256": "29d1b82961de6ca49add089cf37c98ebc8e2b915ef589038d3c8cafc162708b6"
+    },
+    {
+      "name": "320-oboci-a-rasy",
+      "route": "/sluzby/oboci-a-rasy",
+      "width": 320,
+      "sha256": "9b38e71ef3d4d3616befd94dcc612cd96e767450a23927573b7d458d9671d05b"
+    },
+    {
+      "name": "320-missing-page",
+      "route": "/missing-page",
+      "width": 320,
+      "sha256": "86f86f0363a6abab84359334aba31e43edc06183b350f698cf900c90b4c98104"
+    },
+    {
+      "name": "768-home",
+      "route": "/",
+      "width": 768,
+      "sha256": "114414409a9895f27e604f9b261db513f82798c3f236fef38368240d49c18c5d"
+    },
+    {
+      "name": "768-masaze",
+      "route": "/sluzby/masaze",
+      "width": 768,
+      "sha256": "383a64c52ac1178c66b44b5ddcbdd7fb8aef414010d4defe4a1671c342409bd0"
+    },
+    {
+      "name": "768-depilace",
+      "route": "/sluzby/depilace",
+      "width": 768,
+      "sha256": "d337e50643f3bfba8a48b47993a72cb9ee6215fc677ad38ad832c4905e71aa47"
+    },
+    {
+      "name": "768-trvale-odstraneni-chloupku",
+      "route": "/sluzby/trvale-odstraneni-chloupku",
+      "width": 768,
+      "sha256": "286f02cbcdcc7112e6137515b27fa054567f248c7d86894b5e11e41b504c467a"
+    },
+    {
+      "name": "768-oboci-a-rasy",
+      "route": "/sluzby/oboci-a-rasy",
+      "width": 768,
+      "sha256": "b655cb507c11bb7cb139c844ce34bc4604c947e6c151ee84aa33c33da7767cac"
+    },
+    {
+      "name": "768-missing-page",
+      "route": "/missing-page",
+      "width": 768,
+      "sha256": "63291900472ffa836b25b03fa856f3cf0219ce538c16d58091e81e63cd628f45"
+    },
+    {
+      "name": "1440-home",
+      "route": "/",
+      "width": 1440,
+      "sha256": "87b59e33534df59baf16cafaba06a3d99923b7d76e130a1d67a3ef5656c630d2"
+    },
+    {
+      "name": "1440-masaze",
+      "route": "/sluzby/masaze",
+      "width": 1440,
+      "sha256": "d9015af9dfc5ecc0249811461e91e7d09dd35b159c95a571d717423abaf42f50"
+    },
+    {
+      "name": "1440-depilace",
+      "route": "/sluzby/depilace",
+      "width": 1440,
+      "sha256": "97569831194e02dd1453b04e75cf290d2d53cb60fb026171afc1d8421cdc06f2"
+    },
+    {
+      "name": "1440-trvale-odstraneni-chloupku",
+      "route": "/sluzby/trvale-odstraneni-chloupku",
+      "width": 1440,
+      "sha256": "2b09abfdad138ed4bcae7caa30d023bb32a22b5a8dd69f6739099e731fc54a42"
+    },
+    {
+      "name": "1440-oboci-a-rasy",
+      "route": "/sluzby/oboci-a-rasy",
+      "width": 1440,
+      "sha256": "4a70c604d81aad205e8b57d0b8fa78d1ecee6d2a238be00a0f1c70f7667da5c8"
+    },
+    {
+      "name": "1440-missing-page",
+      "route": "/missing-page",
+      "width": 1440,
+      "sha256": "44e8dbee7c708bb9c56f519fa99013b13b98c296667ec87e2be4545e0ce02cff"
+    }
+  ]
+}

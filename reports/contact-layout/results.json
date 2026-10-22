@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 320,
+      "columns": 1,
+      "fields": 1,
+      "cards": 1,
+      "formAfterCopy": true,
+      "overflow": false,
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "columns": 1,
+      "fields": 1,
+      "cards": 1,
+      "formAfterCopy": true,
+      "overflow": false,
+      "clipped": []
+    },
+    {
+      "width": 768,
+      "columns": 1,
+      "fields": 2,
+      "cards": 3,
+      "formAfterCopy": true,
+      "overflow": false,
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "columns": 1,
+      "fields": 2,
+      "cards": 3,
+      "formAfterCopy": true,
+      "overflow": false,
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "columns": 2,
+      "fields": 2,
+      "cards": 3,
+      "formAfterCopy": false,
+      "overflow": false,
+      "clipped": []
+    },
+    {
+      "width": 1440,
+      "columns": 2,
+      "fields": 2,
+      "cards": 3,
+      "formAfterCopy": false,
+      "overflow": false,
+      "clipped": []
+    }
+  ]
+}

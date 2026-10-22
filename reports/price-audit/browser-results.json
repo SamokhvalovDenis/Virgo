@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "width": 320,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 320,
+      "category": "massage",
+      "rows": 37,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 320,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 320,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 360,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 360,
+      "category": "massage",
+      "rows": 37,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 360,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 360,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 390,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 390,
+      "category": "massage",
+      "rows": 37,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 390,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 390,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 1,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 768,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 768,
+      "category": "massage",
+      "rows": 37,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 768,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 768,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1024,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1024,
+      "category": "massage",
+      "rows": 37,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1024,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1024,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 2,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1280,
+      "category": "depilation",
+      "rows": 41,
+      "columns": 3,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1280,
+      "category": "massage",
+      "rows": 37,
+      "columns": 3,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1280,
+      "category": "hair-removal",
+      "rows": 34,
+      "columns": 3,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    },
+    {
+      "width": 1280,
+      "category": "brows-lashes",
+      "rows": 12,
+      "columns": 3,
+      "horizontalOverflow": false,
+      "bookingLabelsVisible": true
+    }
+  ]
+}

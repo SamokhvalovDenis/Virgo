@@ -1,0 +1,28 @@
+@layer components {
+  .benefits-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 28px; scroll-margin-top: 110px; }
+  .benefits-intro { display: flex; align-items: center; gap: 22px; min-width: 0; }
+  .benefits-icon { display: grid; place-items: center; flex: 0 0 68px; height: 68px; border: 1px solid #f1d7a2b0; border-radius: 50%; background: linear-gradient(135deg, #f5dba7, #dfb46c); color: var(--color-burgundy-deep); box-shadow: 0 0 28px #d5ae6915; }
+  .benefits-copy { min-width: 0; }
+  .benefits-copy h3 { color: var(--color-cream); font-size: 26px; line-height: 1.3; letter-spacing: -.5px; }
+  .benefits-copy p { margin-top: 7px; font-size: 14px; color: #e1ccd2; }
+  .benefit-products { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+  .benefit-products li { border: 1px solid #d5ae6990; padding: 10px 17px; border-radius: 99px; background: #270c1b40; color: var(--color-gold-soft); font-size: 14px; line-height: 1.5; white-space: nowrap; transition: background-color 180ms, border-color 180ms; }
+  @media (hover: hover) {
+    .benefit-products li:hover { background: #d5ae6915; border-color: var(--color-gold); }
+  }
+  @media (max-width: 1099px) {
+    .benefits-inner { align-items: flex-start; flex-direction: column; gap: 24px; }
+    .benefit-products { justify-content: flex-start; padding-left: 90px; }
+  }
+  @media (max-width: 767px) {
+    .benefits-intro { align-items: flex-start; gap: 16px; }
+    .benefits-icon { flex-basis: 54px; height: 54px; }
+    .benefits-copy h3 { font-size: 24px; }
+    .benefits-copy p { line-height: 1.65; }
+    .benefit-products { padding-left: 70px; gap: 8px; }
+    .benefit-products li { padding: 8px 14px; }
+  }
+  @media (max-width: 479px) {
+    .benefit-products { padding-left: 0; }
+  }
+}

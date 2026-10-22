@@ -1,0 +1,71 @@
+{
+  "publicFilesChecked": 184,
+  "allPublicFilesUnchanged": false,
+  "duplicateGroups": [
+    {
+      "sha256": "fb1e81b9e08b19959eafdd78a0ede90991f04489fe7ad4194d72f1cf8a1ee983",
+      "files": [
+        "public/images/logo.png",
+        "public/images/virgo-original/virgo-fb1e81b9e08b.png"
+      ]
+    },
+    {
+      "sha256": "05beda091c66a3d8f923079234c50f87e1e44ff955e76673930e7b29b3db94ee",
+      "files": [
+        "public/images/about/studio-main.jpg",
+        "public/images/virgo-original/virgo-05beda091c66.jpg"
+      ]
+    },
+    {
+      "sha256": "494307ff021098c8021583d2244a793113c1e31ae57b562d382eceb1518bed98",
+      "files": [
+        "public/images/gifts/gift-certificates.jpg",
+        "public/images/virgo-original/virgo-494307ff0210.jpg"
+      ]
+    },
+    {
+      "sha256": "941bef5d4e2bac6d9a50086ecafb754c38c1dc252cb9b4712bb008f86a285e40",
+      "files": [
+        "public/images/hero/hero-studio.jpg",
+        "public/images/virgo-original/virgo-941bef5d4e2b.jpg"
+      ]
+    },
+    {
+      "sha256": "83c0aab8a97a0cdb849721badf4ef85e68116dd779a5c724872d1c75c09b0ebb",
+      "files": [
+        "public/images/services/brows-lashes.jpg",
+        "public/images/virgo-original/virgo-83c0aab8a97a.jpg"
+      ]
+    },
+    {
+      "sha256": "0f0fb8661ddc7b7ee5967900aaea406396ae2a8df71ca77d9cba2b58d98fa9ed",
+      "files": [
+        "public/images/services/depilation.jpg",
+        "public/images/virgo-original/virgo-0f0fb8661ddc.jpg"
+      ]
+    },
+    {
+      "sha256": "d88cd29c22039346789415b4f6086d036f52d6988e8cddaf805d2c829bb40b8e",
+      "files": [
+        "public/images/services/hair-removal.jpg",
+        "public/images/virgo-original/virgo-d88cd29c2203.jpg"
+      ]
+    },
+    {
+      "sha256": "57e4e1920ab5fc6e440cc897a71ef73276c883050767514199399f00d8b97f3e",
+      "files": [
+        "public/images/services/massage.jpg",
+        "public/images/virgo-original/virgo-57e4e1920ab5.jpg"
+      ]
+    }
+  ],
+  "disposition": "Preserved: original downloads, selected site copies and full-size gallery photos retain their documented purpose.",
+  "unchangedPublicFiles": 183,
+  "allPhotographsUnchanged": true,
+  "removed": [
+    {
+      "file": "public/icons.svg",
+      "reason": "Unused starter social-icon sprite. No source, CSS, configuration, dynamic <use> or report reference."
+    }
+  ]
+}

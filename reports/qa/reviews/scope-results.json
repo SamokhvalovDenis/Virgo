@@ -1,0 +1,8 @@
+{
+  "unchangedOutsideReviews": true,
+  "reference": "reports/refactor/content-baseline.json",
+  "excluded": [
+    "data.reviews",
+    "data.content.reviews"
+  ]
+}

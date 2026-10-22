@@ -1,0 +1,47 @@
+[
+  {
+    "service": "Masáž zad",
+    "rating": 5,
+    "text": "Studio mohu jen doporučit. Paní masérka má opravdu šikovné ruce. Přišla jsem se zablokovanou páteří a po masáži se cítím jako znovuzrozená, uvolněná a lehká. Moc děkuji!"
+  },
+  {
+    "service": "Maderoterapie",
+    "rating": 5,
+    "text": "Na maderoterapii jsem byla poprvé a nadchla mě. Skvělá úleva pro unavené a bolavé nohy. Masérka je milá, pozorná a šikovná. Ráda se brzy vrátím."
+  },
+  {
+    "service": "Masáž zad a obličeje",
+    "rating": 4.5,
+    "text": "Děkuji za masáž zad a následnou masáž obličeje, odvedená práce je výborná. Byla jsem poprvé, ale rozhodně ne naposledy. Jen by mi vyhovovalo mít na zadní masáž o trochu více času. Už se těším na další péči."
+  },
+  {
+    "service": "Lymfatická masáž a lash lifting",
+    "rating": 5,
+    "text": "Do studia se vracím pravidelně. Při lymfatické masáži jsem se krásně uvolnila, lash lifting byl velmi pečlivý a doporučuji i laserovou epilaci třísel. Oceňuji online rezervaci a možnost platit kartou."
+  },
+  {
+    "service": "Čokoládová masáž",
+    "rating": 5,
+    "text": "Příjemné prostředí a čokoládová masáž byla dokonalý relax. K tomu velmi sympatická paní masérka. Doporučuji!"
+  },
+  {
+    "service": "Medová masáž",
+    "rating": 5,
+    "text": "Milá obsluha a čisté, útulné místo. Medová masáž byla vynikající a nabídka služeb je opravdu široká. Vřele doporučuji."
+  },
+  {
+    "service": "Lash lifting",
+    "rating": 5,
+    "text": "Na lash lifting jsem přišla s malými očekáváními a odcházela nadšená. Výsledek je krásný, ošetření rychlé a práce mnohem pečlivější než v jiných salonech, které jsem zkoušela."
+  },
+  {
+    "service": "Laserová epilace podpaží",
+    "rating": 4.5,
+    "text": "S laserovou epilací podpaží jsem spokojená. Ošetření je rychlé a příjemné, jen mě na začátku překvapilo, že je cítit mírné štípání. Už po několika návštěvách vidím, že chloupků ubývá a rostou pomaleji."
+  },
+  {
+    "service": "Laserová epilace",
+    "rating": 5,
+    "text": "Laserovou epilaci jsem dlouho odkládala, ale jsem ráda, že jsem se rozhodla. Vše proběhlo profesionálně a cítila jsem se příjemně. Chloupků postupně opravdu ubývá."
+  }
+]

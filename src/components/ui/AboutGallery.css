@@ -1,0 +1,94 @@
+@layer components {
+  .about-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    aspect-ratio: 10 / 7;
+    margin-top: 32px;
+  }
+  .about-gallery-tile {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ede5d9;
+    box-shadow: 0 0 0 2px var(--color-surface);
+    cursor: zoom-in;
+  }
+  .about-gallery-tile:first-child { grid-column: span 2; grid-row: span 2; }
+  .about-gallery-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 280ms ease, filter 280ms ease; }
+  .about-gallery-expand {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #fffdf959;
+    border-radius: 50%;
+    background: #270c1b66;
+    color: var(--color-surface);
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .about-gallery-tile:focus-visible { outline-offset: 4px; }
+  .about-gallery-tile:focus-visible img { transform: scale(1.025); filter: brightness(.93); }
+  .about-gallery-tile:focus-visible .about-gallery-expand { opacity: 1; }
+
+  .about-lightbox {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    height: 100dvh;
+    max-height: none;
+    margin: 0;
+    padding: 80px 88px 28px;
+    border: 0;
+    background: #140b11f5;
+    color: var(--color-surface);
+    overscroll-behavior: contain;
+  }
+  .about-lightbox[open] { display: flex; align-items: center; justify-content: center; }
+  .about-lightbox::backdrop { background: #140b11f5; }
+  .about-lightbox-toolbar { position: absolute; inset: max(18px, env(safe-area-inset-top)) 24px auto; display: flex; align-items: center; justify-content: space-between; }
+  .about-lightbox-counter { font-size: 14px; letter-spacing: 2px; font-variant-numeric: tabular-nums; color: var(--color-gold-soft); }
+  .about-lightbox-control { display: grid; place-items: center; width: 48px; height: 48px; flex-shrink: 0; border: 1px solid #fffdf945; border-radius: 50%; background: transparent; color: var(--color-surface); }
+  .about-lightbox-control:hover { background: #fffdf91a; border-color: var(--color-gold-soft); }
+  .about-lightbox-previous, .about-lightbox-next { position: absolute; top: calc(50% - 24px); }
+  .about-lightbox-previous { left: 24px; }
+  .about-lightbox-next { right: 24px; }
+  .about-lightbox-figure { width: 100%; height: 100%; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; pointer-events: none; }
+  .about-lightbox-figure img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+  .about-lightbox-figure figcaption { flex-shrink: 0; max-width: 65ch; text-align: center; color: #dfd2d8; font-size: 13px; line-height: 1.6; }
+}
+
+@media (hover: hover) {
+  .about-gallery-tile:hover img { transform: scale(1.025); filter: brightness(.93); }
+  .about-gallery-tile:hover .about-gallery-expand { opacity: 1; }
+}
+@media (hover: none) {
+  .about-gallery-expand { opacity: 1; }
+}
+@media (max-width: 767px) {
+  .about-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; aspect-ratio: auto; gap: 10px; margin-top: 36px; }
+  .about-gallery-tile { aspect-ratio: 1 / 1; border-radius: 16px; }
+  .about-gallery-tile:first-child, .about-gallery-tile:last-child { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 4 / 3; }
+  .about-gallery-expand { width: 30px; height: 30px; right: 10px; bottom: 10px; }
+  .about-lightbox { padding: 80px 16px max(88px, calc(72px + env(safe-area-inset-bottom))); }
+  .about-lightbox-toolbar { right: 16px; left: 16px; }
+  .about-lightbox-previous, .about-lightbox-next { top: auto; bottom: max(18px, env(safe-area-inset-bottom)); }
+  .about-lightbox-previous { left: calc(50% - 60px); }
+  .about-lightbox-next { right: calc(50% - 60px); }
+  .about-lightbox-figure figcaption { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-gallery-tile img, .about-gallery-expand { transition: none; }
+  .about-gallery-tile:is(:hover, :focus-visible) img { transform: none; }
+}

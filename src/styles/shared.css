@@ -1,0 +1,19 @@
+@layer components {
+  .section-space { padding-block: 96px; }
+  .eyebrow { font-size: 14px; font-weight: 500; letter-spacing: 2.6px; line-height: 1.5; color: #876536; margin-bottom: 14px; }
+  .section-heading { max-width: 690px; margin-bottom: 36px; }
+  .section-subtitle { margin-top: 16px; color: var(--color-muted); }
+  .section-header-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+  .section-aside { display: flex; gap: 8px; align-items: center; color: var(--color-muted); font-size: 14px; margin-top: 12px; }
+  .section-aside svg { color: #876536; }
+  .button { min-height: 48px; padding: 12px 23px; border: 1px solid transparent; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 99px; font-size: 14px; font-weight: 600; line-height: 1.45; text-align: center; }
+  .button-gold { background: var(--color-gold-soft); color: var(--color-burgundy-deep); border-color: var(--color-gold-soft); }
+  .button-gold:hover { background: var(--color-gold); border-color: var(--color-gold); }
+  .button-burgundy { background: var(--color-burgundy); color: var(--color-surface); }
+  .button-burgundy:hover { background: var(--color-burgundy-deep); }
+  .button-outline { border-color: #ccb5bd; color: var(--color-burgundy); background: transparent; }
+  .button-outline:hover { background: #42132908; border-color: var(--color-burgundy); }
+  .button:disabled { cursor: not-allowed; background: #e8e0dc; color: #6b6063; border-color: #e8e0dc; }
+  .skip-link { position: fixed; left: 16px; top: -100px; z-index: 100; padding: 12px 20px; background: var(--color-gold-soft); color: var(--color-burgundy); border-radius: 8px; }
+  .skip-link:focus { top: 12px; }
+}

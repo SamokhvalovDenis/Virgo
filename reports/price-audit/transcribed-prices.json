@@ -1,0 +1,1348 @@
+{
+  "reviewedAt": "2026-10-15",
+  "sources": {
+    "brows": {
+      "title": "Péče o obočí a řasy",
+      "file": "virgo-3c06e8b3513e.jpg"
+    },
+    "depilation-body": {
+      "title": "Depilace — Ženy / Muži",
+      "file": "virgo-291868b11987.jpg"
+    },
+    "massage-special": {
+      "title": "Masáže, maderoterapie a zábaly",
+      "file": "virgo-cc4f36a2336a.jpg"
+    },
+    "depilation-women": {
+      "title": "Depilace dámská",
+      "file": "virgo-93e2db7cda04.jpg"
+    },
+    "depilation-men": {
+      "title": "Depilace pánská",
+      "file": "virgo-8e3a1a28b192.jpg"
+    },
+    "device-men": {
+      "title": "Přístrojové odstranění chloupků — Muži",
+      "file": "virgo-ed1dd2234a02.jpg"
+    },
+    "device-women": {
+      "title": "Přístrojové odstranění chloupků — Ženy",
+      "file": "virgo-becadaa5816c.jpg"
+    },
+    "device-packages-women": {
+      "title": "Přístrojové ošetření — Balíčky pro ženy",
+      "file": "virgo-d65c367ca605.jpg"
+    },
+    "device-packages-men": {
+      "title": "Přístrojové ošetření — Balíčky pro muže",
+      "file": "virgo-12d8cc1ec8a5.jpg"
+    },
+    "massage-classic": {
+      "title": "Masáže — jednotlivé procedury a balíčky",
+      "file": "virgo-8b06e6967a1f.jpg"
+    }
+  },
+  "originalDepilation": [
+    {
+      "label": "Obličej",
+      "women": 450,
+      "men": 450
+    },
+    {
+      "label": "Obočí",
+      "women": 200,
+      "men": 250
+    },
+    {
+      "label": "Horní ret",
+      "women": 200,
+      "men": 250
+    },
+    {
+      "label": "Brada",
+      "women": 250,
+      "men": 250
+    },
+    {
+      "label": "Nosní dírky",
+      "women": 200,
+      "men": 300
+    },
+    {
+      "label": "Uši",
+      "women": 200,
+      "men": 300
+    },
+    {
+      "label": "Tváře",
+      "women": 300,
+      "men": 300
+    },
+    {
+      "label": "Krk",
+      "women": 200,
+      "men": 300
+    },
+    {
+      "label": "Ruce — předloktí",
+      "women": 400,
+      "men": 490
+    },
+    {
+      "label": "Ruce — nadloktí",
+      "women": 350,
+      "men": 450
+    },
+    {
+      "label": "Ruce — celé ruce",
+      "women": 550,
+      "men": {
+        "from": 750,
+        "to": 850
+      }
+    },
+    {
+      "label": "Ruce — prsty",
+      "women": 110,
+      "men": 150
+    },
+    {
+      "label": "Hruď",
+      "women": 450,
+      "men": 600
+    },
+    {
+      "label": "Břicho",
+      "women": 400,
+      "men": 500
+    },
+    {
+      "label": "Pupek",
+      "women": 150,
+      "men": 170
+    },
+    {
+      "label": "Podpaží",
+      "women": 400,
+      "men": 400
+    },
+    {
+      "label": "Záda — spodní část",
+      "women": 300,
+      "men": 600
+    },
+    {
+      "label": "Záda — horní část",
+      "women": 400,
+      "men": 500
+    },
+    {
+      "label": "Záda — celá záda",
+      "women": 700,
+      "men": 950
+    },
+    {
+      "label": "Nohy — lýtka (včetně kolen)",
+      "women": 500,
+      "men": 700
+    },
+    {
+      "label": "Nohy — ¾ (do poloviny stehna)",
+      "women": 800,
+      "men": 1050
+    },
+    {
+      "label": "Nohy — stehna",
+      "women": 500,
+      "men": 650
+    },
+    {
+      "label": "Nohy — celé (bez třísel a prstů)",
+      "women": 850,
+      "men": 1200
+    },
+    {
+      "label": "Nohy — prsty",
+      "women": 150,
+      "men": 200
+    },
+    {
+      "label": "Hýždě — zevnitř",
+      "women": 200,
+      "men": 350
+    },
+    {
+      "label": "Hýždě — zvenčí",
+      "women": 400,
+      "men": 530
+    },
+    {
+      "label": "Hýždě — komplex",
+      "women": 550,
+      "men": 750
+    }
+  ],
+  "additionalDepilationPrices": [
+    {
+      "id": "depilation-extra-bikini-classic",
+      "groupId": "intimate",
+      "label": "Klasické bikiny",
+      "women": 500,
+      "men": 650,
+      "sourceIds": [
+        "depilation-women",
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-bikini-medium",
+      "groupId": "intimate",
+      "label": "Střední bikiny",
+      "women": 750,
+      "men": 900,
+      "sourceIds": [
+        "depilation-women",
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-brazil-triangle",
+      "groupId": "intimate",
+      "label": "Brazilská — trojúhelník / proužek",
+      "women": 1000,
+      "men": 1200,
+      "sourceIds": [
+        "depilation-women",
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-brazil-hollywood",
+      "groupId": "intimate",
+      "label": "Brazilská Hollywood",
+      "women": 1000,
+      "men": 1200,
+      "sourceIds": [
+        "depilation-women",
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-bikini-vajacial",
+      "groupId": "intimate",
+      "label": "Bikiny + vajacial",
+      "women": 1250,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-s-brazil-vajacial",
+      "groupId": "intimate",
+      "label": "S-Brazilská + vajacial",
+      "women": 1500,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-hollywood-vajacial",
+      "groupId": "intimate",
+      "label": "Hollywood + vajacial",
+      "women": 1750,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-underarms-calves",
+      "groupId": "combinations",
+      "label": "Podpaží + lýtka",
+      "women": 850,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-underarms-bikini",
+      "groupId": "combinations",
+      "label": "Podpaží + bikiny",
+      "women": 1100,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-fitness-legs",
+      "groupId": "combinations",
+      "label": "Fitness: podpaží + celé nohy + třísla",
+      "women": 1550,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-fitness-half-legs",
+      "groupId": "combinations",
+      "label": "Fitness: podpaží + polovina nohou + třísla",
+      "women": 1250,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-fitness-arms-legs",
+      "groupId": "combinations",
+      "label": "Fitness: podpaží + celé nohy + celé ruce + třísla",
+      "women": 2000,
+      "men": null,
+      "sourceIds": [
+        "depilation-women"
+      ]
+    },
+    {
+      "id": "depilation-extra-chest-abdomen",
+      "groupId": "combinations",
+      "label": "Hruď + břicho",
+      "women": null,
+      "men": 900,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-back-triceps",
+      "groupId": "combinations",
+      "label": "Celá záda + tricepsová zóna (k lokti)",
+      "women": null,
+      "men": 1200,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-bsc",
+      "groupId": "intimate",
+      "label": "BSC: záda + vnitřní část hýždí + intimní část",
+      "women": null,
+      "men": 1390,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-brazil-intimate",
+      "groupId": "intimate",
+      "label": "Brazilská: intimní části + dolní část břicha + třísla",
+      "women": null,
+      "men": 1650,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-brazil-sport",
+      "groupId": "intimate",
+      "label": "Brazilská sportovní (dolní část břicha)",
+      "women": null,
+      "men": 870,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-brazil-manjacial",
+      "groupId": "intimate",
+      "label": "Brazilská + manjacial",
+      "women": null,
+      "men": 2700,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-cyclists",
+      "groupId": "combinations",
+      "label": "Pro cyklisty: celé nohy + třísla",
+      "women": null,
+      "men": 1620,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-fitness-torso",
+      "groupId": "combinations",
+      "label": "Fitness: hruď + břicho + záda",
+      "women": null,
+      "men": 1670,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-in-hollywood",
+      "groupId": "combinations",
+      "label": "IN: Brazilská Hollywood + celé hýždě",
+      "women": null,
+      "men": 2200,
+      "sourceIds": [
+        "depilation-men"
+      ]
+    },
+    {
+      "id": "depilation-extra-whole-body",
+      "groupId": "combinations",
+      "label": "Celé tělo",
+      "women": null,
+      "men": 6100,
+      "sourceIds": [
+        "depilation-men"
+      ],
+      "menNote": "Kauce 2 000 Kč."
+    }
+  ],
+  "massagePrices": [
+    {
+      "id": "massage-price-whole-60",
+      "label": "Celková masáž",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-whole-90",
+      "label": "Celková masáž",
+      "price": 1250,
+      "detail": "90 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-whole-120",
+      "label": "Celková masáž",
+      "price": 1700,
+      "detail": "120 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-back",
+      "label": "Masáž zad",
+      "price": 450,
+      "detail": "30 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-neck",
+      "label": "Masáž šíje",
+      "price": 300,
+      "detail": "20 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-back-neck",
+      "label": "Masáž zad a šíje",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-lower-40",
+      "label": "Masáž dolních končetin",
+      "price": 550,
+      "detail": "40 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-lower-60",
+      "label": "Masáž dolních končetin",
+      "price": 850,
+      "detail": "60 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-upper",
+      "label": "Masáž horních končetin",
+      "price": 400,
+      "detail": "30 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-feet",
+      "label": "Masáž chodidel",
+      "price": 300,
+      "detail": "20 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-back-cupping",
+      "label": "Záda a baňkování",
+      "price": 700,
+      "detail": "50 min",
+      "groupId": "body",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-cupping",
+      "label": "Baňkování",
+      "price": 300,
+      "detail": "20 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-honey",
+      "label": "Medová masáž",
+      "price": 500,
+      "detail": "30 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-chocolate",
+      "label": "Čokoládová masáž",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-hot-stones",
+      "label": "Masáž lávovými kameny",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-anticellulite-60",
+      "label": "Masáž proti celulitidě",
+      "price": 1000,
+      "detail": "60 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-anticellulite-90",
+      "label": "Masáž proti celulitidě",
+      "price": 1400,
+      "detail": "90 min",
+      "groupId": "special",
+      "sourceIds": [
+        "massage-classic"
+      ]
+    },
+    {
+      "id": "massage-price-ozone",
+      "label": "Masáž proti celulitidě + ozonový zábal",
+      "price": 1250,
+      "detail": "50 + 25 min",
+      "groupId": "ozone",
+      "sourceIds": [
+        "massage-classic"
+      ],
+      "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
+    },
+    {
+      "id": "massage-price-ozone-5",
+      "label": "Masáž proti celulitidě + ozonový zábal",
+      "price": 5649,
+      "detail": "Balíček 5 ošetření",
+      "groupId": "ozone",
+      "sourceIds": [
+        "massage-classic"
+      ],
+      "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
+    },
+    {
+      "id": "massage-price-ozone-10",
+      "label": "Masáž proti celulitidě + ozonový zábal",
+      "price": 11249,
+      "detail": "Balíček 10 ošetření",
+      "groupId": "ozone",
+      "sourceIds": [
+        "massage-classic"
+      ],
+      "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
+    },
+    {
+      "id": "massage-price-madero-60",
+      "label": "Maderoterapie",
+      "price": 1000,
+      "detail": "60 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-madero-90",
+      "label": "Maderoterapie",
+      "price": 1500,
+      "detail": "90 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-madero-3-60",
+      "label": "Maderoterapie",
+      "price": 2800,
+      "detail": "3 × 60 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-madero-5-60",
+      "label": "Maderoterapie",
+      "price": 4500,
+      "detail": "5 × 60 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-madero-3-90",
+      "label": "Maderoterapie",
+      "price": 4200,
+      "detail": "3 × 90 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-madero-5-90",
+      "label": "Maderoterapie",
+      "price": 6900,
+      "detail": "5 × 90 min",
+      "groupId": "madero",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-cinnamon-mud",
+      "label": "Skořicový / bahenní zábal",
+      "price": 500,
+      "detail": "1 × 20–30 min",
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-cinnamon-mud-3",
+      "label": "Skořicový / bahenní zábal",
+      "price": 1300,
+      "detail": "3 ošetření",
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-cinnamon-mud-5",
+      "label": "Skořicový / bahenní zábal",
+      "price": 2300,
+      "detail": "5 ošetření",
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-cinnamon-mud-10",
+      "label": "Skořicový / bahenní zábal",
+      "price": 4600,
+      "detail": "10 ošetření",
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-peat",
+      "label": "Rašelinový zábal",
+      "price": 300,
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-paraffin-hands",
+      "label": "Parafínový zábal rukou",
+      "price": 290,
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-paraffin-feet",
+      "label": "Parafínový zábal nohou",
+      "price": 320,
+      "groupId": "wraps",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-indian-head",
+      "label": "Indická masáž hlavy",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "relax",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-thai-feet",
+      "label": "Thajská masáž nohou",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "relax",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-ayurveda",
+      "label": "Ájurvédská masáž",
+      "price": 1800,
+      "detail": "120 min",
+      "groupId": "relax",
+      "sourceIds": [
+        "massage-special"
+      ]
+    },
+    {
+      "id": "massage-price-lymphatic",
+      "label": "Lymfatická masáž",
+      "price": 900,
+      "detail": "60 min",
+      "groupId": "relax",
+      "sourceIds": [
+        "massage-special"
+      ]
+    }
+  ],
+  "browsLashesPrices": [
+    {
+      "id": "brow-price-correction-women",
+      "label": "Korekce obočí — ženy",
+      "price": 200,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-correction-men",
+      "label": "Korekce obočí — muži",
+      "price": 250,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-color",
+      "label": "Barvení obočí",
+      "price": 250,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-color-correction",
+      "label": "Barvení + korekce obočí",
+      "price": 400,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lamination-correction",
+      "label": "Laminace + korekce obočí",
+      "price": 550,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lamination-color-correction",
+      "label": "Laminace + barvení + korekce obočí",
+      "price": 700,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lightening",
+      "label": "Zesvětlení obočí",
+      "price": 300,
+      "groupId": "brows",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lashes-color",
+      "label": "Barvení řas",
+      "price": 250,
+      "groupId": "lashes",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lashes-lamination",
+      "label": "Laminace řas",
+      "price": 650,
+      "groupId": "lashes",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-lashes-lamination-color",
+      "label": "Laminace + barvení řas",
+      "price": 800,
+      "groupId": "lashes",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-both-lamination",
+      "label": "Laminace obočí + řas",
+      "price": 1100,
+      "groupId": "combined",
+      "sourceIds": [
+        "brows"
+      ]
+    },
+    {
+      "id": "brow-price-both-complex",
+      "label": "Komplex obočí + řasy",
+      "price": 1400,
+      "groupId": "combined",
+      "sourceIds": [
+        "brows"
+      ]
+    }
+  ],
+  "deviceHairRemovalPrices": [
+    {
+      "id": "device-face",
+      "groupId": "face",
+      "label": "Obličej",
+      "women": 1400,
+      "men": 1800,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-upper-lip",
+      "groupId": "face",
+      "label": "Horní ret",
+      "women": 450,
+      "men": null,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-women"
+      ]
+    },
+    {
+      "id": "device-beard-contours",
+      "groupId": "face",
+      "label": "Úprava kontur vousů",
+      "women": null,
+      "men": 850,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-chin",
+      "groupId": "face",
+      "label": "Brada",
+      "women": 550,
+      "men": 1000,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-between-brows",
+      "groupId": "face",
+      "label": "Mezi obočím",
+      "women": 400,
+      "men": 450,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-neck-back",
+      "groupId": "face",
+      "label": "Zadní partie krku",
+      "women": 550,
+      "men": 1050,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-neck-front",
+      "groupId": "face",
+      "label": "Přední partie krku",
+      "women": 550,
+      "men": 1050,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-underarms",
+      "groupId": "arms",
+      "label": "Podpaží",
+      "women": 800,
+      "men": 900,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-forearms",
+      "groupId": "arms",
+      "label": "Předloktí",
+      "women": 1400,
+      "men": 1700,
+      "detail": "25 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-wrist-fingers",
+      "groupId": "arms",
+      "label": "Zápěstí + prsty",
+      "women": 700,
+      "men": 950,
+      "detail": "10 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-arms-full",
+      "groupId": "arms",
+      "label": "Celé ruce",
+      "women": 1850,
+      "men": 2500,
+      "detail": "25 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-chest",
+      "groupId": "body",
+      "label": "Hrudník",
+      "women": 1300,
+      "men": 1800,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-areola",
+      "groupId": "body",
+      "label": "Okolo prsních dvorců",
+      "women": 600,
+      "men": null,
+      "detail": "10 min",
+      "sourceIds": [
+        "device-women"
+      ]
+    },
+    {
+      "id": "device-abdomen",
+      "groupId": "body",
+      "label": "Břicho",
+      "women": 1300,
+      "men": 1800,
+      "detail": "20 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-navel",
+      "groupId": "body",
+      "label": "Okolo pupíku",
+      "women": 700,
+      "men": null,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-women"
+      ]
+    },
+    {
+      "id": "device-below-navel",
+      "groupId": "body",
+      "label": "Střední linie pod pupíkem",
+      "women": 700,
+      "men": null,
+      "detail": "5 min",
+      "sourceIds": [
+        "device-women"
+      ]
+    },
+    {
+      "id": "device-shoulders",
+      "groupId": "body",
+      "label": "Ramena",
+      "women": null,
+      "men": 1800,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-back-full",
+      "groupId": "back",
+      "label": "Celá záda",
+      "women": 2200,
+      "men": 3000,
+      "detail": "35 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-back-half",
+      "groupId": "back",
+      "label": "½ zad (horní nebo dolní část)",
+      "women": 1200,
+      "men": null,
+      "detail": "20 min",
+      "sourceIds": [
+        "device-women"
+      ]
+    },
+    {
+      "id": "device-back-upper",
+      "groupId": "back",
+      "label": "Horní část zad",
+      "women": null,
+      "men": 1800,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-back-lower",
+      "groupId": "back",
+      "label": "Dolní část zad",
+      "women": null,
+      "men": 1700,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-buttocks",
+      "groupId": "intimate",
+      "label": "Hýždě",
+      "women": 1400,
+      "men": 2000,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-between-buttocks",
+      "groupId": "intimate",
+      "label": "Mezi hýždě",
+      "women": 800,
+      "men": 1500,
+      "detail": "10 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-groin",
+      "groupId": "intimate",
+      "label": "Třísla",
+      "women": 1200,
+      "men": 1800,
+      "detail": "15 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-brazil",
+      "groupId": "intimate",
+      "label": "Brazílie — intimní partie",
+      "women": 1800,
+      "men": 2400,
+      "detail": "30 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-calves",
+      "groupId": "legs",
+      "label": "Lýtka",
+      "women": 1700,
+      "men": 2200,
+      "detail": "25 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-knees",
+      "groupId": "legs",
+      "label": "Kolena",
+      "women": 600,
+      "men": 600,
+      "detail": "10 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-thighs",
+      "groupId": "legs",
+      "label": "Stehna",
+      "women": 1800,
+      "men": 2300,
+      "detail": "25 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-legs-full",
+      "groupId": "legs",
+      "label": "Celé nohy",
+      "women": 3000,
+      "men": 4000,
+      "detail": "40 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-instep-toes",
+      "groupId": "legs",
+      "label": "Nárt a prsty",
+      "women": 750,
+      "men": 1050,
+      "detail": "10 min",
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    },
+    {
+      "id": "device-whole-body",
+      "groupId": "body",
+      "label": "Celé tělo",
+      "women": 12500,
+      "men": 15500,
+      "sourceIds": [
+        "device-women",
+        "device-men"
+      ]
+    }
+  ],
+  "deviceHairRemovalPackages": [
+    {
+      "id": "device-package-brazil-underarms-1",
+      "label": "Brazilka + podpaží",
+      "women": 2100,
+      "men": 2800,
+      "detail": "1 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-6",
+      "label": "Brazilka + podpaží",
+      "women": 11350,
+      "men": 16790,
+      "detail": "6 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-calves-1",
+      "label": "Brazilka + podpaží + lýtka",
+      "women": 3800,
+      "men": 5050,
+      "detail": "1 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-calves-6",
+      "label": "Brazilka + podpaží + lýtka",
+      "women": 20550,
+      "men": 27300,
+      "detail": "6 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-legs-1",
+      "label": "Brazilka + podpaží + celé nohy",
+      "women": 5100,
+      "men": 6800,
+      "detail": "1 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-legs-6",
+      "label": "Brazilka + podpaží + celé nohy",
+      "women": 27550,
+      "men": 36720,
+      "detail": "6 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-arms-legs-1",
+      "label": "Brazilka + podpaží + celé ruce + celé nohy",
+      "women": 6500,
+      "men": 8900,
+      "detail": "1 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    },
+    {
+      "id": "device-package-brazil-underarms-arms-legs-6",
+      "label": "Brazilka + podpaží + celé ruce + celé nohy",
+      "women": 35100,
+      "men": 48100,
+      "detail": "6 ošetření",
+      "sourceIds": [
+        "device-packages-women",
+        "device-packages-men"
+      ]
+    }
+  ]
+}

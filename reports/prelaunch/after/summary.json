@@ -1,0 +1,140 @@
+{
+  "phase": "after",
+  "lighthouseVersion": "13.5.0",
+  "lighthouse": [
+    {
+      "name": "home-mobile",
+      "route": "/",
+      "scores": {
+        "performance": 64,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 6252.8862500000005,
+        "cumulative-layout-shift": 0.0007615226132667569,
+        "total-blocking-time": 78,
+        "first-contentful-paint": 5146.709,
+        "speed-index": 5146.709
+      },
+      "warnings": []
+    },
+    {
+      "name": "masaze-mobile",
+      "route": "/sluzby/masaze",
+      "scores": {
+        "performance": 81,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 3993.2455,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 27,
+        "first-contentful-paint": 3318.2455,
+        "speed-index": 3318.2455
+      },
+      "warnings": []
+    },
+    {
+      "name": "home-desktop",
+      "route": "/",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 1022.9479999999999,
+        "cumulative-layout-shift": 0.001129694826616741,
+        "total-blocking-time": 0,
+        "first-contentful-paint": 882.9480000000001,
+        "speed-index": 882.9480000000001
+      },
+      "warnings": []
+    }
+  ],
+  "axe": [
+    {
+      "name": "home-320",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "count": 1
+        },
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ],
+      "nonGetRequests": []
+    },
+    {
+      "name": "masaze-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "depilace-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "trvale-odstraneni-chloupku-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "oboci-a-rasy-320",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "home-1440",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "count": 1
+        },
+        {
+          "id": "color-contrast",
+          "count": 4
+        }
+      ],
+      "nonGetRequests": []
+    },
+    {
+      "name": "masaze-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "depilace-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "trvale-odstraneni-chloupku-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    },
+    {
+      "name": "oboci-a-rasy-1440",
+      "violations": [],
+      "incomplete": [],
+      "nonGetRequests": []
+    }
+  ]
+}

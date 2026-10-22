@@ -1,0 +1,25 @@
+@layer base {
+  :root { font-family: var(--font-sans); color: var(--color-ink); background: var(--color-cream); font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; color-scheme: light; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; min-width: 320px; font-size: 16px; line-height: 1.65; }
+  h1, h2, h3, h4, p, figure { margin: 0; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.2; }
+  h1 { font-size: clamp(36px, 4.7vw, 62px); letter-spacing: -2px; }
+  h2 { font-size: clamp(30px, 3.3vw, 42px); letter-spacing: -1.2px; color: var(--color-burgundy); }
+  h3 { font-size: 24px; }
+  a { text-decoration: none; }
+  button, input, select, textarea { font: inherit; }
+  button, summary { cursor: pointer; }
+  a, button, input, select, textarea, summary { -webkit-tap-highlight-color: transparent; }
+  a, button { touch-action: manipulation; }
+  button, a, summary { transition: color 180ms, background-color 180ms, border-color 180ms, box-shadow 180ms; }
+  :focus-visible { outline: 3px solid var(--color-burgundy); outline-offset: 5px; }
+  :is(.site-header, .site-footer, .hero-section, .price-section, .gift-section, .about-lightbox) :focus-visible { outline-color: var(--color-gold-soft); }
+  ::selection { background: var(--color-gold-soft); color: var(--color-burgundy-deep); }
+  section[id] { scroll-margin-top: 100px; }
+  main[id] { scroll-margin-top: 100px; }
+  svg { flex-shrink: 0; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  img { max-width: 100%; display: block; }
+  [hidden] { display: none !important; }
+}

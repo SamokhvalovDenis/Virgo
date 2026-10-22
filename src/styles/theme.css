@@ -1,0 +1,13 @@
+@theme {
+  --color-burgundy: #421329;
+  --color-burgundy-deep: #270C1B;
+  --color-cream: #FAF5EE;
+  --color-surface: #FFFDF9;
+  --color-gold: #D5AE69;
+  --color-gold-soft: #F1D7A2;
+  --color-ink: #271C21;
+  --color-muted: #6B6063;
+  --color-border: #E9DCD6;
+  --font-sans: 'Inter Variable', sans-serif;
+  --font-display: 'Playfair Display Variable', Georgia, serif;
+}

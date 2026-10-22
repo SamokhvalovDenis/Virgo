@@ -1,0 +1,26 @@
+{
+  "phase": "final-raw",
+  "compression": "none",
+  "lighthouseVersion": "13.5.0",
+  "lighthouse": [
+    {
+      "name": "home-mobile",
+      "route": "/",
+      "scores": {
+        "performance": 69,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 6013.197,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 48,
+        "first-contentful-paint": 3835.9974999999995,
+        "speed-index": 3835.9974999999995
+      },
+      "warnings": []
+    }
+  ],
+  "axe": []
+}

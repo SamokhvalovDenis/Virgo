@@ -1,0 +1,8 @@
+{
+  "checkedOn": "2026-10-21",
+  "command": "npm.cmd audit --omit=dev --json --cache .npm-cache",
+  "source": "npm advisory database",
+  "exitCode": 0,
+  "vulnerabilities": { "info": 0, "low": 0, "moderate": 0, "high": 0, "critical": 0, "total": 0 },
+  "productionDependencies": 40
+}

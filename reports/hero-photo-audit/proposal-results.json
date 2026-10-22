@@ -1,0 +1,42 @@
+{
+  "proposalOnly": true,
+  "applicationFilesChanged": false,
+  "cases": [
+    {
+      "width": 320,
+      "overflow": false,
+      "sources": [
+        "http://127.0.0.1:52755/images/optimized/4fd8f15d2286-400.webp",
+        "http://127.0.0.1:52755/images/optimized/ee07e2c6146d-400.webp"
+      ],
+      "loaded": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "sources": [
+        "http://127.0.0.1:52755/images/optimized/4fd8f15d2286-400.webp",
+        "http://127.0.0.1:52755/images/optimized/ee07e2c6146d-400.webp"
+      ],
+      "loaded": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "sources": [
+        "http://127.0.0.1:52755/images/optimized/4fd8f15d2286-400.webp",
+        "http://127.0.0.1:52755/images/optimized/ee07e2c6146d-400.webp"
+      ],
+      "loaded": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "sources": [
+        "http://127.0.0.1:52755/images/optimized/4fd8f15d2286-800.webp",
+        "http://127.0.0.1:52755/images/optimized/ee07e2c6146d-400.webp"
+      ],
+      "loaded": true
+    }
+  ]
+}

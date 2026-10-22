@@ -1,0 +1,26 @@
+{
+  "phase": "fonts-gzip",
+  "compression": "gzip for text",
+  "lighthouseVersion": "13.5.0",
+  "lighthouse": [
+    {
+      "name": "home-mobile",
+      "route": "/",
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 3379.1000000000004,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 85,
+        "first-contentful-paint": 1626.5625,
+        "speed-index": 2619.130615989775
+      },
+      "warnings": []
+    }
+  ],
+  "axe": []
+}

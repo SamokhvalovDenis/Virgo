@@ -1,0 +1,686 @@
+{
+  "passed": true,
+  "metrics": [
+    {
+      "weight": 400,
+      "originalWidth": 603.94921875,
+      "optimizedWidth": 603.94921875,
+      "identicalPixels": true
+    },
+    {
+      "weight": 500,
+      "originalWidth": 610.3935546875,
+      "optimizedWidth": 610.3935546875,
+      "identicalPixels": true
+    },
+    {
+      "weight": 600,
+      "originalWidth": 616.8202514648438,
+      "optimizedWidth": 616.8202514648438,
+      "identicalPixels": true
+    },
+    {
+      "weight": 650,
+      "originalWidth": 619.9852905273438,
+      "optimizedWidth": 619.9852905273438,
+      "identicalPixels": true
+    },
+    {
+      "weight": 700,
+      "originalWidth": 623.2118530273438,
+      "optimizedWidth": 623.2118530273438,
+      "identicalPixels": true
+    }
+  ],
+  "assets": [
+    {
+      "width": 320,
+      "route": "/",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/4fd8f15d2286-400.webp",
+          "width": 280,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee07e2c6146d-400.webp",
+          "width": 133,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee7b2f135d17-400.webp",
+          "width": 133,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/massage.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/57e4e1920ab5-600.webp",
+          "width": 600,
+          "alt": "Masáž zad a ramen na masážním lehátku.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/depilation.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0f0fb8661ddc-600.webp",
+          "width": 600,
+          "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/hair-removal.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/d88cd29c2203-400.webp",
+          "width": 280,
+          "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/brows-lashes.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/83c0aab8a97a-400.webp",
+          "width": 280,
+          "alt": "Detail oka a přirozených řas.",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-941bef5d4e2b.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/82118d84a994-400.webp",
+          "width": 280,
+          "alt": "Celkový pohled do studia Virgo s kosmetickým lehátkem a vybavením",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/e18ded09baf0-400.webp",
+          "width": 280,
+          "alt": "Čekací koutek se dvěma křesly a kulatým stolkem",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-b3ac8b382ca3.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/9a270d190511-400.webp",
+          "width": 280,
+          "alt": "Recepce studia s diplomy a certifikáty na stěně",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee7b2f135d17-400.webp",
+          "width": 280,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee07e2c6146d-400.webp",
+          "width": 280,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-945bb0014d8e.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/db116cc18ac7-400.webp",
+          "width": 280,
+          "alt": "Kosmetické vybavení a bílé úložné skříně ve studiu Virgo",
+          "responsive": true
+        },
+        {
+          "src": "/images/gifts/gift-certificates.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/494307ff0210-400.webp",
+          "width": 280,
+          "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "route": "/sluzby/masaze",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-57e4e1920ab5.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/57e4e1920ab5-400.webp",
+          "width": 280,
+          "alt": "Masáž zad a ramen muže na masážním lehátku.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-e08883f6e9ba.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/e08883f6e9ba-400.webp",
+          "width": 280,
+          "alt": "Nanášení medu na záda při medové masáži.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-e462497b5730.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/e462497b5730-400.webp",
+          "width": 280,
+          "alt": "Masáž zad zahřátými lávovými kameny.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-ad46cdec38ca.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/ad46cdec38ca-400.webp",
+          "width": 280,
+          "alt": "Čokoládová masáž zad.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-04aa20c10c49.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/04aa20c10c49-400.webp",
+          "width": 280,
+          "alt": "Skleněné baňky na zádech při baňkování.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-9f3e933515fe.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/9f3e933515fe-400.webp",
+          "width": 280,
+          "alt": "Ruční masáž stehen a pokožky nohou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-1a1a8b2c68a7.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/1a1a8b2c68a7-400.webp",
+          "width": 280,
+          "alt": "Masáž dřevěnými válečky při maderoterapii.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-36d0ce4d8c4c.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/36d0ce4d8c4c-391.webp",
+          "width": 280,
+          "alt": "Olejová masáž zad a ramen.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-1d773a971214.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/1d773a971214-400.webp",
+          "width": 280,
+          "alt": "Masáž pokožky hlavy a vlasové části hlavy.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-822fa23c1df2.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/822fa23c1df2-400.webp",
+          "width": 280,
+          "alt": "Masáž chodidla pomocí dřevěné tyčinky.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "route": "/sluzby/depilace",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-0f0fb8661ddc.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0f0fb8661ddc-400.webp",
+          "width": 280,
+          "alt": "Cukrová pasta na špachtli při depilaci.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-d4e7458b47ef.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/d4e7458b47ef-400.webp",
+          "width": 280,
+          "alt": "Depilační vosk a vosková depilace nohy.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-00cad37d37f4.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/00cad37d37f4-400.webp",
+          "width": 280,
+          "alt": "Koláž péče o intimní oblast, pokožku a depilace.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "route": "/sluzby/trvale-odstraneni-chloupku",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-0d9eb7910850.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0d9eb7910850-400.webp",
+          "width": 280,
+          "alt": "Přístrojové odstranění chloupků na nohou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-8505d6a20e52.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/8505d6a20e52-400.webp",
+          "width": 280,
+          "alt": "Přístrojové ošetření pokožky břicha.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "route": "/sluzby/oboci-a-rasy",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-502a15dc4066.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/502a15dc4066-400.webp",
+          "width": 280,
+          "alt": "Detail oka a natočených řas.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-6fe049d7d58f.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/6fe049d7d58f-400.webp",
+          "width": 280,
+          "alt": "Detail upravených a vyčesaných chloupků obočí.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-f39a8a85b2b1.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/f39a8a85b2b1-400.webp",
+          "width": 280,
+          "alt": "Barvení řas s ochrannou podložkou pod okem.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/4fd8f15d2286-800.webp",
+          "width": 422,
+          "alt": "Čekací koutek Virgo Beauty Studio se dvěma světlými křesly a malým kulatým stolkem.",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee07e2c6146d-400.webp",
+          "width": 152,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee7b2f135d17-400.webp",
+          "width": 152,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/massage.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/57e4e1920ab5-600.webp",
+          "width": 600,
+          "alt": "Masáž zad a ramen na masážním lehátku.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/depilation.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0f0fb8661ddc-600.webp",
+          "width": 600,
+          "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/hair-removal.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/d88cd29c2203-400.webp",
+          "width": 322,
+          "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+          "responsive": true
+        },
+        {
+          "src": "/images/services/brows-lashes.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/83c0aab8a97a-400.webp",
+          "width": 322,
+          "alt": "Detail oka a přirozených řas.",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-941bef5d4e2b.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/82118d84a994-800.webp",
+          "width": 560,
+          "alt": "Celkový pohled do studia Virgo s kosmetickým lehátkem a vybavením",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-5e46a6a8e504.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/e18ded09baf0-800.webp",
+          "width": 560,
+          "alt": "Čekací koutek se dvěma křesly a kulatým stolkem",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-b3ac8b382ca3.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/9a270d190511-800.webp",
+          "width": 560,
+          "alt": "Recepce studia s diplomy a certifikáty na stěně",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-05beda091c66.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee7b2f135d17-800.webp",
+          "width": 560,
+          "alt": "Masážní lehátko v klidném a světlém prostoru studia",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-f04a78ef8962.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/ee07e2c6146d-800.webp",
+          "width": 560,
+          "alt": "Zapálené dekorativní svíčky na poličce ve studiu",
+          "responsive": true
+        },
+        {
+          "src": "/images/about/gallery/virgo-945bb0014d8e.webp",
+          "selected": "http://127.0.0.1:55559/images/optimized/db116cc18ac7-800.webp",
+          "width": 560,
+          "alt": "Kosmetické vybavení a bílé úložné skříně ve studiu Virgo",
+          "responsive": true
+        },
+        {
+          "src": "/images/gifts/gift-certificates.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/494307ff0210-800.webp",
+          "width": 560,
+          "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/sluzby/masaze",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-57e4e1920ab5.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/57e4e1920ab5-600.webp",
+          "width": 560,
+          "alt": "Masáž zad a ramen muže na masážním lehátku.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-e08883f6e9ba.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/e08883f6e9ba-600.webp",
+          "width": 560,
+          "alt": "Nanášení medu na záda při medové masáži.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-e462497b5730.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/e462497b5730-600.webp",
+          "width": 560,
+          "alt": "Masáž zad zahřátými lávovými kameny.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-ad46cdec38ca.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/ad46cdec38ca-600.webp",
+          "width": 560,
+          "alt": "Čokoládová masáž zad.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-04aa20c10c49.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/04aa20c10c49-600.webp",
+          "width": 560,
+          "alt": "Skleněné baňky na zádech při baňkování.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-9f3e933515fe.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/9f3e933515fe-600.webp",
+          "width": 560,
+          "alt": "Ruční masáž stehen a pokožky nohou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-1a1a8b2c68a7.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/1a1a8b2c68a7-526.webp",
+          "width": 560,
+          "alt": "Masáž dřevěnými válečky při maderoterapii.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-36d0ce4d8c4c.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/36d0ce4d8c4c-391.webp",
+          "width": 560,
+          "alt": "Olejová masáž zad a ramen.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-1d773a971214.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/1d773a971214-600.webp",
+          "width": 560,
+          "alt": "Masáž pokožky hlavy a vlasové části hlavy.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-822fa23c1df2.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/822fa23c1df2-600.webp",
+          "width": 560,
+          "alt": "Masáž chodidla pomocí dřevěné tyčinky.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/sluzby/depilace",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-0f0fb8661ddc.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0f0fb8661ddc-600.webp",
+          "width": 560,
+          "alt": "Cukrová pasta na špachtli při depilaci.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-d4e7458b47ef.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/d4e7458b47ef-600.webp",
+          "width": 560,
+          "alt": "Depilační vosk a vosková depilace nohy.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-00cad37d37f4.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/00cad37d37f4-600.webp",
+          "width": 560,
+          "alt": "Koláž péče o intimní oblast, pokožku a depilace.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/sluzby/trvale-odstraneni-chloupku",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-0d9eb7910850.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/0d9eb7910850-600.webp",
+          "width": 560,
+          "alt": "Přístrojové odstranění chloupků na nohou.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-8505d6a20e52.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/8505d6a20e52-600.webp",
+          "width": 560,
+          "alt": "Přístrojové ošetření pokožky břicha.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/sluzby/oboci-a-rasy",
+      "images": [
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        },
+        {
+          "src": "/images/virgo-original/virgo-502a15dc4066.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/502a15dc4066-600.webp",
+          "width": 560,
+          "alt": "Detail oka a natočených řas.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-6fe049d7d58f.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/6fe049d7d58f-600.webp",
+          "width": 560,
+          "alt": "Detail upravených a vyčesaných chloupků obočí.",
+          "responsive": true
+        },
+        {
+          "src": "/images/virgo-original/virgo-f39a8a85b2b1.jpg",
+          "selected": "http://127.0.0.1:55559/images/optimized/f39a8a85b2b1-600.webp",
+          "width": 560,
+          "alt": "Barvení řas s ochrannou podložkou pod okem.",
+          "responsive": true
+        },
+        {
+          "src": "/images/logo.png",
+          "selected": "http://127.0.0.1:55559/images/logo.png",
+          "width": 250,
+          "alt": "Virgo Beauty Studio — logo",
+          "responsive": false
+        }
+      ]
+    }
+  ],
+  "failedFormChunkPreservesPage": true
+}

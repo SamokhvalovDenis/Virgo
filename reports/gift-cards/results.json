@@ -1,0 +1,278 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1440,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 120,
+        "y": 366.921875,
+        "width": 550,
+        "height": 296.515625,
+        "bottom": 663.4375,
+        "right": 670
+      },
+      "button": {
+        "x": 120,
+        "y": 601.4375,
+        "width": 315.4375,
+        "height": 62,
+        "bottom": 663.4375,
+        "right": 435.4375
+      },
+      "photo": {
+        "x": 726,
+        "y": 323.578125,
+        "width": 594,
+        "height": 383.21875,
+        "bottom": 706.796875,
+        "right": 1320
+      },
+      "benefits": {
+        "x": 120,
+        "y": 807.796875,
+        "width": 1200,
+        "height": 68,
+        "bottom": 875.796875,
+        "right": 1320
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 1280,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 40,
+        "y": 370.5625,
+        "width": 550,
+        "height": 290.1875,
+        "bottom": 660.75,
+        "right": 590
+      },
+      "button": {
+        "x": 40,
+        "y": 598.75,
+        "width": 315.4375,
+        "height": 62,
+        "bottom": 660.75,
+        "right": 355.4375
+      },
+      "photo": {
+        "x": 646,
+        "y": 324.046875,
+        "width": 594,
+        "height": 383.21875,
+        "bottom": 707.265625,
+        "right": 1240
+      },
+      "benefits": {
+        "x": 40,
+        "y": 808.265625,
+        "width": 1200,
+        "height": 68,
+        "bottom": 876.265625,
+        "right": 1240
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 1024,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 40,
+        "y": 340.765625,
+        "width": 436.53125,
+        "height": 282.34375,
+        "bottom": 623.109375,
+        "right": 476.53125
+      },
+      "button": {
+        "x": 40,
+        "y": 561.109375,
+        "width": 277.640625,
+        "height": 62,
+        "bottom": 623.109375,
+        "right": 317.640625
+      },
+      "photo": {
+        "x": 512.53125,
+        "y": 285.5,
+        "width": 471.46875,
+        "height": 392.890625,
+        "bottom": 678.390625,
+        "right": 984
+      },
+      "benefits": {
+        "x": 40,
+        "y": 779.390625,
+        "width": 944,
+        "height": 135,
+        "bottom": 914.390625,
+        "right": 984
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 768,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 40,
+        "y": 302.015625,
+        "width": 313.453125,
+        "height": 359.9375,
+        "bottom": 661.953125,
+        "right": 353.453125
+      },
+      "button": {
+        "x": 40,
+        "y": 599.953125,
+        "width": 277.640625,
+        "height": 62,
+        "bottom": 661.953125,
+        "right": 317.640625
+      },
+      "photo": {
+        "x": 389.453125,
+        "y": 340.921875,
+        "width": 338.546875,
+        "height": 282.109375,
+        "bottom": 623.03125,
+        "right": 728
+      },
+      "benefits": {
+        "x": 40,
+        "y": 762.953125,
+        "width": 688,
+        "height": 135,
+        "bottom": 897.953125,
+        "right": 728
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 767,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 63.5,
+        "y": 84.796875,
+        "width": 640,
+        "height": 271.90625,
+        "bottom": 356.703125,
+        "right": 703.5
+      },
+      "button": {
+        "x": 63.5,
+        "y": 294.703125,
+        "width": 277.640625,
+        "height": 62,
+        "bottom": 356.703125,
+        "right": 341.140625
+      },
+      "photo": {
+        "x": 63.5,
+        "y": 390.703125,
+        "width": 640,
+        "height": 412.890625,
+        "bottom": 803.59375,
+        "right": 703.5
+      },
+      "benefits": {
+        "x": 63.5,
+        "y": 884.59375,
+        "width": 640,
+        "height": 124.28125,
+        "bottom": 1008.875,
+        "right": 703.5
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 20,
+        "y": 135.671875,
+        "width": 350,
+        "height": 286.5,
+        "bottom": 422.171875,
+        "right": 370
+      },
+      "button": {
+        "x": 20,
+        "y": 360.171875,
+        "width": 350,
+        "height": 62,
+        "bottom": 422.171875,
+        "right": 370
+      },
+      "photo": {
+        "x": 20,
+        "y": 456.171875,
+        "width": 350,
+        "height": 225.796875,
+        "bottom": 681.96875,
+        "right": 370
+      },
+      "benefits": {
+        "x": 20,
+        "y": 762.96875,
+        "width": 350,
+        "height": 194.375,
+        "bottom": 957.34375,
+        "right": 370
+      },
+      "topic": "gift-certificate"
+    },
+    {
+      "width": 320,
+      "passed": true,
+      "overflow": false,
+      "clipped": false,
+      "copy": {
+        "x": 20,
+        "y": 121.421875,
+        "width": 280,
+        "height": 328.96875,
+        "bottom": 450.390625,
+        "right": 300
+      },
+      "button": {
+        "x": 20,
+        "y": 388.390625,
+        "width": 280,
+        "height": 62,
+        "bottom": 450.390625,
+        "right": 300
+      },
+      "photo": {
+        "x": 20,
+        "y": 484.390625,
+        "width": 280,
+        "height": 180.640625,
+        "bottom": 665.03125,
+        "right": 300
+      },
+      "benefits": {
+        "x": 20,
+        "y": 746.03125,
+        "width": 280,
+        "height": 225.5625,
+        "bottom": 971.59375,
+        "right": 300
+      },
+      "topic": "gift-certificate"
+    }
+  ]
+}

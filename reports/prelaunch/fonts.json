@@ -1,0 +1,45 @@
+{
+  "tool": "subset-font",
+  "ranges": [
+    [
+      32,
+      383
+    ],
+    [
+      768,
+      879
+    ],
+    [
+      8192,
+      8303
+    ],
+    [
+      8352,
+      8399
+    ],
+    [
+      8592,
+      8595
+    ]
+  ],
+  "weightRange": [
+    100,
+    900
+  ],
+  "results": [
+    {
+      "subset": "latin",
+      "source": "node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2",
+      "file": "/fonts/inter-latin-a5c5c13ecff5.woff2",
+      "originalBytes": 48256,
+      "bytes": 46036
+    },
+    {
+      "subset": "latin-ext",
+      "source": "node_modules/@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2",
+      "file": "/fonts/inter-latin-ext-cf4dc92700b7.woff2",
+      "originalBytes": 85068,
+      "bytes": 22436
+    }
+  ]
+}

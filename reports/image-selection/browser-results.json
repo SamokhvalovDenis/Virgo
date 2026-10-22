@@ -1,0 +1,286 @@
+{
+  "passed": true,
+  "failedImageFallback": true,
+  "images": [
+    {
+      "viewport": 320,
+      "section": "hero",
+      "src": "/images/hero/hero-studio.jpg",
+      "alt": "Světlý interiér Virgo Studio s lehátkem, vybavením pro ošetření a jemným osvětlením.",
+      "naturalWidth": 370,
+      "width": 278,
+      "height": 208,
+      "loading": "eager"
+    },
+    {
+      "viewport": 320,
+      "section": "services",
+      "src": "/images/services/massage.jpg",
+      "alt": "Masáž zad a ramen na masážním lehátku.",
+      "naturalWidth": 600,
+      "width": 278,
+      "height": 146,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 320,
+      "section": "services",
+      "src": "/images/services/depilation.jpg",
+      "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+      "naturalWidth": 600,
+      "width": 278,
+      "height": 146,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 320,
+      "section": "services",
+      "src": "/images/services/hair-removal.jpg",
+      "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+      "naturalWidth": 768,
+      "width": 278,
+      "height": 146,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 320,
+      "section": "services",
+      "src": "/images/services/brows-lashes.jpg",
+      "alt": "Detail oka a přirozených řas.",
+      "naturalWidth": 1079,
+      "width": 278,
+      "height": 146,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 320,
+      "section": "about",
+      "src": "/images/about/studio-main.jpg",
+      "alt": "Interiér Virgo Studio s masážním lehátkem a vybavením pro ošetření.",
+      "naturalWidth": 370,
+      "width": 280,
+      "height": 330,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 320,
+      "section": "gifts",
+      "src": "/images/gifts/gift-certificates.jpg",
+      "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+      "naturalWidth": 1280,
+      "width": 248,
+      "height": 124,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "hero",
+      "src": "/images/hero/hero-studio.jpg",
+      "alt": "Světlý interiér Virgo Studio s lehátkem, vybavením pro ošetření a jemným osvětlením.",
+      "naturalWidth": 370,
+      "width": 348,
+      "height": 261,
+      "loading": "eager"
+    },
+    {
+      "viewport": 390,
+      "section": "services",
+      "src": "/images/services/massage.jpg",
+      "alt": "Masáž zad a ramen na masážním lehátku.",
+      "naturalWidth": 600,
+      "width": 348,
+      "height": 183,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "services",
+      "src": "/images/services/depilation.jpg",
+      "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+      "naturalWidth": 600,
+      "width": 348,
+      "height": 183,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "services",
+      "src": "/images/services/hair-removal.jpg",
+      "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+      "naturalWidth": 768,
+      "width": 348,
+      "height": 183,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "services",
+      "src": "/images/services/brows-lashes.jpg",
+      "alt": "Detail oka a přirozených řas.",
+      "naturalWidth": 1079,
+      "width": 348,
+      "height": 183,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "about",
+      "src": "/images/about/studio-main.jpg",
+      "alt": "Interiér Virgo Studio s masážním lehátkem a vybavením pro ošetření.",
+      "naturalWidth": 370,
+      "width": 350,
+      "height": 330,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 390,
+      "section": "gifts",
+      "src": "/images/gifts/gift-certificates.jpg",
+      "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+      "naturalWidth": 1280,
+      "width": 318,
+      "height": 159,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "hero",
+      "src": "/images/hero/hero-studio.jpg",
+      "alt": "Světlý interiér Virgo Studio s lehátkem, vybavením pro ošetření a jemným osvětlením.",
+      "naturalWidth": 370,
+      "width": 269,
+      "height": 202,
+      "loading": "eager"
+    },
+    {
+      "viewport": 768,
+      "section": "services",
+      "src": "/images/services/massage.jpg",
+      "alt": "Masáž zad a ramen na masážním lehátku.",
+      "naturalWidth": 600,
+      "width": 332,
+      "height": 208,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "services",
+      "src": "/images/services/depilation.jpg",
+      "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+      "naturalWidth": 600,
+      "width": 332,
+      "height": 208,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "services",
+      "src": "/images/services/hair-removal.jpg",
+      "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+      "naturalWidth": 768,
+      "width": 332,
+      "height": 208,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "services",
+      "src": "/images/services/brows-lashes.jpg",
+      "alt": "Detail oka a přirozených řas.",
+      "naturalWidth": 1079,
+      "width": 332,
+      "height": 208,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "about",
+      "src": "/images/about/studio-main.jpg",
+      "alt": "Interiér Virgo Studio s masážním lehátkem a vybavením pro ošetření.",
+      "naturalWidth": 370,
+      "width": 304,
+      "height": 228,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 768,
+      "section": "gifts",
+      "src": "/images/gifts/gift-certificates.jpg",
+      "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+      "naturalWidth": 1280,
+      "width": 317,
+      "height": 159,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "hero",
+      "src": "/images/hero/hero-studio.jpg",
+      "alt": "Světlý interiér Virgo Studio s lehátkem, vybavením pro ošetření a jemným osvětlením.",
+      "naturalWidth": 370,
+      "width": 428,
+      "height": 321,
+      "loading": "eager"
+    },
+    {
+      "viewport": 1280,
+      "section": "services",
+      "src": "/images/services/massage.jpg",
+      "alt": "Masáž zad a ramen na masážním lehátku.",
+      "naturalWidth": 600,
+      "width": 283,
+      "height": 177,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "services",
+      "src": "/images/services/depilation.jpg",
+      "alt": "Depilační pasta na dřevěné špachtli nad miskou.",
+      "naturalWidth": 600,
+      "width": 283,
+      "height": 177,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "services",
+      "src": "/images/services/hair-removal.jpg",
+      "alt": "Přístrojové ošetření nohou pro odstranění chloupků.",
+      "naturalWidth": 768,
+      "width": 283,
+      "height": 177,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "services",
+      "src": "/images/services/brows-lashes.jpg",
+      "alt": "Detail oka a přirozených řas.",
+      "naturalWidth": 1079,
+      "width": 283,
+      "height": 177,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "about",
+      "src": "/images/about/studio-main.jpg",
+      "alt": "Interiér Virgo Studio s masážním lehátkem a vybavením pro ošetření.",
+      "naturalWidth": 370,
+      "width": 430,
+      "height": 323,
+      "loading": "lazy"
+    },
+    {
+      "viewport": 1280,
+      "section": "gifts",
+      "src": "/images/gifts/gift-certificates.jpg",
+      "alt": "Bordó-zlaté dárkové poukazy Virgo Beauty Studio na dřevěném stole.",
+      "naturalWidth": 1280,
+      "width": 553,
+      "height": 277,
+      "loading": "lazy"
+    }
+  ]
+}

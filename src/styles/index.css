@@ -1,0 +1,20 @@
+/* Import order preserves the original layers and responsive cascade. */
+/* Keep generated utilities independent of historical reports, fixtures and audit HTML. */
+@import 'tailwindcss' source('../');
+@import './fonts.css';
+@import './theme.css';
+@import './base.css';
+@import './shared.css';
+@import '../components/layout/Header.css';
+@import '../components/sections/Hero.css';
+@import '../components/sections/Services.css';
+@import '../components/sections/PriceList.css';
+@import '../components/sections/About.css';
+@import '../components/sections/GiftCards.css';
+@import '../components/sections/Benefits.css';
+@import '../components/sections/Faq.css';
+@import '../components/sections/Contact.css';
+@import '../components/sections/ContactForm.css';
+@import '../components/layout/Footer.css';
+@import './responsive.css';
+@import '../pages/ServiceDetailPage.css';

@@ -1,0 +1,3022 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "width": 320,
+      "columns": 1,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 20,
+            "y": -971.125,
+            "width": 280,
+            "height": 460,
+            "bottom": -511.125
+          },
+          "button": {
+            "x": 41,
+            "y": -580.125,
+            "width": 238,
+            "height": 48,
+            "bottom": -532.125
+          },
+          "icon": {
+            "x": 41,
+            "y": -818.125,
+            "width": 44,
+            "height": 44,
+            "bottom": -774.125
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 41,
+                "y": -762.125,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -733.328125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 41,
+                "y": -723.328125,
+                "width": 238,
+                "height": 47.59375,
+                "bottom": -675.734375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -632.125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -588.125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -580.125,
+                "width": 238,
+                "height": 48,
+                "bottom": -532.125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -491.125,
+            "width": 280,
+            "height": 460,
+            "bottom": -31.125
+          },
+          "button": {
+            "x": 41,
+            "y": -100.125,
+            "width": 238,
+            "height": 48,
+            "bottom": -52.125
+          },
+          "icon": {
+            "x": 41,
+            "y": -338.125,
+            "width": 44,
+            "height": 44,
+            "bottom": -294.125
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 41,
+                "y": -282.125,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -253.328125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 41,
+                "y": -243.328125,
+                "width": 238,
+                "height": 47.59375,
+                "bottom": -195.734375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -152.125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -108.125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -100.125,
+                "width": 238,
+                "height": 48,
+                "bottom": -52.125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -11.125,
+            "width": 280,
+            "height": 460,
+            "bottom": 448.875
+          },
+          "button": {
+            "x": 41,
+            "y": 379.875,
+            "width": 238,
+            "height": 48,
+            "bottom": 427.875
+          },
+          "icon": {
+            "x": 41,
+            "y": 141.875,
+            "width": 44,
+            "height": 44,
+            "bottom": 185.875
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 41,
+                "y": 197.875,
+                "width": 238,
+                "height": 57.59375,
+                "bottom": 255.46875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 41,
+                "y": 265.46875,
+                "width": 238,
+                "height": 47.59375,
+                "bottom": 313.0625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": 327.875,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 371.875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": 379.875,
+                "width": 238,
+                "height": 48,
+                "bottom": 427.875
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": 468.875,
+            "width": 280,
+            "height": 460,
+            "bottom": 928.875
+          },
+          "button": {
+            "x": 41,
+            "y": 859.875,
+            "width": 238,
+            "height": 48,
+            "bottom": 907.875
+          },
+          "icon": {
+            "x": 41,
+            "y": 621.875,
+            "width": 44,
+            "height": 44,
+            "bottom": 665.875
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 41,
+                "y": 677.875,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 706.671875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 41,
+                "y": 716.671875,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 740.46875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": 807.875,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 851.875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": 859.875,
+                "width": 238,
+                "height": 48,
+                "bottom": 907.875
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [
+        {
+          "text": "Masáže",
+          "minimum": 11.987206071229474,
+          "threshold": 3
+        },
+        {
+          "text": "Klasické, relaxační a speciální masážní techniky.",
+          "minimum": 11.601680018508965,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.380594310673647,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.275830674949885,
+          "threshold": 4.5
+        },
+        {
+          "text": "Depilace",
+          "minimum": 11.446191321902583,
+          "threshold": 3
+        },
+        {
+          "text": "Cukrová pasta, vosk a speciální péče.",
+          "minimum": 11.693817428848678,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.380594310673647,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.275830674949885,
+          "threshold": 4.5
+        },
+        {
+          "text": "Trvalé odstranění chloupků",
+          "minimum": 12.36571681181493,
+          "threshold": 3
+        },
+        {
+          "text": "Informace o možnostech přístrojového ošetření.",
+          "minimum": 12.579003305312815,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.380594310673647,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.275830674949885,
+          "threshold": 4.5
+        },
+        {
+          "text": "Péče o obočí a řasy",
+          "minimum": 12.217207430979736,
+          "threshold": 3
+        },
+        {
+          "text": "Lash lifting, laminace a barvení.",
+          "minimum": 11.72893654969298,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.380594310673647,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.275830674949885,
+          "threshold": 4.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 375,
+      "columns": 1,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 20,
+            "y": -1358.109375,
+            "width": 335,
+            "height": 460,
+            "bottom": -898.109375
+          },
+          "button": {
+            "x": 41,
+            "y": -967.109375,
+            "width": 293,
+            "height": 48,
+            "bottom": -919.109375
+          },
+          "icon": {
+            "x": 41,
+            "y": -1205.109375,
+            "width": 44,
+            "height": 44,
+            "bottom": -1161.109375
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 41,
+                "y": -1149.109375,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -1120.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 41,
+                "y": -1110.3125,
+                "width": 293,
+                "height": 47.59375,
+                "bottom": -1062.71875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -1019.109375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -975.109375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -967.109375,
+                "width": 293,
+                "height": 48,
+                "bottom": -919.109375
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -878.109375,
+            "width": 335,
+            "height": 460,
+            "bottom": -418.109375
+          },
+          "button": {
+            "x": 41,
+            "y": -487.109375,
+            "width": 293,
+            "height": 48,
+            "bottom": -439.109375
+          },
+          "icon": {
+            "x": 41,
+            "y": -725.109375,
+            "width": 44,
+            "height": 44,
+            "bottom": -681.109375
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 41,
+                "y": -669.109375,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -640.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 41,
+                "y": -630.3125,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -606.515625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -539.109375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -495.109375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -487.109375,
+                "width": 293,
+                "height": 48,
+                "bottom": -439.109375
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -398.109375,
+            "width": 335,
+            "height": 460,
+            "bottom": 61.890625
+          },
+          "button": {
+            "x": 41,
+            "y": -7.109375,
+            "width": 293,
+            "height": 48,
+            "bottom": 40.890625
+          },
+          "icon": {
+            "x": 41,
+            "y": -245.109375,
+            "width": 44,
+            "height": 44,
+            "bottom": -201.109375
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 41,
+                "y": -189.109375,
+                "width": 293,
+                "height": 57.59375,
+                "bottom": -131.515625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 41,
+                "y": -121.515625,
+                "width": 293,
+                "height": 47.59375,
+                "bottom": -73.921875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -59.109375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -15.109375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -7.109375,
+                "width": 293,
+                "height": 48,
+                "bottom": 40.890625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": 81.890625,
+            "width": 335,
+            "height": 460,
+            "bottom": 541.890625
+          },
+          "button": {
+            "x": 41,
+            "y": 472.890625,
+            "width": 293,
+            "height": 48,
+            "bottom": 520.890625
+          },
+          "icon": {
+            "x": 41,
+            "y": 234.890625,
+            "width": 44,
+            "height": 44,
+            "bottom": 278.890625
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 41,
+                "y": 290.890625,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 319.6875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 41,
+                "y": 329.6875,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 353.484375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": 420.890625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 464.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": 472.890625,
+                "width": 293,
+                "height": 48,
+                "bottom": 520.890625
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "columns": 1,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 20,
+            "y": -1358.296875,
+            "width": 350,
+            "height": 460,
+            "bottom": -898.296875
+          },
+          "button": {
+            "x": 41,
+            "y": -967.296875,
+            "width": 308,
+            "height": 48,
+            "bottom": -919.296875
+          },
+          "icon": {
+            "x": 41,
+            "y": -1205.296875,
+            "width": 44,
+            "height": 44,
+            "bottom": -1161.296875
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 41,
+                "y": -1149.296875,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -1120.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 41,
+                "y": -1110.5,
+                "width": 308,
+                "height": 47.59375,
+                "bottom": -1062.90625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -1019.296875,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -975.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -967.296875,
+                "width": 308,
+                "height": 48,
+                "bottom": -919.296875
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -878.296875,
+            "width": 350,
+            "height": 460,
+            "bottom": -418.296875
+          },
+          "button": {
+            "x": 41,
+            "y": -487.296875,
+            "width": 308,
+            "height": 48,
+            "bottom": -439.296875
+          },
+          "icon": {
+            "x": 41,
+            "y": -725.296875,
+            "width": 44,
+            "height": 44,
+            "bottom": -681.296875
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 41,
+                "y": -669.296875,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -640.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 41,
+                "y": -630.5,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -606.703125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -539.296875,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -495.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -487.296875,
+                "width": 308,
+                "height": 48,
+                "bottom": -439.296875
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": -398.296875,
+            "width": 350,
+            "height": 460,
+            "bottom": 61.703125
+          },
+          "button": {
+            "x": 41,
+            "y": -7.296875,
+            "width": 308,
+            "height": 48,
+            "bottom": 40.703125
+          },
+          "icon": {
+            "x": 41,
+            "y": -245.296875,
+            "width": 44,
+            "height": 44,
+            "bottom": -201.296875
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 41,
+                "y": -189.296875,
+                "width": 297.21875,
+                "height": 28.796875,
+                "bottom": -160.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 41,
+                "y": -150.5,
+                "width": 308,
+                "height": 47.59375,
+                "bottom": -102.90625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": -59.296875,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -15.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": -7.296875,
+                "width": 308,
+                "height": 48,
+                "bottom": 40.703125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 20,
+            "y": 81.703125,
+            "width": 350,
+            "height": 460,
+            "bottom": 541.703125
+          },
+          "button": {
+            "x": 41,
+            "y": 472.703125,
+            "width": 308,
+            "height": 48,
+            "bottom": 520.703125
+          },
+          "icon": {
+            "x": 41,
+            "y": 234.703125,
+            "width": 44,
+            "height": 44,
+            "bottom": 278.703125
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 41,
+                "y": 290.703125,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 319.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 41,
+                "y": 329.5,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 353.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 41,
+                "y": 420.703125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 464.703125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 41,
+                "y": 472.703125,
+                "width": 308,
+                "height": 48,
+                "bottom": 520.703125
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 767,
+      "columns": 1,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 183.5,
+            "y": -1358.09375,
+            "width": 400,
+            "height": 460,
+            "bottom": -898.09375
+          },
+          "button": {
+            "x": 204.5,
+            "y": -967.09375,
+            "width": 358,
+            "height": 48,
+            "bottom": -919.09375
+          },
+          "icon": {
+            "x": 204.5,
+            "y": -1205.09375,
+            "width": 44,
+            "height": 44,
+            "bottom": -1161.09375
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 204.5,
+                "y": -1149.09375,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -1120.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 204.5,
+                "y": -1110.296875,
+                "width": 318.890625,
+                "height": 23.796875,
+                "bottom": -1086.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 204.5,
+                "y": -1019.09375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -975.09375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 204.5,
+                "y": -967.09375,
+                "width": 358,
+                "height": 48,
+                "bottom": -919.09375
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 183.5,
+            "y": -878.09375,
+            "width": 400,
+            "height": 460,
+            "bottom": -418.09375
+          },
+          "button": {
+            "x": 204.5,
+            "y": -487.09375,
+            "width": 358,
+            "height": 48,
+            "bottom": -439.09375
+          },
+          "icon": {
+            "x": 204.5,
+            "y": -725.09375,
+            "width": 44,
+            "height": 44,
+            "bottom": -681.09375
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 204.5,
+                "y": -669.09375,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -640.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 204.5,
+                "y": -630.296875,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -606.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 204.5,
+                "y": -539.09375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -495.09375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 204.5,
+                "y": -487.09375,
+                "width": 358,
+                "height": 48,
+                "bottom": -439.09375
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 183.5,
+            "y": -398.09375,
+            "width": 400,
+            "height": 460,
+            "bottom": 61.90625
+          },
+          "button": {
+            "x": 204.5,
+            "y": -7.09375,
+            "width": 358,
+            "height": 48,
+            "bottom": 40.90625
+          },
+          "icon": {
+            "x": 204.5,
+            "y": -245.09375,
+            "width": 44,
+            "height": 44,
+            "bottom": -201.09375
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 204.5,
+                "y": -189.09375,
+                "width": 297.21875,
+                "height": 28.796875,
+                "bottom": -160.296875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 204.5,
+                "y": -150.296875,
+                "width": 316.6875,
+                "height": 23.796875,
+                "bottom": -126.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 204.5,
+                "y": -59.09375,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": -15.09375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 204.5,
+                "y": -7.09375,
+                "width": 358,
+                "height": 48,
+                "bottom": 40.90625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 183.5,
+            "y": 81.90625,
+            "width": 400,
+            "height": 460,
+            "bottom": 541.90625
+          },
+          "button": {
+            "x": 204.5,
+            "y": 472.90625,
+            "width": 358,
+            "height": 48,
+            "bottom": 520.90625
+          },
+          "icon": {
+            "x": 204.5,
+            "y": 234.90625,
+            "width": 44,
+            "height": 44,
+            "bottom": 278.90625
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 204.5,
+                "y": 290.90625,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 319.703125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 204.5,
+                "y": 329.703125,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 353.5
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 204.5,
+                "y": 420.90625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 464.90625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 204.5,
+                "y": 472.90625,
+                "width": 358,
+                "height": 48,
+                "bottom": 520.90625
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "columns": 2,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 40,
+            "y": -330.609375,
+            "width": 334,
+            "height": 480,
+            "bottom": 149.390625
+          },
+          "button": {
+            "x": 61,
+            "y": 80.390625,
+            "width": 292,
+            "height": 48,
+            "bottom": 128.390625
+          },
+          "icon": {
+            "x": 61,
+            "y": -159.609375,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.609375
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 61,
+                "y": -95.609375,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -66.8125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 61,
+                "y": -56.8125,
+                "width": 292,
+                "height": 47.59375,
+                "bottom": -9.21875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 61,
+                "y": 28.390625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.390625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 61,
+                "y": 80.390625,
+                "width": 292,
+                "height": 48,
+                "bottom": 128.390625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 394,
+            "y": -330.609375,
+            "width": 334,
+            "height": 480,
+            "bottom": 149.390625
+          },
+          "button": {
+            "x": 415,
+            "y": 80.390625,
+            "width": 292,
+            "height": 48,
+            "bottom": 128.390625
+          },
+          "icon": {
+            "x": 415,
+            "y": -159.609375,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.609375
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 415,
+                "y": -95.609375,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -66.8125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 415,
+                "y": -56.8125,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -33.015625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 415,
+                "y": 28.390625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.390625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 415,
+                "y": 80.390625,
+                "width": 292,
+                "height": 48,
+                "bottom": 128.390625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 40,
+            "y": 169.390625,
+            "width": 334,
+            "height": 480,
+            "bottom": 649.390625
+          },
+          "button": {
+            "x": 61,
+            "y": 580.390625,
+            "width": 292,
+            "height": 48,
+            "bottom": 628.390625
+          },
+          "icon": {
+            "x": 61,
+            "y": 340.390625,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.390625
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 61,
+                "y": 404.390625,
+                "width": 292,
+                "height": 57.59375,
+                "bottom": 461.984375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 61,
+                "y": 471.984375,
+                "width": 292,
+                "height": 47.59375,
+                "bottom": 519.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 61,
+                "y": 528.390625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.390625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 61,
+                "y": 580.390625,
+                "width": 292,
+                "height": 48,
+                "bottom": 628.390625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 394,
+            "y": 169.390625,
+            "width": 334,
+            "height": 480,
+            "bottom": 649.390625
+          },
+          "button": {
+            "x": 415,
+            "y": 580.390625,
+            "width": 292,
+            "height": 48,
+            "bottom": 628.390625
+          },
+          "icon": {
+            "x": 415,
+            "y": 340.390625,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.390625
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 415,
+                "y": 404.390625,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 433.1875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 415,
+                "y": 443.1875,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 466.984375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 415,
+                "y": 528.390625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.390625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 415,
+                "y": 580.390625,
+                "width": 292,
+                "height": 48,
+                "bottom": 628.390625
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "columns": 2,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 40,
+            "y": -330.6875,
+            "width": 462,
+            "height": 480,
+            "bottom": 149.3125
+          },
+          "button": {
+            "x": 61,
+            "y": 80.3125,
+            "width": 420,
+            "height": 48,
+            "bottom": 128.3125
+          },
+          "icon": {
+            "x": 61,
+            "y": -159.6875,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.6875
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 61,
+                "y": -95.6875,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -66.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 61,
+                "y": -56.890625,
+                "width": 318.890625,
+                "height": 23.796875,
+                "bottom": -33.09375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 61,
+                "y": 28.3125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 61,
+                "y": 80.3125,
+                "width": 420,
+                "height": 48,
+                "bottom": 128.3125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 522,
+            "y": -330.6875,
+            "width": 462,
+            "height": 480,
+            "bottom": 149.3125
+          },
+          "button": {
+            "x": 543,
+            "y": 80.3125,
+            "width": 420,
+            "height": 48,
+            "bottom": 128.3125
+          },
+          "icon": {
+            "x": 543,
+            "y": -159.6875,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.6875
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 543,
+                "y": -95.6875,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -66.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 543,
+                "y": -56.890625,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -33.09375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 543,
+                "y": 28.3125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 543,
+                "y": 80.3125,
+                "width": 420,
+                "height": 48,
+                "bottom": 128.3125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 40,
+            "y": 169.3125,
+            "width": 462,
+            "height": 480,
+            "bottom": 649.3125
+          },
+          "button": {
+            "x": 61,
+            "y": 580.3125,
+            "width": 420,
+            "height": 48,
+            "bottom": 628.3125
+          },
+          "icon": {
+            "x": 61,
+            "y": 340.3125,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.3125
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 61,
+                "y": 404.3125,
+                "width": 297.21875,
+                "height": 28.796875,
+                "bottom": 433.109375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 61,
+                "y": 443.109375,
+                "width": 316.6875,
+                "height": 23.796875,
+                "bottom": 466.90625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 61,
+                "y": 528.3125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 61,
+                "y": 580.3125,
+                "width": 420,
+                "height": 48,
+                "bottom": 628.3125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 522,
+            "y": 169.3125,
+            "width": 462,
+            "height": 480,
+            "bottom": 649.3125
+          },
+          "button": {
+            "x": 543,
+            "y": 580.3125,
+            "width": 420,
+            "height": 48,
+            "bottom": 628.3125
+          },
+          "icon": {
+            "x": 543,
+            "y": 340.3125,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.3125
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 543,
+                "y": 404.3125,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 433.109375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 543,
+                "y": 443.109375,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 466.90625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 543,
+                "y": 528.3125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.3125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 543,
+                "y": 580.3125,
+                "width": 420,
+                "height": 48,
+                "bottom": 628.3125
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 1199,
+      "columns": 2,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 87.5,
+            "y": -330.84375,
+            "width": 502,
+            "height": 480,
+            "bottom": 149.15625
+          },
+          "button": {
+            "x": 108.5,
+            "y": 80.15625,
+            "width": 460,
+            "height": 48,
+            "bottom": 128.15625
+          },
+          "icon": {
+            "x": 108.5,
+            "y": -159.84375,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.84375
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 108.5,
+                "y": -95.84375,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": -67.046875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 108.5,
+                "y": -57.046875,
+                "width": 318.890625,
+                "height": 23.796875,
+                "bottom": -33.25
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 108.5,
+                "y": 28.15625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.15625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 108.5,
+                "y": 80.15625,
+                "width": 460,
+                "height": 48,
+                "bottom": 128.15625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 609.5,
+            "y": -330.84375,
+            "width": 502,
+            "height": 480,
+            "bottom": 149.15625
+          },
+          "button": {
+            "x": 630.5,
+            "y": 80.15625,
+            "width": 460,
+            "height": 48,
+            "bottom": 128.15625
+          },
+          "icon": {
+            "x": 630.5,
+            "y": -159.84375,
+            "width": 52,
+            "height": 52,
+            "bottom": -107.84375
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 630.5,
+                "y": -95.84375,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": -67.046875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 630.5,
+                "y": -57.046875,
+                "width": 249.484375,
+                "height": 23.796875,
+                "bottom": -33.25
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 630.5,
+                "y": 28.15625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 72.15625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 630.5,
+                "y": 80.15625,
+                "width": 460,
+                "height": 48,
+                "bottom": 128.15625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 87.5,
+            "y": 169.15625,
+            "width": 502,
+            "height": 480,
+            "bottom": 649.15625
+          },
+          "button": {
+            "x": 108.5,
+            "y": 580.15625,
+            "width": 460,
+            "height": 48,
+            "bottom": 628.15625
+          },
+          "icon": {
+            "x": 108.5,
+            "y": 340.15625,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.15625
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 108.5,
+                "y": 404.15625,
+                "width": 297.21875,
+                "height": 28.796875,
+                "bottom": 432.953125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 108.5,
+                "y": 442.953125,
+                "width": 316.6875,
+                "height": 23.796875,
+                "bottom": 466.75
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 108.5,
+                "y": 528.15625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.15625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 108.5,
+                "y": 580.15625,
+                "width": 460,
+                "height": 48,
+                "bottom": 628.15625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 609.5,
+            "y": 169.15625,
+            "width": 502,
+            "height": 480,
+            "bottom": 649.15625
+          },
+          "button": {
+            "x": 630.5,
+            "y": 580.15625,
+            "width": 460,
+            "height": 48,
+            "bottom": 628.15625
+          },
+          "icon": {
+            "x": 630.5,
+            "y": 340.15625,
+            "width": 52,
+            "height": 52,
+            "bottom": 392.15625
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 630.5,
+                "y": 404.15625,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 432.953125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 630.5,
+                "y": 442.953125,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 466.75
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 630.5,
+                "y": 528.15625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 572.15625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 630.5,
+                "y": 580.15625,
+                "width": 460,
+                "height": 48,
+                "bottom": 628.15625
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "columns": 4,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 88,
+            "y": 523.890625,
+            "width": 241,
+            "height": 480,
+            "bottom": 1003.890625
+          },
+          "button": {
+            "x": 109,
+            "y": 934.890625,
+            "width": 199,
+            "height": 48,
+            "bottom": 982.890625
+          },
+          "icon": {
+            "x": 109,
+            "y": 682.890625,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.890625
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 109,
+                "y": 746.890625,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": 775.6875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 109,
+                "y": 785.6875,
+                "width": 199,
+                "height": 47.59375,
+                "bottom": 833.28125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 109,
+                "y": 882.890625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 109,
+                "y": 934.890625,
+                "width": 199,
+                "height": 48,
+                "bottom": 982.890625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 349,
+            "y": 523.890625,
+            "width": 241,
+            "height": 480,
+            "bottom": 1003.890625
+          },
+          "button": {
+            "x": 370,
+            "y": 934.890625,
+            "width": 199,
+            "height": 48,
+            "bottom": 982.890625
+          },
+          "icon": {
+            "x": 370,
+            "y": 682.890625,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.890625
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 370,
+                "y": 746.890625,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": 775.6875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 370,
+                "y": 785.6875,
+                "width": 199,
+                "height": 47.59375,
+                "bottom": 833.28125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 370,
+                "y": 882.890625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 370,
+                "y": 934.890625,
+                "width": 199,
+                "height": 48,
+                "bottom": 982.890625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 610,
+            "y": 523.890625,
+            "width": 241,
+            "height": 480,
+            "bottom": 1003.890625
+          },
+          "button": {
+            "x": 631,
+            "y": 934.890625,
+            "width": 199,
+            "height": 48,
+            "bottom": 982.890625
+          },
+          "icon": {
+            "x": 631,
+            "y": 682.890625,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.890625
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 631,
+                "y": 746.890625,
+                "width": 199,
+                "height": 57.59375,
+                "bottom": 804.484375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 631,
+                "y": 814.484375,
+                "width": 199,
+                "height": 47.59375,
+                "bottom": 862.078125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 631,
+                "y": 882.890625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 631,
+                "y": 934.890625,
+                "width": 199,
+                "height": 48,
+                "bottom": 982.890625
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 871,
+            "y": 523.890625,
+            "width": 241,
+            "height": 480,
+            "bottom": 1003.890625
+          },
+          "button": {
+            "x": 892,
+            "y": 934.890625,
+            "width": 199,
+            "height": 48,
+            "bottom": 982.890625
+          },
+          "icon": {
+            "x": 892,
+            "y": 682.890625,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.890625
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 892,
+                "y": 746.890625,
+                "width": 199,
+                "height": 57.59375,
+                "bottom": 804.484375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 892,
+                "y": 814.484375,
+                "width": 199,
+                "height": 47.59375,
+                "bottom": 862.078125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 892,
+                "y": 882.890625,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.890625
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 892,
+                "y": 934.890625,
+                "width": 199,
+                "height": 48,
+                "bottom": 982.890625
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "columns": 4,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 120,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 141,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 141,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 141,
+                "y": 746.78125,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 141,
+                "y": 785.578125,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 833.171875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 141,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 141,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 425,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 446,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 446,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 446,
+                "y": 746.78125,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 446,
+                "y": 785.578125,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 833.171875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 446,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 446,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 730,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 751,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 751,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 751,
+                "y": 746.78125,
+                "width": 243,
+                "height": 57.59375,
+                "bottom": 804.375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 751,
+                "y": 814.375,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 861.96875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 751,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 751,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 1035,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 1056,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 1056,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 1056,
+                "y": 746.78125,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 1056,
+                "y": 785.578125,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 809.375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 1056,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 1056,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [
+        {
+          "text": "Masáže",
+          "minimum": 12.32473236072899,
+          "threshold": 3
+        },
+        {
+          "text": "Klasické, relaxační a speciální masážní techniky.",
+          "minimum": 11.78624561975653,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.327158663036952,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.282015717565821,
+          "threshold": 4.5
+        },
+        {
+          "text": "Depilace",
+          "minimum": 12.17953754628338,
+          "threshold": 3
+        },
+        {
+          "text": "Cukrová pasta, vosk a speciální péče.",
+          "minimum": 11.8434901075369,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.39190137110915,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.186806203317325,
+          "threshold": 4.5
+        },
+        {
+          "text": "Trvalé odstranění chloupků",
+          "minimum": 12.604706352019338,
+          "threshold": 3
+        },
+        {
+          "text": "Informace o možnostech přístrojového ošetření.",
+          "minimum": 12.579003305312815,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.327158663036952,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.282015717565821,
+          "threshold": 4.5
+        },
+        {
+          "text": "Péče o obočí a řasy",
+          "minimum": 12.625495024343444,
+          "threshold": 3
+        },
+        {
+          "text": "Lash lifting, laminace a barvení.",
+          "minimum": 11.855308368261888,
+          "threshold": 4.5
+        },
+        {
+          "text": "Zjistit více",
+          "minimum": 12.442513494751505,
+          "threshold": 4.5
+        },
+        {
+          "text": "Rezervovat",
+          "minimum": 13.275830674949885,
+          "threshold": 4.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1672,
+      "columns": 4,
+      "overflow": false,
+      "cards": [
+        {
+          "bounds": {
+            "x": 236,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 257,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 257,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Masáže",
+              "bounds": {
+                "x": 257,
+                "y": 746.78125,
+                "width": 78.984375,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Klasické, relaxační a speciální masážní techniky.",
+              "bounds": {
+                "x": 257,
+                "y": 785.578125,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 833.171875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 257,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 257,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 541,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 562,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 562,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Depilace",
+              "bounds": {
+                "x": 562,
+                "y": 746.78125,
+                "width": 93.109375,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Cukrová pasta, vosk a speciální péče.",
+              "bounds": {
+                "x": 562,
+                "y": 785.578125,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 833.171875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 562,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 562,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 846,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 867,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 867,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Trvalé odstranění chloupků",
+              "bounds": {
+                "x": 867,
+                "y": 746.78125,
+                "width": 243,
+                "height": 57.59375,
+                "bottom": 804.375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Informace o možnostech přístrojového ošetření.",
+              "bounds": {
+                "x": 867,
+                "y": 814.375,
+                "width": 243,
+                "height": 47.59375,
+                "bottom": 861.96875
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 867,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 867,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        },
+        {
+          "bounds": {
+            "x": 1151,
+            "y": 523.78125,
+            "width": 285,
+            "height": 480,
+            "bottom": 1003.78125
+          },
+          "button": {
+            "x": 1172,
+            "y": 934.78125,
+            "width": 243,
+            "height": 48,
+            "bottom": 982.78125
+          },
+          "icon": {
+            "x": 1172,
+            "y": 682.78125,
+            "width": 52,
+            "height": 52,
+            "bottom": 734.78125
+          },
+          "texts": [
+            {
+              "text": "Péče o obočí a řasy",
+              "bounds": {
+                "x": 1172,
+                "y": 746.78125,
+                "width": 202.421875,
+                "height": 28.796875,
+                "bottom": 775.578125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Lash lifting, laminace a barvení.",
+              "bounds": {
+                "x": 1172,
+                "y": 785.578125,
+                "width": 208.125,
+                "height": 23.796875,
+                "bottom": 809.375
+              },
+              "clipped": false
+            },
+            {
+              "text": "Zjistit více",
+              "bounds": {
+                "x": 1172,
+                "y": 882.78125,
+                "width": 96.234375,
+                "height": 44,
+                "bottom": 926.78125
+              },
+              "clipped": false
+            },
+            {
+              "text": "Rezervovat",
+              "bounds": {
+                "x": 1172,
+                "y": 934.78125,
+                "width": 243,
+                "height": 48,
+                "bottom": 982.78125
+              },
+              "clipped": false
+            }
+          ]
+        }
+      ],
+      "contrast": [],
+      "errors": []
+    }
+  ],
+  "routes": true,
+  "bookingClicks": true,
+  "keyboard": true,
+  "hover": true,
+  "reducedMotion": true
+}
