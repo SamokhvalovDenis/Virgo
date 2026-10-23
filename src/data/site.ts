@@ -79,7 +79,7 @@ export const site: SiteConfig = {
   },
 
   seo: {
-    canonicalUrl: null, // URL нової production-версії, а не адреса оригінального сайту.
+    canonicalUrl: "https://virgo.beautycz.workers.dev",
     title: "Beauty Studio Virgo | Litoměřice",
     description:
       "Masáže, depilace, péče o obočí a řasy v Litoměřicích. Rezervujte si svůj termín online.",

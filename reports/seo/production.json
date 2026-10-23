@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-23T07:58:08.766Z",
+  "passed": true,
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Beauty Studio Virgo | Masáže a kosmetická péče Litoměřice",
+      "description": "Dopřejte si chvíli relaxace v Beauty Studio Virgo v Litoměřicích. Masáže, depilace, péče o obočí a řasy. Rezervujte si termín online.",
+      "canonical": "https://virgo.beautycz.workers.dev/",
+      "h1": "Dopřejte si chvíli péče a odpočinku",
+      "withoutJavaScript": true
+    },
+    {
+      "path": "/sluzby/masaze",
+      "status": 200,
+      "title": "Masáže Litoměřice | Beauty Studio Virgo",
+      "description": "Prohlédněte si nabídku masáží v Beauty Studio Virgo v Litoměřicích. Klasické, sportovní i relaxační masáže. Termín si rezervujte online.",
+      "canonical": "https://virgo.beautycz.workers.dev/sluzby/masaze",
+      "h1": "Masáže",
+      "withoutJavaScript": true
+    },
+    {
+      "path": "/sluzby/depilace",
+      "status": 200,
+      "title": "Depilace Litoměřice | Beauty Studio Virgo",
+      "description": "Depilace cukrovou pastou a voskem pro ženy i muže v Beauty Studio Virgo v Litoměřicích. Informace o procedurách a online rezervace termínu.",
+      "canonical": "https://virgo.beautycz.workers.dev/sluzby/depilace",
+      "h1": "Depilace",
+      "withoutJavaScript": true
+    },
+    {
+      "path": "/sluzby/trvale-odstraneni-chloupku",
+      "status": 200,
+      "title": "Trvalé odstranění chloupků Litoměřice | Beauty Studio Virgo",
+      "description": "Přístrojové odstranění chloupků v Beauty Studio Virgo v Litoměřicích. Přečtěte si informace o proceduře a rezervujte si termín online.",
+      "canonical": "https://virgo.beautycz.workers.dev/sluzby/trvale-odstraneni-chloupku",
+      "h1": "Trvalé odstranění chloupků",
+      "withoutJavaScript": true
+    },
+    {
+      "path": "/sluzby/oboci-a-rasy",
+      "status": 200,
+      "title": "Péče o obočí a řasy Litoměřice | Beauty Studio Virgo",
+      "description": "Lash lifting, laminace a barvení obočí a řas v Beauty Studio Virgo v Litoměřicích. Prohlédněte si nabídku péče a rezervujte si termín online.",
+      "canonical": "https://virgo.beautycz.workers.dev/sluzby/oboci-a-rasy",
+      "h1": "Péče o obočí a řasy",
+      "withoutJavaScript": true
+    }
+  ],
+  "internalLinksWithoutJavaScript": true,
+  "xmlParsed": true,
+  "robotsAndSitemapHttp200": true,
+  "unknownRoutesHttp404": true,
+  "hydrationAndReloads": true
+}

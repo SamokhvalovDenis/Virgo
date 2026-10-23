@@ -16,6 +16,7 @@ await build({
 })
 const { render, getHeadTags, getPageMetadata, getSiteOrigin, indexablePaths } = await import(pathToFileURL(resolve(serverDirectory, 'entry-server.mjs')).href)
 const origin = getSiteOrigin()
+if (!origin) throw new Error('A production HTTPS origin is required to generate canonical URLs, robots.txt and sitemap.xml.')
 const template = await readFile('dist/index.html', 'utf8')
 const stylesheets = await Promise.all((await readdir('dist/assets')).filter(file => file.endsWith('.css')).map(file => readFile(`dist/assets/${file}`, 'utf8')))
 const fontUrls = [...new Set(stylesheets.flatMap(css => [...css.matchAll(/url\(["']?([^"')]+\.woff2)["']?\)/g)].map(match => match[1])))]
@@ -41,10 +42,6 @@ for (const pathname of indexablePaths) {
   await writeFile(file, htmlFor(pathname))
 }
 await writeFile('dist/404.html', htmlFor('/404'))
-await writeFile('dist/robots.txt', `User-agent: *\nAllow: /\n${origin ? `\nSitemap: ${origin}/sitemap.xml\n` : ''}`)
-if (origin) {
-  await writeFile('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexablePaths.map(pathname => `  <url><loc>${escapeHtml(`${origin}${pathname}`)}</loc></url>`).join('\n')}\n</urlset>\n`)
-} else {
-  console.warn('VITE_SITE_URL is unset: canonical URLs, absolute social images and sitemap are omitted. Set the approved HTTPS origin and rebuild before indexing production.')
-}
+await writeFile('dist/robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`)
+await writeFile('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexablePaths.map(pathname => `  <url><loc>${escapeHtml(`${origin}${pathname}`)}</loc></url>`).join('\n')}\n</urlset>\n`)
 console.log(`Prerendered ${indexablePaths.length} indexable pages and 404.html.`)

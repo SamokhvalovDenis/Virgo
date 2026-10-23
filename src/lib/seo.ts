@@ -19,7 +19,7 @@ const descriptions: Record<string, string> = {
   '/sluzby/oboci-a-rasy': 'Lash lifting, laminace a barvení obočí a řas v Beauty Studio Virgo v Litoměřicích. Prohlédněte si nabídku péče a rezervujte si termín online.',
 }
 
-/** An origin is configured only after the owner has selected the production host. */
+/** Use the live production host unless an explicit public build override is supplied. */
 export function getSiteOrigin(value: string | undefined = import.meta.env.VITE_SITE_URL || site.seo.canonicalUrl || undefined): string | null {
   if (!value?.trim()) return null
   let url: URL

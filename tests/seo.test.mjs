@@ -9,6 +9,15 @@ const server = await createServer({
 after(() => server.close())
 const { getHeadTags, getPageMetadata, getSiteOrigin, indexablePaths } = await server.ssrLoadModule('/src/lib/seo.ts')
 
+test('a clean build defaults to the actual production host without an environment override', () => {
+  assert.equal(getSiteOrigin(), 'https://virgo.beautycz.workers.dev')
+  for (const pathname of indexablePaths) {
+    const page = getPageMetadata(pathname)
+    assert.equal(page.canonical, `https://virgo.beautycz.workers.dev${pathname}`)
+    assert.equal(new URL(page.image).origin, 'https://virgo.beautycz.workers.dev')
+  }
+})
+
 test('only the five real pages are indexable with unique Czech metadata and path-specific canonicals', () => {
   assert.equal(indexablePaths.length, 5)
   const metadata = indexablePaths.map(pathname => getPageMetadata(pathname, 'https://approved.example'))

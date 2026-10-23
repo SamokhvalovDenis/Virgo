@@ -7,7 +7,7 @@ import { startPreview } from './helpers/preview.mjs'
 const widths = [320, 360, 375, 390, 430, 768, 1024, 1280, 1440, 1920]
 const routes = ['/', '/sluzby/masaze', '/sluzby/depilace', '/sluzby/trvale-odstraneni-chloupku', '/sluzby/oboci-a-rasy']
 const bookingUrl = 'https://www.termino.eu/r/beauty-studio-litomerice'
-const output = 'reports/prelaunch/responsive'
+const output = process.argv[2] ?? 'reports/prelaunch/responsive'
 await mkdir(output, { recursive: true })
 const preview = await startPreview()
 const browser = await chromium.launch({ headless: true })

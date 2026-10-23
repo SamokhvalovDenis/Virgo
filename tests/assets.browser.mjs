@@ -9,6 +9,7 @@ const fonts = await Promise.all(fontReport.results.map(async font => ({
   original: (await readFile(font.source)).toString('base64'),
   optimized: (await readFile(`public${font.file}`)).toString('base64'),
 })))
+const output = process.argv[2] ?? 'reports/prelaunch/assets'
 const server = await startPreview()
 const browser = await chromium.launch({ headless: true })
 try {
@@ -60,7 +61,7 @@ try {
   assert.equal(await failure.locator('main h1').count(), 1, 'A failed form chunk preserves the page')
   assert.ok(await failure.locator('.hero-actions a[href*="termino.eu"]').isVisible())
   await failure.close()
-  await mkdir('reports/prelaunch/assets', { recursive: true })
-  await writeFile('reports/prelaunch/assets/browser-results.json', JSON.stringify({ passed: true, metrics, assets, failedFormChunkPreservesPage: true }, null, 2))
+  await mkdir(output, { recursive: true })
+  await writeFile(`${output}/browser-results.json`, JSON.stringify({ passed: true, metrics, assets, failedFormChunkPreservesPage: true }, null, 2))
   console.log('PASS: identical Czech font metrics/pixels at five weights, all selected images decode at 10 route/viewports, form chunk failure preserves the page.')
 } finally { await browser.close(); await server.close() }

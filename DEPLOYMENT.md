@@ -1,4 +1,14 @@
-# Virgo Beauty Studio — Cloudflare Pages
+# Virgo Beauty Studio — Cloudflare Workers / Pages
+
+## Поточний production: Cloudflare Workers
+
+Поточна адреса — **https://virgo.beautycz.workers.dev/**. SEO-аудит і перевірки: [docs/seo-audit.md](docs/seo-audit.md). Розділи про Pages нижче описують альтернативну платформу, а не налаштування поточного Worker.
+
+- У підключеному до GitHub Worker `virgo` використовуйте build command **`npm run build`**, deploy command **`npx wrangler deploy`** з кореня репозиторію і конфігурацію **`wrangler.json`**. Публікується **`dist`**, зокрема п'ять HTML-сторінок і `404.html`. Не змінюйте ім'я Worker або hostname.
+- `assets.html_handling: "drop-trailing-slash"` зіставляє `/sluzby/masaze` з `dist/sluzby/masaze.html`; `assets.not_found_handling: "404-page"` повертає невідомим адресам справжній HTTP 404. Приберіть у налаштуваннях збірки альтернативну конфігурацію SPA fallback або CLI-параметри, що перекривають цей файл. [Офіційна конфігурація SSG для Workers](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/).
+- `VITE_SITE_URL` необов'язкова: у коді вже задано поточний production origin. Якщо змінна задана в Cloudflare Build variables, вона має дорівнювати `https://virgo.beautycz.workers.dev`. Canonical, `og:url`, robots і sitemap генеруються узгоджено під час build; deploy готового старого `dist` не застосує виправлення.
+- `functions/` і `_routes.json` належать до Pages Functions, Workers не запускає їх автоматично. Цей аудит не переносить контактний API, не змінює його конфігурацію або Resend; не використовуйте статичний preview як підтвердження роботи API.
+- Після deployment перевірте зовнішні відповіді всіх п'яти URL, `/robots.txt`, `/sitemap.xml` і `/sluzby/neexistuje`. Локальний preview перевіряє файли, але не доводить стан Dashboard/WAF/CDN. Не додавайте `/* /index.html 200`.
 
 Ця інструкція готує публікацію. Commit, push, створення Pages-проєкту, зміни DNS та реальний deploy у межах аудиту не виконуються.
 
@@ -41,7 +51,7 @@ Git integration збирає `functions/api/contact.ts` окремо від ст
 
 | Змінна | Де | Призначення |
 |---|---|---|
-| `VITE_SITE_URL` | public build | Погоджений HTTPS origin без шляху/query/hash. Поки домен не обрано — порожня. |
+| `VITE_SITE_URL` | public build | Необов'язкове перевизначення HTTPS origin; поточне значення `https://virgo.beautycz.workers.dev` уже задане в коді. |
 | `VITE_CONTACT_MODE` | public build | `disabled` за замовчуванням; `mock` лише в development; `production` лише після готовності всіх інтеграцій. |
 | `VITE_CONTACT_MOCK_RESULT` | local development | `success` / `error`, не імітує production delivery. |
 | `VITE_CONTACT_PRIVACY_URL` | public build | Схвалена і реально доступна політика захисту даних. |
@@ -73,7 +83,7 @@ Git integration збирає `functions/api/contact.ts` окремо від ст
 1. Власниця обирає домен і основний варіант із `www` або без нього. Значення в коді не вигадується.
 2. У **Pages → Custom domains → Set up a domain** додайте погоджений hostname. Для apex-домену потрібна Cloudflare zone і належні nameservers; для субдомену виконайте DNS-інструкції Pages. Дочекайтесь активного домену й сертифіката. [Custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/).
 3. Увімкніть zone-level **Always Use HTTPS** та перевірте редирект HTTP → HTTPS. Налаштуйте постійний redirect альтернативного `www`/apex-hostname на основний зі збереженням шляху і query. За потреби окремо налаштуйте redirect production `pages.dev` hostname; доменні redirects не записуйте як недійсні правила `_redirects`. [Always Use HTTPS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/), [Pages domain redirect](https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/).
-4. Встановіть `VITE_SITE_URL` рівним погодженому HTTPS origin і перебудуйте. До цього canonical, `og:url`, абсолютні social images та `sitemap.xml` свідомо відсутні; build виводить попередження.
+4. Поточний origin `https://virgo.beautycz.workers.dev` уже заданий у коді. Необов'язкове `VITE_SITE_URL` має збігатися з ним; після зміни build-змінних перебудуйте сайт. Canonical, `og:url`, social images, robots і sitemap генеруються для цього origin; відсутність production origin зупиняє build.
 5. Переконайтеся, що кожна реальна сторінка має власний canonical, а `/sitemap.xml` містить рівно п'ять реальних URL без вигаданого `lastmod`. `/robots.txt` має дозволяти індексацію і посилатися на цей sitemap. Production-відповіді не повинні мати випадкового `noindex`.
 6. Перевірте JSON-LD у [Rich Results Test](https://search.google.com/test/rich-results) і [Schema Markup Validator](https://validator.schema.org/); потім підтвердьте сайт і sitemap у Google Search Console та використайте URL Inspection для сервісних сторінок. Під час локального аудиту зовнішні валідатори не були виконані: у середовищі немає доступного керованого браузера. Локальна перевірка JSON, полів і відсутності self-serving review markup виконана; вона не замінює ці сервіси.
 

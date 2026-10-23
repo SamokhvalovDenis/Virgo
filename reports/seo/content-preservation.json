@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "path": "/",
+      "mainHtmlUnchanged": true,
+      "sha256": "daed63019d10d4cfc01c726d175beed12dd5a05d41d2bae75e9f403d5dd6225c"
+    },
+    {
+      "path": "/sluzby/masaze",
+      "mainHtmlUnchanged": true,
+      "sha256": "b538e266d16cd956ed960871697b01d35cfb70c6850f041ecf3b4849dca6823d"
+    },
+    {
+      "path": "/sluzby/depilace",
+      "mainHtmlUnchanged": true,
+      "sha256": "4ac6559b6f16130f75a2eaef205127803a477e908d1bc46711e98d2d1e2b1148"
+    },
+    {
+      "path": "/sluzby/trvale-odstraneni-chloupku",
+      "mainHtmlUnchanged": true,
+      "sha256": "e956c9d961f09768ae263b76ec53aaabba130af5bd1781ff343dc3a28cf2a080"
+    },
+    {
+      "path": "/sluzby/oboci-a-rasy",
+      "mainHtmlUnchanged": true,
+      "sha256": "4d4cc73d71bcc6b38539473f3baf013d15f80fa48eabc7a02e1b165f2ed8b5d3"
+    }
+  ]
+}
