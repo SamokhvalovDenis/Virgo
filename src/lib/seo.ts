@@ -8,6 +8,7 @@ export type PageMetadata = {
   image: string | null
   noindex: boolean
   business: Record<string, unknown> | null
+  website: Record<string, unknown> | null
 }
 
 export type HeadTag = { tag: 'meta' | 'link' | 'script'; attrs: Record<string, string>; text?: string }
@@ -84,6 +85,14 @@ export function getPageMetadata(pathname: string, origin = getSiteOrigin()): Pag
     image: origin && !noindex ? new URL('/images/about/gallery/virgo-5e46a6a8e504.jpg', origin).href : null,
     noindex,
     business: isHome ? localBusiness(origin) : null,
+    website: isHome && origin ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${origin}/#website`,
+      name: site.name,
+      alternateName: 'Virgo Beauty Studio',
+      url: `${origin}/`,
+    } : null,
   }
 }
 
@@ -100,5 +109,6 @@ export function getHeadTags(metadata: PageMetadata): HeadTag[] {
     ...(metadata.canonical ? [{ tag: 'link' as const, attrs: { rel: 'canonical', href: metadata.canonical } }, og('og:url', metadata.canonical)] : []),
     ...(metadata.image ? [og('og:image', metadata.image), og('og:image:alt', 'Interiér Beauty Studio Virgo v Litoměřicích'), meta('twitter:image', metadata.image), meta('twitter:image:alt', 'Interiér Beauty Studio Virgo v Litoměřicích')] : []),
     ...(metadata.business ? [{ tag: 'script' as const, attrs: { type: 'application/ld+json' }, text: JSON.stringify(metadata.business).replaceAll('<', '\\u003c') }] : []),
+    ...(metadata.website ? [{ tag: 'script' as const, attrs: { type: 'application/ld+json' }, text: JSON.stringify(metadata.website).replaceAll('<', '\\u003c') }] : []),
   ]
 }

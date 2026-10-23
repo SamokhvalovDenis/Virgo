@@ -34,6 +34,30 @@ try {
     assert.equal(await page.locator('link[rel="canonical"]').count(), 1)
     assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), origin + path)
     assert.equal(await page.locator('meta[property="og:url"]').getAttribute('content'), origin + path)
+    assert.equal(await page.locator('meta[property="og:site_name"]').count(), 1)
+    assert.equal(await page.locator('meta[property="og:site_name"]').getAttribute('content'), 'Beauty Studio Virgo')
+    assert.equal(await page.locator('meta[property="og:title"]').getAttribute('content'), await page.title())
+    assert.equal(await page.locator('meta[property="og:description"]').getAttribute('content'), await page.locator('meta[name="description"]').getAttribute('content'))
+    assert.equal(await page.locator('link[rel="icon"][href="/favicon.png"][sizes="96x96"]').count(), 1)
+    assert.equal(await page.locator('link[rel="icon"][href="/favicon.ico"]').count(), 1)
+    assert.equal(await page.locator('link[href="/favicon.svg"]').count(), 0)
+    const schemas = await page.locator('script[type="application/ld+json"]').evaluateAll(tags => {
+      const collect = value => {
+        if (Array.isArray(value)) return value.flatMap(collect)
+        if (!value || typeof value !== 'object') return []
+        return [value, ...Object.values(value).flatMap(collect)]
+      }
+      return tags.flatMap(tag => collect(JSON.parse(tag.textContent)))
+    })
+    const websites = schemas.filter(schema => [schema['@type']].flat().includes('WebSite'))
+    assert.equal(websites.length, path === '/' ? 1 : 0, `${path}: no duplicate or conflicting WebSite nodes in production HTML`)
+    if (path === '/') {
+      assert.deepEqual(websites[0], {
+        '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${origin}/#website`,
+        name: 'Beauty Studio Virgo', alternateName: 'Virgo Beauty Studio', url: `${origin}/`,
+      })
+      assert.equal(schemas.filter(schema => schema['@type'] === 'BeautySalon').length, 1)
+    }
     assert.ok(!/noindex|none/i.test((await page.locator('meta[name="robots"]').evaluateAll(tags => tags.map(tag => tag.content))).join('')))
     if (path === '/') {
       for (const service of paths.slice(1)) {
@@ -63,6 +87,7 @@ try {
     const reload = await hydrated.reload({ waitUntil: 'networkidle' })
     assert.equal(reload.status(), 200)
     assert.equal(await hydrated.locator('link[rel="canonical"]').getAttribute('href'), origin + path)
+    assert.equal(await hydrated.locator('script[type="application/ld+json"]').count(), path === '/' ? 2 : 0, 'Hydration must preserve the prerendered schemas without adding duplicates')
     assert.deepEqual(errors, [], `${path}: hydration/console errors`)
     await hydrated.close()
     if (path !== '/') {
@@ -88,6 +113,47 @@ try {
     await page.close()
   }
   const parser = await browser.newPage()
+  const faviconResults = []
+  for (const [path, size] of [['/favicon.png', 96], ['/apple-touch-icon.png', 180], ['/favicon.ico', null]]) {
+    const response = await fetch(preview.origin + path, { redirect: 'manual', headers: { 'User-Agent': 'Googlebot-Image' } })
+    assert.equal(response.status, 200, `${path}: direct URL`)
+    assert.equal(response.headers.get('location'), null)
+    assert.ok(!/noindex|none/i.test(response.headers.get('x-robots-tag') ?? ''))
+    assert.match(response.headers.get('content-type'), size ? /^image\/png/ : /^image\/(?:x-icon|vnd\.microsoft\.icon)/)
+    const bytes = Buffer.from(await response.arrayBuffer())
+    assert.deepEqual(bytes, await readFile(`public${path}`), `${path}: build must preserve favicon bytes`)
+    if (size) {
+      assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a')
+      assert.equal(bytes.readUInt32BE(16), size)
+      assert.equal(bytes.readUInt32BE(20), size)
+    } else {
+      assert.equal(bytes.readUInt16LE(0), 0)
+      assert.equal(bytes.readUInt16LE(2), 1)
+      const entries = Array.from({ length: bytes.readUInt16LE(4) }, (_, index) => {
+        const entry = 6 + index * 16
+        const width = bytes[entry] || 256
+        assert.equal(bytes[entry + 1] || 256, width)
+        const offset = bytes.readUInt32LE(entry + 12)
+        const length = bytes.readUInt32LE(entry + 8)
+        assert.ok(offset + length <= bytes.length)
+        const png = bytes.subarray(offset, offset + length)
+        assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a')
+        assert.equal(png.readUInt32BE(16), width)
+        assert.equal(png.readUInt32BE(20), width)
+        return width
+      })
+      assert.deepEqual(entries, [16, 32, 48, 96, 192])
+    }
+    const decoded = await parser.evaluate(async url => {
+      const image = new Image()
+      image.src = url
+      await image.decode()
+      return { width: image.naturalWidth, height: image.naturalHeight }
+    }, preview.origin + path)
+    assert.equal(decoded.width, decoded.height)
+    if (size) assert.equal(decoded.width, size)
+    faviconResults.push({ path, status: response.status, contentType: response.headers.get('content-type'), ...decoded })
+  }
   for (const directory of ['public', 'dist']) {
     const sitemap = await readFile(`${directory}/sitemap.xml`, 'utf8')
     const parsed = await parser.evaluate(source => {
@@ -110,8 +176,8 @@ try {
     assert.match(response.headers.get('content-type'), path.endsWith('.xml') ? /xml/ : /text\/plain/)
   }
   await mkdir('reports/seo', { recursive: true })
-  await writeFile('reports/seo/production.json', JSON.stringify({ checkedAt: new Date().toISOString(), passed: true, pages: results, internalLinksWithoutJavaScript: true, xmlParsed: true, robotsAndSitemapHttp200: true, unknownRoutesHttp404: true, hydrationAndReloads: true }, null, 2) + '\n')
-  console.log('PASS: five prerendered pages without JavaScript, real service links, unique metadata and canonical URLs, hydration/reloads, trailing-slash redirects, real 404, valid public/production XML and sitemap/robots HTTP 200.')
+  await writeFile('reports/seo/production.json', JSON.stringify({ checkedAt: new Date().toISOString(), passed: true, pages: results, favicons: faviconResults, singleHomepageWebSite: true, consistentOpenGraph: true, internalLinksWithoutJavaScript: true, xmlParsed: true, robotsAndSitemapHttp200: true, unknownRoutesHttp404: true, hydrationAndReloads: true }, null, 2) + '\n')
+  console.log('PASS: five prerendered pages without JavaScript, one homepage WebSite, consistent Open Graph, favicon PNG/ICO HTTP 200 and image decoding, real service links, unique metadata/canonicals, hydration, redirects, 404 and valid sitemap/robots.')
 } finally {
   await browser.close()
   await preview.close()

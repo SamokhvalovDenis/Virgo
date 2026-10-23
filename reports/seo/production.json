@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-23T07:58:08.766Z",
+  "checkedAt": "2026-10-23T10:08:02.052Z",
   "passed": true,
   "pages": [
     {
@@ -48,6 +48,31 @@
       "withoutJavaScript": true
     }
   ],
+  "favicons": [
+    {
+      "path": "/favicon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "/apple-touch-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 200,
+      "contentType": "image/x-icon",
+      "width": 192,
+      "height": 192
+    }
+  ],
+  "singleHomepageWebSite": true,
+  "consistentOpenGraph": true,
   "internalLinksWithoutJavaScript": true,
   "xmlParsed": true,
   "robotsAndSitemapHttp200": true,

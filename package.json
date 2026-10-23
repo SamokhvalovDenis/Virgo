@@ -11,6 +11,7 @@
     "test:prices:browser": "npm run build && node tests/prices.browser.mjs",
     "dev": "vite",
     "images:optimize": "node scripts/optimize-images.mjs",
+    "favicon:generate": "node scripts/generate-favicons.mjs",
     "fonts:optimize": "node scripts/optimize-fonts.mjs",
     "build": "tsc -b && node scripts/build.mjs",
     "lint": "eslint .",

@@ -40,6 +40,7 @@ test('an unselected domain never creates canonical URLs, absolute image URLs or 
   assert.equal(page.image, null)
   assert.equal(page.business.url, undefined)
   assert.equal(page.business.logo, undefined)
+  assert.equal(page.website, null)
   assert.ok(!getHeadTags(page).some(tag => tag.attrs.rel === 'canonical' || tag.attrs.property === 'og:url'))
 })
 
@@ -57,6 +58,7 @@ test('unknown pages have no canonical or business schema and explicitly request 
     assert.equal(page.noindex, true)
     assert.equal(page.canonical, null)
     assert.equal(page.business, null)
+    assert.equal(page.website, null)
     assert.equal(getHeadTags(page).find(tag => tag.attrs.name === 'robots').attrs.content, 'noindex, follow')
   }
 })
@@ -73,4 +75,29 @@ test('BeautySalon JSON-LD reuses supplied public data and never adds self-servin
   assert.ok(!/aggregateRating|review|priceRange|legalName|taxID/i.test(JSON.stringify(business)))
   const encoded = getHeadTags(getPageMetadata('/', 'https://approved.example')).find(tag => tag.tag === 'script').text
   assert.deepEqual(JSON.parse(encoded), business)
+})
+
+test('the homepage has exactly one WebSite with the requested brand and production URL', () => {
+  for (const pathname of indexablePaths) {
+    const page = getPageMetadata(pathname)
+    const schemas = getHeadTags(page).filter(tag => tag.tag === 'script').map(tag => JSON.parse(tag.text))
+    const websites = schemas.filter(schema => schema['@type'] === 'WebSite')
+    assert.equal(websites.length, pathname === '/' ? 1 : 0)
+    assert.equal(getHeadTags(page).find(tag => tag.attrs.property === 'og:site_name').attrs.content, 'Beauty Studio Virgo')
+    if (pathname === '/') {
+      assert.deepEqual(websites[0], {
+        '@context': 'https://schema.org', '@type': 'WebSite',
+        '@id': 'https://virgo.beautycz.workers.dev/#website',
+        name: 'Beauty Studio Virgo', alternateName: 'Virgo Beauty Studio',
+        url: 'https://virgo.beautycz.workers.dev/',
+      })
+      assert.equal(schemas.filter(schema => schema['@type'] === 'BeautySalon').length, 1)
+    } else assert.equal(page.website, null)
+  }
+})
+
+test('WebSite URL follows the same explicit origin as the canonical URL', () => {
+  const page = getPageMetadata('/', 'https://approved.example')
+  assert.equal(page.website.url, page.canonical)
+  assert.equal(page.website['@id'], 'https://approved.example/#website')
 })
