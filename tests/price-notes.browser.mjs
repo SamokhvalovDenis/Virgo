@@ -24,8 +24,12 @@ try {
   const sharedNote = 'Společná testovací poznámka pro všechny varianty v této kartě.'
   const longNote = `Testovací poznámka konkrétní varianty. ${'Delší text s diakritikou pro ověření zalamování. '.repeat(5)}\n${'Dlouhéslovo'.repeat(18)}`
   const catalog = structuredClone(priceCatalogs.find(item => item.id === 'massage'))
-  catalog.groups = [{ ...catalog.groups[0], rows: catalog.groups[0].rows.slice(0, 3), note: sharedNote }]
-  catalog.groups[0].rows[1].note = longNote
+  catalog.groups = [{
+    ...catalog.groups[0],
+    rows: catalog.groups[0].rows.slice(0, 4).map(row => ({ ...row, note: undefined })),
+    note: sharedNote,
+  }]
+  catalog.groups[0].rows.find(row => row.id === 'massage-price-whole-90').note = longNote
   const [group] = getPriceGroups(catalog, 'women')
   const cards = [
     group,

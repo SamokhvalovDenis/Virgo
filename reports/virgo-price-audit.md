@@ -2,6 +2,8 @@
 
 Перевірено локальні `reports/virgo-images.html`, `reports/virgo-images.json` та завантажені файли. Дата читання зображень: 15.10.2026; це не дата набуття чинності цін.
 
+Актуальні ціни масажів і косметики нижче оновлено за додатковим прайсом, наданим власницею; вони замінюють попередню транскрипцію для цих двох категорій.
+
 ## Знайдені джерела
 
 У звіті 167 URL, 165 успішних завантажень. 146 записів зі студійного CDN згруповано у 38 оригінальних зображень за URL до параметрів обрізання/розміру; решта — карти, технічні заглушки, іконки або невдалі завантаження. Візуальний огляд усіх 38 оригіналів виявив 10 прайс-зображень. Для читання взято найбільші завантажені версії. HTML-підписи секцій евристичні: наприклад, загальний прайс позначений у звіті як Vajacial/manjacial, але визначений за вмістом зображення.
@@ -94,60 +96,51 @@
 
 | Процедура | Варіант / тривалість | Ціна |
 |---|---|---:|
-| Celková masáž | 60 min | 900 Kč |
-| Celková masáž | 90 min | 1250 Kč |
-| Celková masáž | 120 min | 1700 Kč |
-| Masáž zad | 30 min | 450 Kč |
-| Masáž šíje | 20 min | 300 Kč |
-| Masáž zad a šíje | 60 min | 900 Kč |
-| Masáž dolních končetin | 40 min | 550 Kč |
-| Masáž dolních končetin | 60 min | 850 Kč |
-| Masáž horních končetin | 30 min | 400 Kč |
-| Masáž chodidel | 20 min | 300 Kč |
-| Záda a baňkování | 50 min | 700 Kč |
-| Baňkování | 20 min | 300 Kč |
-| Medová masáž | 30 min | 500 Kč |
-| Čokoládová masáž | 60 min | 900 Kč |
-| Masáž lávovými kameny | 60 min | 900 Kč |
-| Masáž proti celulitidě | 60 min | 1000 Kč |
-| Masáž proti celulitidě | 90 min | 1400 Kč |
-| Masáž proti celulitidě + ozonový zábal | 50 + 25 min | 1250 Kč |
-| Masáž proti celulitidě + ozonový zábal | Balíček 5 ošetření | 5649 Kč |
-| Masáž proti celulitidě + ozonový zábal | Balíček 10 ošetření | 11249 Kč |
-| Maderoterapie | 60 min | 1000 Kč |
-| Maderoterapie | 90 min | 1500 Kč |
-| Maderoterapie | 3 × 60 min | 2800 Kč |
-| Maderoterapie | 5 × 60 min | 4500 Kč |
-| Maderoterapie | 3 × 90 min | 4200 Kč |
-| Maderoterapie | 5 × 90 min | 6900 Kč |
-| Skořicový / bahenní zábal | 1 × 20–30 min | 500 Kč |
-| Skořicový / bahenní zábal | 3 ošetření | 1300 Kč |
-| Skořicový / bahenní zábal | 5 ošetření | 2300 Kč |
-| Skořicový / bahenní zábal | 10 ošetření | 4600 Kč |
-| Rašelinový zábal | — | 300 Kč |
+| Regenerační a relaxační masáž | 30 min | 500 Kč |
+| Regenerační a relaxační masáž | 60 min | 1000 Kč |
+| Regenerační a relaxační masáž | 90 min | 1500 Kč |
+| Regenerační a relaxační masáž | 120 min | 1900 Kč |
+| Manuální lymfodrenáž | 60 min | 1100 Kč |
+| Manuální lymfodrenáž | 90 min | 1600 Kč |
 | Parafínový zábal rukou | — | 290 Kč |
 | Parafínový zábal nohou | — | 320 Kč |
-| Indická masáž hlavy | 60 min | 900 Kč |
-| Thajská masáž nohou | 60 min | 900 Kč |
-| Ájurvédská masáž | 120 min | 1800 Kč |
-| Lymfatická masáž | 60 min | 900 Kč |
+| Masáž obličeje | 30 min | 500 Kč |
+| Masáž chodidel | 20 min | 350 Kč |
+| Masáž šíje | 20 min | 350 Kč |
+| Baňkování | 30 min | 550 Kč |
+| Medová a detoxikační masáž | 30 min | 600 Kč |
+| Čokoládová masáž | 60 min | 1100 Kč |
+| Masáž lávovými kameny | 60 min | 1100 Kč |
+| Indická masáž hlavy | 60 min | 1000 Kč |
+| Thajská masáž nohou | 60 min | 1000 Kč |
+| Ájurvédská masáž | 120 min | 2200 Kč |
+| Maderoterapie | 60 min | 1100 Kč |
+| Maderoterapie | 90 min | 1600 Kč |
+| Maderoterapie | 3 × 60 min | 3000 Kč |
+| Maderoterapie | 5 × 60 min | 4900 Kč |
+| Maderoterapie | 3 × 90 min | 4500 Kč |
+| Maderoterapie | 5 × 90 min | 7200 Kč |
+| Masáž proti celulitidě | 60 min | 1100 Kč |
+| Masáž proti celulitidě | 90 min | 1600 Kč |
+| Skořicový / ozonový zábal | 1 × 20–30 min | 500 Kč |
+| Skořicový / ozonový zábal | 3 ošetření | 1300 Kč |
+| Skořicový / ozonový zábal | 5 ošetření | 2300 Kč |
+| Skořicový / ozonový zábal | 10 ošetření | 4600 Kč |
 
 ## Брови та вії
 
 | Процедура | Варіант / тривалість | Ціна |
 |---|---|---:|
-| Korekce obočí — ženy | — | 200 Kč |
-| Korekce obočí — muži | — | 250 Kč |
-| Barvení obočí | — | 250 Kč |
-| Barvení + korekce obočí | — | 400 Kč |
-| Laminace + korekce obočí | — | 550 Kč |
-| Laminace + barvení + korekce obočí | — | 700 Kč |
-| Zesvětlení obočí | — | 300 Kč |
-| Barvení řas | — | 250 Kč |
-| Laminace řas | — | 650 Kč |
-| Laminace + barvení řas | — | 800 Kč |
-| Laminace obočí + řas | — | 1100 Kč |
-| Komplex obočí + řasy | — | 1400 Kč |
+| Úprava obočí | — | 250 Kč |
+| Barvení obočí | — | 300 Kč |
+| Barvení + úprava obočí | — | 500 Kč |
+| Laminace + úprava obočí | — | 1000 Kč |
+| Laminace + barvení + úprava obočí | — | 1200 Kč |
+| Barvení řas | — | 300 Kč |
+| Laminace řas | — | 950 Kč |
+| Laminace + barvení řas | — | 1100 Kč |
+| Laminace obočí + řas | — | 1800 Kč |
+| Komplex obočí + řasy | — | 2100 Kč |
 
 ## Приладове видалення волосся
 

@@ -14,7 +14,11 @@ const { PriceTable } = await server.ssrLoadModule('/src/components/ui/PriceTable
 const { getPriceGroups } = await server.ssrLoadModule('/src/lib/priceCatalog.ts')
 const { priceCatalogs, massagePrices, depilationPrices } = await server.ssrLoadModule('/src/data/prices.ts')
 const render = group => renderToStaticMarkup(createElement(PriceTable, { group, categoryId: 'massage' }))
-const group = { id: 'test', title: 'Test', rows: massagePrices.slice(0, 3) }
+const group = {
+  id: 'test',
+  title: 'Test',
+  rows: massagePrices.filter(row => row.id !== 'massage-price-whole-30').slice(0, 3).map(row => ({ ...row, note: undefined })),
+}
 
 test('absent, null, empty and whitespace notes leave identical card markup', () => {
   const baseline = render(group)

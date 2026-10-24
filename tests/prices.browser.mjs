@@ -37,9 +37,9 @@ try {
     const categories = prices.getByRole('group', { name: 'Kategorie služeb', exact: true })
     const cases = [
       { name: 'Depilace', women: 39, men: 41, key: 'depilation' },
-      { name: 'Masáže', rows: 37, key: 'massage' },
+      { name: 'Masáže', rows: 30, key: 'massage' },
       { name: 'Trvalé odstranění chloupků', women: 35, men: 34, key: 'hair-removal' },
-      { name: 'Péče o obočí a řasy', rows: 12, key: 'brows-lashes' },
+      { name: 'Péče o obočí a řasy', rows: 10, key: 'brows-lashes' },
     ]
     for (const item of cases) {
       const category = categories.getByRole('button', { name: item.name, exact: true })

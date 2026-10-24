@@ -343,39 +343,53 @@ export const additionalDepilationPrices: (GenderPriceRow & { groupId: string })[
 
 export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
+    "id": "massage-price-whole-30",
+    "label": "Regenerační a relaxační masáž",
+    "price": 500,
+    "detail": "30 min",
+    "groupId": "body",
+    "sourceIds": [
+      "massage-classic"
+    ],
+    "note": "Při masáži si můžete zvolit, na které partie se zaměříme: záda, šíji, horní nebo dolní končetiny."
+  },
+  {
     "id": "massage-price-whole-60",
-    "label": "Celková masáž",
-    "price": 900,
+    "label": "Regenerační a relaxační masáž",
+    "price": 1000,
     "detail": "60 min",
     "groupId": "body",
     "sourceIds": [
       "massage-classic"
-    ]
+    ],
+    "note": "Při masáži si můžete zvolit, na které partie se zaměříme: záda, šíji, horní nebo dolní končetiny."
   },
   {
     "id": "massage-price-whole-90",
-    "label": "Celková masáž",
-    "price": 1250,
+    "label": "Regenerační a relaxační masáž",
+    "price": 1500,
     "detail": "90 min",
     "groupId": "body",
     "sourceIds": [
       "massage-classic"
-    ]
+    ],
+    "note": "Při masáži si můžete zvolit, na které partie se zaměříme: záda, šíji, horní nebo dolní končetiny."
   },
   {
     "id": "massage-price-whole-120",
-    "label": "Celková masáž",
-    "price": 1700,
+    "label": "Regenerační a relaxační masáž",
+    "price": 1900,
     "detail": "120 min",
     "groupId": "body",
     "sourceIds": [
       "massage-classic"
-    ]
+    ],
+    "note": "Při masáži si můžete zvolit, na které partie se zaměříme: záda, šíji, horní nebo dolní končetiny."
   },
   {
-    "id": "massage-price-back",
-    "label": "Masáž zad",
-    "price": 450,
+    "id": "massage-price-face",
+    "label": "Masáž obličeje",
+    "price": 500,
     "detail": "30 min",
     "groupId": "body",
     "sourceIds": [
@@ -385,48 +399,8 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-neck",
     "label": "Masáž šíje",
-    "price": 300,
+    "price": 350,
     "detail": "20 min",
-    "groupId": "body",
-    "sourceIds": [
-      "massage-classic"
-    ]
-  },
-  {
-    "id": "massage-price-back-neck",
-    "label": "Masáž zad a šíje",
-    "price": 900,
-    "detail": "60 min",
-    "groupId": "body",
-    "sourceIds": [
-      "massage-classic"
-    ]
-  },
-  {
-    "id": "massage-price-lower-40",
-    "label": "Masáž dolních končetin",
-    "price": 550,
-    "detail": "40 min",
-    "groupId": "body",
-    "sourceIds": [
-      "massage-classic"
-    ]
-  },
-  {
-    "id": "massage-price-lower-60",
-    "label": "Masáž dolních končetin",
-    "price": 850,
-    "detail": "60 min",
-    "groupId": "body",
-    "sourceIds": [
-      "massage-classic"
-    ]
-  },
-  {
-    "id": "massage-price-upper",
-    "label": "Masáž horních končetin",
-    "price": 400,
-    "detail": "30 min",
     "groupId": "body",
     "sourceIds": [
       "massage-classic"
@@ -435,18 +409,8 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-feet",
     "label": "Masáž chodidel",
-    "price": 300,
+    "price": 350,
     "detail": "20 min",
-    "groupId": "body",
-    "sourceIds": [
-      "massage-classic"
-    ]
-  },
-  {
-    "id": "massage-price-back-cupping",
-    "label": "Záda a baňkování",
-    "price": 700,
-    "detail": "50 min",
     "groupId": "body",
     "sourceIds": [
       "massage-classic"
@@ -455,8 +419,8 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-cupping",
     "label": getServiceTitle('massage-cupping'),
-    "price": 300,
-    "detail": "20 min",
+    "price": 550,
+    "detail": "30 min",
     "groupId": "special",
     "sourceIds": [
       "massage-classic"
@@ -465,7 +429,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-honey",
     "label": getServiceTitle('massage-honey'),
-    "price": 500,
+    "price": 600,
     "detail": "30 min",
     "groupId": "special",
     "sourceIds": [
@@ -475,7 +439,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-chocolate",
     "label": getServiceTitle('massage-chocolate'),
-    "price": 900,
+    "price": 1100,
     "detail": "60 min",
     "groupId": "special",
     "sourceIds": [
@@ -485,7 +449,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-hot-stones",
     "label": getServiceTitle('massage-hot-stones'),
-    "price": 900,
+    "price": 1100,
     "detail": "60 min",
     "groupId": "special",
     "sourceIds": [
@@ -495,7 +459,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-anticellulite-60",
     "label": getServiceTitle('massage-anticellulite'),
-    "price": 1000,
+    "price": 1100,
     "detail": "60 min",
     "groupId": "special",
     "sourceIds": [
@@ -505,7 +469,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-anticellulite-90",
     "label": getServiceTitle('massage-anticellulite'),
-    "price": 1400,
+    "price": 1600,
     "detail": "90 min",
     "groupId": "special",
     "sourceIds": [
@@ -513,42 +477,9 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
     ]
   },
   {
-    "id": "massage-price-ozone",
-    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
-    "price": 1250,
-    "detail": "50 + 25 min",
-    "groupId": "ozone",
-    "sourceIds": [
-      "massage-classic"
-    ],
-    "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
-  },
-  {
-    "id": "massage-price-ozone-5",
-    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
-    "price": 5649,
-    "detail": "Balíček 5 ošetření",
-    "groupId": "ozone",
-    "sourceIds": [
-      "massage-classic"
-    ],
-    "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
-  },
-  {
-    "id": "massage-price-ozone-10",
-    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
-    "price": 11249,
-    "detail": "Balíček 10 ošetření",
-    "groupId": "ozone",
-    "sourceIds": [
-      "massage-classic"
-    ],
-    "note": "V původním ceníku je uvedeno „+ ozonový zábal“. Složení balíčku si prosím potvrďte ve studiu."
-  },
-  {
     "id": "massage-price-madero-60",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 1000,
+    "price": 1100,
     "detail": "60 min",
     "groupId": "madero",
     "sourceIds": [
@@ -558,7 +489,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-madero-90",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 1500,
+    "price": 1600,
     "detail": "90 min",
     "groupId": "madero",
     "sourceIds": [
@@ -568,7 +499,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-madero-3-60",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 2800,
+    "price": 3000,
     "detail": "3 × 60 min",
     "groupId": "madero",
     "sourceIds": [
@@ -578,7 +509,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-madero-5-60",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 4500,
+    "price": 4900,
     "detail": "5 × 60 min",
     "groupId": "madero",
     "sourceIds": [
@@ -588,7 +519,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-madero-3-90",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 4200,
+    "price": 4500,
     "detail": "3 × 90 min",
     "groupId": "madero",
     "sourceIds": [
@@ -598,7 +529,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-madero-5-90",
     "label": getServiceTitle('massage-maderotherapy'),
-    "price": 6900,
+    "price": 7200,
     "detail": "5 × 90 min",
     "groupId": "madero",
     "sourceIds": [
@@ -607,7 +538,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-cinnamon-mud",
-    "label": "Skořicový / bahenní zábal",
+    "label": "Skořicový / ozonový zábal",
     "price": 500,
     "detail": "1 × 20–30 min",
     "groupId": "wraps",
@@ -617,7 +548,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-cinnamon-mud-3",
-    "label": "Skořicový / bahenní zábal",
+    "label": "Skořicový / ozonový zábal",
     "price": 1300,
     "detail": "3 ošetření",
     "groupId": "wraps",
@@ -627,7 +558,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-cinnamon-mud-5",
-    "label": "Skořicový / bahenní zábal",
+    "label": "Skořicový / ozonový zábal",
     "price": 2300,
     "detail": "5 ošetření",
     "groupId": "wraps",
@@ -637,18 +568,9 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-cinnamon-mud-10",
-    "label": "Skořicový / bahenní zábal",
+    "label": "Skořicový / ozonový zábal",
     "price": 4600,
     "detail": "10 ošetření",
-    "groupId": "wraps",
-    "sourceIds": [
-      "massage-special"
-    ]
-  },
-  {
-    "id": "massage-price-peat",
-    "label": "Rašelinový zábal",
-    "price": 300,
     "groupId": "wraps",
     "sourceIds": [
       "massage-special"
@@ -675,7 +597,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-indian-head",
     "label": getServiceTitle('massage-indian-head'),
-    "price": 900,
+    "price": 1000,
     "detail": "60 min",
     "groupId": "relax",
     "sourceIds": [
@@ -685,7 +607,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-thai-feet",
     "label": getServiceTitle('massage-thai-feet'),
-    "price": 900,
+    "price": 1000,
     "detail": "60 min",
     "groupId": "relax",
     "sourceIds": [
@@ -695,7 +617,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "massage-price-ayurveda",
     "label": getServiceTitle('massage-ayurveda'),
-    "price": 1800,
+    "price": 2200,
     "detail": "120 min",
     "groupId": "relax",
     "sourceIds": [
@@ -704,9 +626,19 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-lymphatic",
-    "label": "Lymfatická masáž",
-    "price": 900,
+    "label": "Manuální lymfodrenáž",
+    "price": 1100,
     "detail": "60 min",
+    "groupId": "relax",
+    "sourceIds": [
+      "massage-special"
+    ]
+  },
+  {
+    "id": "massage-price-lymphatic-90",
+    "label": "Manuální lymfodrenáž",
+    "price": 1600,
+    "detail": "90 min",
     "groupId": "relax",
     "sourceIds": [
       "massage-special"
@@ -717,16 +649,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
 export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-correction-women",
-    "label": "Korekce obočí — ženy",
-    "price": 200,
-    "groupId": "brows",
-    "sourceIds": [
-      "brows"
-    ]
-  },
-  {
-    "id": "brow-price-correction-men",
-    "label": "Korekce obočí — muži",
+    "label": "Úprava obočí",
     "price": 250,
     "groupId": "brows",
     "sourceIds": [
@@ -736,7 +659,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-color",
     "label": "Barvení obočí",
-    "price": 250,
+    "price": 300,
     "groupId": "brows",
     "sourceIds": [
       "brows"
@@ -744,8 +667,8 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "brow-price-color-correction",
-    "label": "Barvení + korekce obočí",
-    "price": 400,
+    "label": "Barvení + úprava obočí",
+    "price": 500,
     "groupId": "brows",
     "sourceIds": [
       "brows"
@@ -753,8 +676,8 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "brow-price-lamination-correction",
-    "label": "Laminace + korekce obočí",
-    "price": 550,
+    "label": "Laminace + úprava obočí",
+    "price": 1000,
     "groupId": "brows",
     "sourceIds": [
       "brows"
@@ -762,17 +685,8 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "brow-price-lamination-color-correction",
-    "label": "Laminace + barvení + korekce obočí",
-    "price": 700,
-    "groupId": "brows",
-    "sourceIds": [
-      "brows"
-    ]
-  },
-  {
-    "id": "brow-price-lightening",
-    "label": "Zesvětlení obočí",
-    "price": 300,
+    "label": "Laminace + barvení + úprava obočí",
+    "price": 1200,
     "groupId": "brows",
     "sourceIds": [
       "brows"
@@ -781,7 +695,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-lashes-color",
     "label": "Barvení řas",
-    "price": 250,
+    "price": 300,
     "groupId": "lashes",
     "sourceIds": [
       "brows"
@@ -790,7 +704,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-lashes-lamination",
     "label": "Laminace řas",
-    "price": 650,
+    "price": 950,
     "groupId": "lashes",
     "sourceIds": [
       "brows"
@@ -799,7 +713,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-lashes-lamination-color",
     "label": "Laminace + barvení řas",
-    "price": 800,
+    "price": 1100,
     "groupId": "lashes",
     "sourceIds": [
       "brows"
@@ -808,7 +722,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-both-lamination",
     "label": `${getServiceTitle('brows-lamination')} + řas`,
-    "price": 1100,
+    "price": 1800,
     "groupId": "combined",
     "sourceIds": [
       "brows"
@@ -817,7 +731,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   {
     "id": "brow-price-both-complex",
     "label": "Komplex obočí + řasy",
-    "price": 1400,
+    "price": 2100,
     "groupId": "combined",
     "sourceIds": [
       "brows"
@@ -1306,12 +1220,11 @@ export const priceCatalogs: PriceCatalog[] = [
     description: 'Jednotlivé masáže i balíčky. Délka a počet ošetření jsou uvedeny u příslušné varianty.',
     notes: [],
     groups: [
-      { id: 'body', title: 'Masáže jednotlivých partií' },
+      { id: 'body', title: 'Regenerační a relaxační masáže' },
       { id: 'special', title: 'Speciální masáže' },
       { id: 'madero', title: getServiceTitle('massage-maderotherapy') },
-      { id: 'relax', title: 'Relaxační a lymfatické masáže' },
+      { id: 'relax', title: 'Relaxační a lymfodrenážné masáže' },
       { id: 'wraps', title: 'Zábaly' },
-      { id: 'ozone', title: 'Masáž a ozonový zábal' },
     ].map(group => ({ ...group, rows: massagePrices.filter(row => row.groupId === group.id) })),
   },
   {

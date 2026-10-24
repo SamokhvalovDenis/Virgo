@@ -205,7 +205,7 @@ test('editing service titles once updates detail headings and linked price rows'
       assert.equal(renamed.massagePrices.find(item => item.id === row.id).label, `Test ${row.label}`, row.id)
       linkedPrices++
     }
-    assert.equal(linkedPrices, 18)
+    assert.equal(linkedPrices, 15)
     const massageCatalog = renamed.priceCatalogs.find(catalog => catalog.id === 'massage')
     assert.equal(massageCatalog.groups.find(group => group.id === 'madero').title, 'Test Maderoterapie')
     assert.equal(renamed.browsLashesPrices.find(row => row.id === 'brow-price-both-lamination').label,
@@ -213,7 +213,7 @@ test('editing service titles once updates detail headings and linked price rows'
     const tables = getPriceGroups(massageCatalog, 'women')
       .map(group => renderToStaticMarkup(createElement(PriceTable, { group, categoryId: 'massage' }))).join('')
     assert.ok(tables.includes('Test Čokoládová masáž'))
-    assert.ok(tables.includes('Test Masáž proti celulitidě + ozonový zábal'))
+    assert.ok(tables.includes('Test Masáž proti celulitidě'))
     assert.throws(() => renamed.getServiceTitle('missing-service'), /Unknown service/)
   } finally {
     await renamedServer.close()
@@ -337,15 +337,40 @@ test('disabled contact client returns unavailability without sending a network r
 
 test('all new prices match the reviewed image transcription and have valid provenance', async () => {
   const source = JSON.parse(await readFile(new URL('../reports/price-audit/transcribed-prices.json', import.meta.url), 'utf8'))
+  const revisedPriceIds = {
+    massagePrices: new Set([
+      'massage-price-whole-30', 'massage-price-whole-60', 'massage-price-whole-90', 'massage-price-whole-120',
+      'massage-price-back', 'massage-price-face', 'massage-price-neck', 'massage-price-back-neck',
+      'massage-price-lower-40', 'massage-price-lower-60', 'massage-price-upper', 'massage-price-feet',
+      'massage-price-back-cupping', 'massage-price-cupping', 'massage-price-honey', 'massage-price-chocolate',
+      'massage-price-hot-stones', 'massage-price-anticellulite-60', 'massage-price-anticellulite-90',
+      'massage-price-ozone', 'massage-price-ozone-5', 'massage-price-ozone-10',
+      'massage-price-madero-60', 'massage-price-madero-90', 'massage-price-madero-3-60',
+      'massage-price-madero-5-60', 'massage-price-madero-3-90', 'massage-price-madero-5-90',
+      'massage-price-cinnamon-mud', 'massage-price-peat', 'massage-price-indian-head',
+      'massage-price-thai-feet', 'massage-price-ayurveda', 'massage-price-lymphatic',
+      'massage-price-lymphatic-90',
+    ]),
+    browsLashesPrices: new Set([
+      'brow-price-correction-women', 'brow-price-correction-men', 'brow-price-color',
+      'brow-price-color-correction', 'brow-price-lamination-correction',
+      'brow-price-lamination-color-correction', 'brow-price-lightening', 'brow-price-lashes-color',
+      'brow-price-lashes-lamination', 'brow-price-lashes-lamination-color',
+      'brow-price-both-lamination', 'brow-price-both-complex',
+    ]),
+  }
   for (const key of ['additionalDepilationPrices', 'massagePrices', 'browsLashesPrices', 'deviceHairRemovalPrices', 'deviceHairRemovalPackages']) {
     // Display names and optional notes are editable independently of the transcription.
     // Keep checking every amount, duration, identifier and source reference.
+    const revisedIds = revisedPriceIds[key] ?? new Set()
+    const rows = data[key].filter(row => !revisedIds.has(row.id))
+    const sourceRows = source[key].filter(row => !revisedIds.has(row.id))
     const withoutEditorialFields = rows => rows.map(({ label, ...row }) => {
       assert.ok(typeof label === 'string' && label.trim().length > 0)
       for (const field of ['note', 'womenNote', 'menNote']) delete row[field]
       return row
     })
-    assert.deepEqual(JSON.parse(JSON.stringify(withoutEditorialFields(data[key]))), withoutEditorialFields(source[key]), key)
+    assert.deepEqual(JSON.parse(JSON.stringify(withoutEditorialFields(rows))), withoutEditorialFields(sourceRows), key)
   }
   const inventory = JSON.parse(await readFile(new URL('../reports/virgo-images.json', import.meta.url), 'utf8'))
   for (const source of Object.values(data.priceSources)) assert.ok(inventory.images.some(image => image.file === source.file && image.status === 'downloaded'))
@@ -358,7 +383,7 @@ test('all new prices match the reviewed image transcription and have valid prove
       }
     }
   }
-  assert.equal(ids.length, 137)
+  assert.equal(ids.length, 128)
   assert.equal(new Set(ids).size, ids.length)
   assert.equal(Object.keys(data.priceSources).length, 10)
 })
@@ -366,7 +391,7 @@ test('all new prices match the reviewed image transcription and have valid prove
 test('every category and audience exposes only its own readable prices and notes', async () => {
   const { getPriceGroups } = await server.ssrLoadModule('/src/lib/priceCatalog.ts')
   const { PriceTable } = await server.ssrLoadModule('/src/components/ui/PriceTable.tsx')
-  const counts = { depilation: [39, 41], massage: [37, 37], 'hair-removal': [35, 34], 'brows-lashes': [12, 12] }
+  const counts = { depilation: [39, 41], massage: [30, 30], 'hair-removal': [35, 34], 'brows-lashes': [10, 10] }
   for (const catalog of data.priceCatalogs) {
     for (const [index, audience] of ['women', 'men'].entries()) {
       const groups = getPriceGroups(catalog, audience)
@@ -387,3 +412,56 @@ test('every category and audience exposes only its own readable prices and notes
   }
 })
 
+test('massage prices match all procedures and rates in the supplied price list', () => {
+  assert.deepEqual(data.massagePrices.map(({ id, price, detail }) => [id, price, detail]), [
+    ['massage-price-whole-30', 500, '30 min'],
+    ['massage-price-whole-60', 1000, '60 min'],
+    ['massage-price-whole-90', 1500, '90 min'],
+    ['massage-price-whole-120', 1900, '120 min'],
+    ['massage-price-face', 500, '30 min'],
+    ['massage-price-neck', 350, '20 min'],
+    ['massage-price-feet', 350, '20 min'],
+    ['massage-price-cupping', 550, '30 min'],
+    ['massage-price-honey', 600, '30 min'],
+    ['massage-price-chocolate', 1100, '60 min'],
+    ['massage-price-hot-stones', 1100, '60 min'],
+    ['massage-price-anticellulite-60', 1100, '60 min'],
+    ['massage-price-anticellulite-90', 1600, '90 min'],
+    ['massage-price-madero-60', 1100, '60 min'],
+    ['massage-price-madero-90', 1600, '90 min'],
+    ['massage-price-madero-3-60', 3000, '3 × 60 min'],
+    ['massage-price-madero-5-60', 4900, '5 × 60 min'],
+    ['massage-price-madero-3-90', 4500, '3 × 90 min'],
+    ['massage-price-madero-5-90', 7200, '5 × 90 min'],
+    ['massage-price-cinnamon-mud', 500, '1 × 20–30 min'],
+    ['massage-price-cinnamon-mud-3', 1300, '3 ošetření'],
+    ['massage-price-cinnamon-mud-5', 2300, '5 ošetření'],
+    ['massage-price-cinnamon-mud-10', 4600, '10 ošetření'],
+    ['massage-price-paraffin-hands', 290, undefined],
+    ['massage-price-paraffin-feet', 320, undefined],
+    ['massage-price-indian-head', 1000, '60 min'],
+    ['massage-price-thai-feet', 1000, '60 min'],
+    ['massage-price-ayurveda', 2200, '120 min'],
+    ['massage-price-lymphatic', 1100, '60 min'],
+    ['massage-price-lymphatic-90', 1600, '90 min'],
+  ])
+  const selectedParts = data.massagePrices.filter(row => row.label === 'Regenerační a relaxační masáž')
+  assert.ok(selectedParts.every(row => row.note === 'Při masáži si můžete zvolit, na které partie se zaměříme: záda, šíji, horní nebo dolní končetiny.'))
+  assert.equal(data.massagePrices.find(row => row.id === 'massage-price-lymphatic').label, 'Manuální lymfodrenáž')
+  assert.equal(data.massagePrices.find(row => row.id === 'massage-price-cinnamon-mud').label, 'Skořicový / ozonový zábal')
+})
+
+test('cosmetic prices match all services and rates in the supplied price list', () => {
+  assert.deepEqual(data.browsLashesPrices.map(({ id, label, price }) => [id, label, price]), [
+    ['brow-price-correction-women', 'Úprava obočí', 250],
+    ['brow-price-color', 'Barvení obočí', 300],
+    ['brow-price-color-correction', 'Barvení + úprava obočí', 500],
+    ['brow-price-lamination-correction', 'Laminace + úprava obočí', 1000],
+    ['brow-price-lamination-color-correction', 'Laminace + barvení + úprava obočí', 1200],
+    ['brow-price-lashes-color', 'Barvení řas', 300],
+    ['brow-price-lashes-lamination', 'Laminace řas', 950],
+    ['brow-price-lashes-lamination-color', 'Laminace + barvení řas', 1100],
+    ['brow-price-both-lamination', 'Laminace obočí + řas', 1800],
+    ['brow-price-both-complex', 'Komplex obočí + řasy', 2100],
+  ])
+})
