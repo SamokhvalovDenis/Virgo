@@ -4,6 +4,15 @@ import { site } from './site';
 import { getServiceTitle } from './services';
 
 /**
+ * Примітки редагуються тут, без змін React-компонентів:
+ * - note: "Підтверджений текст чеською" у позиції — під її ціною та Rezervovat.
+ * - note у групі priceCatalogs — один раз внизу всієї картки з варіантами.
+ * - womenNote / menNote — уточнення лише для відповідної аудиторії.
+ * Щоб прибрати примітку, видаліть поле або вкажіть null / "".
+ * Приклад із частинами тіла додавайте лише до підтвердженої процедури.
+ */
+
+/**
  * Source: references/depilation-price-original.png (user-provided)
  * All amounts in CZK; MUST reconfirm with studio owner before launch.
  * IMPORTANT: Не підтверджено, чи цей прайс стосується waxing, sugaring чи обох.
@@ -19,7 +28,9 @@ export const priceGroups = [
 ] as const;
 
 export const depilationPrices: PriceRow[] = [
-  { id: "depilation-face", groupId: "face", label: "Obličej", women: 450, men: 450 },
+  {
+    id: "depilation-face", groupId: "face", label: "Obličej", women: 450, men: 450,
+  },
   { id: "depilation-eyebrows", groupId: "face", label: "Obočí", women: 200, men: 250 },
   { id: "depilation-upper-lip", groupId: "face", label: "Horní ret", women: 200, men: 250 },
   { id: "depilation-chin", groupId: "face", label: "Brada", women: 250, men: 250 },

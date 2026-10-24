@@ -338,13 +338,14 @@ test('disabled contact client returns unavailability without sending a network r
 test('all new prices match the reviewed image transcription and have valid provenance', async () => {
   const source = JSON.parse(await readFile(new URL('../reports/price-audit/transcribed-prices.json', import.meta.url), 'utf8'))
   for (const key of ['additionalDepilationPrices', 'massagePrices', 'browsLashesPrices', 'deviceHairRemovalPrices', 'deviceHairRemovalPackages']) {
-    // Display names are editable independently of the historical transcription.
-    // Keep checking every amount, duration, note, identifier and source reference.
-    const withoutLabels = rows => rows.map(({ label, ...row }) => {
+    // Display names and optional notes are editable independently of the transcription.
+    // Keep checking every amount, duration, identifier and source reference.
+    const withoutEditorialFields = rows => rows.map(({ label, ...row }) => {
       assert.ok(typeof label === 'string' && label.trim().length > 0)
+      for (const field of ['note', 'womenNote', 'menNote']) delete row[field]
       return row
     })
-    assert.deepEqual(JSON.parse(JSON.stringify(withoutLabels(data[key]))), withoutLabels(source[key]), key)
+    assert.deepEqual(JSON.parse(JSON.stringify(withoutEditorialFields(data[key]))), withoutEditorialFields(source[key]), key)
   }
   const inventory = JSON.parse(await readFile(new URL('../reports/virgo-images.json', import.meta.url), 'utf8'))
   for (const source of Object.values(data.priceSources)) assert.ok(inventory.images.some(image => image.file === source.file && image.status === 'downloaded'))

@@ -5,9 +5,9 @@ export type DisplayPriceRow = {
   label: string
   price: Exclude<PriceValue, null>
   detail?: string
-  note?: string
+  note?: string | null
 }
-export type DisplayPriceGroup = { id: string; title: string; rows: DisplayPriceRow[] }
+export type DisplayPriceGroup = { id: string; title: string; note?: string | null; rows: DisplayPriceRow[] }
 
 /** Never infer the other audience's price or duplicate a total across treatments. */
 export function getPriceGroups(catalog: PriceCatalog, audience: PriceAudience): DisplayPriceGroup[] {
@@ -20,6 +20,6 @@ export function getPriceGroups(catalog: PriceCatalog, audience: PriceAudience): 
       const note = 'price' in row ? row.note : (audience === 'women' ? row.womenNote : row.menNote) ?? row.note
       rows.push({ id: row.id, label: row.label, price, detail, note })
     }
-    return { id: group.id, title: group.title, rows }
+    return { id: group.id, title: group.title, note: group.note, rows }
   }).filter(group => group.rows.length > 0)
 }

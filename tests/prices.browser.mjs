@@ -11,7 +11,7 @@ const { origin } = preview
 let browser
 const results = []
 async function assertPriceLayout(prices, context) {
-  const problems = await prices.locator('tbody tr').evaluateAll(rows => rows.flatMap(row => {
+  const problems = await prices.locator('tbody .price-procedure').evaluateAll(rows => rows.flatMap(row => {
     const value = row.querySelector('.price-value')
     const booking = row.querySelector('.price-row-booking')
     const priceBounds = value.getBoundingClientRect()
@@ -53,11 +53,11 @@ try {
       const audience = prices.getByRole('group', { name: 'Zobrazit ceny pro', exact: true })
       if (item.rows) {
         assert.equal(await audience.count(), 0)
-        assert.equal(await prices.locator('tbody tr').count(), item.rows)
+        assert.equal(await prices.locator('tbody .price-procedure').count(), item.rows)
       } else {
         for (const [label, count] of [['Ženy', item.women], ['Muži', item.men]]) {
           await audience.getByRole('button', { name: label, exact: true }).click()
-          assert.equal(await prices.locator('tbody tr').count(), count)
+          assert.equal(await prices.locator('tbody .price-procedure').count(), count)
           if (item.key === 'depilation') {
             const arms = prices.locator('[data-price-id="depilation-arms-full"] .price-value')
             assert.equal(await arms.innerText(), label === 'Ženy' ? '550 Kč' : '750–850 Kč')
@@ -67,7 +67,7 @@ try {
         }
       }
       await assertPriceLayout(prices, `${width}/${item.key}`)
-      const rows = prices.locator('tbody tr')
+      const rows = prices.locator('tbody .price-procedure')
       const bookingLinks = prices.locator('.price-row-booking')
       assert.equal(await bookingLinks.count(), await rows.count())
       assert.equal((await bookingLinks.first().innerText()).trim(), 'Rezervovat')

@@ -1,8 +1,10 @@
+import { Fragment } from 'react'
 import { content } from '../../data/content'
 import { formatPrice } from '../../data/prices'
 import type { DisplayPriceGroup } from '../../lib/priceCatalog'
 import { BookingButton } from './BookingButton'
 import { PriceBotanical } from './PriceBotanical'
+import { PriceNote } from './PriceNote'
 
 type Props = { group: DisplayPriceGroup; categoryId: string; audienceLabel?: string }
 
@@ -26,26 +28,31 @@ export function PriceTable({ group, categoryId, audienceLabel }: Props) {
       <tbody role="rowgroup">
         {group.rows.map(row => {
           const procedure = [row.label, row.detail, audienceLabel].filter(Boolean).join(' — ')
-          return <tr key={row.id} data-price-id={row.id} className="price-procedure" role="row">
-            <th scope="row" role="rowheader">
-              <span className="price-row-label">{row.label}</span>
-              {row.detail && <span className="price-row-detail">{row.detail}</span>}
-              {row.note && <span className="price-row-note">{row.note}</span>}
-            </th>
-            <td className="price-value" role="cell">{formatPrice(row.price)}</td>
-            <td className="price-booking-cell" role="cell">
-              <BookingButton
-                location={`price-${categoryId}-${row.id}`}
-                label={content.sections.serviceBooking}
-                variant="burgundy"
-                className="price-row-booking"
-                ariaLabel={content.common.bookProcedure.replace('{procedure}', procedure)}
-              />
-            </td>
-          </tr>
+          return <Fragment key={row.id}>
+            <tr data-price-id={row.id} className="price-procedure" role="row">
+              <th scope="row" role="rowheader">
+                <span className="price-row-label">{row.label}</span>
+                {row.detail && <span className="price-row-detail">{row.detail}</span>}
+              </th>
+              <td className="price-value" role="cell">{formatPrice(row.price)}</td>
+              <td className="price-booking-cell" role="cell">
+                <BookingButton
+                  location={`price-${categoryId}-${row.id}`}
+                  label={content.sections.serviceBooking}
+                  variant="burgundy"
+                  className="price-row-booking"
+                  ariaLabel={content.common.bookProcedure.replace('{procedure}', procedure)}
+                />
+              </td>
+            </tr>
+            {row.note?.trim() && <tr className="price-note-row" data-price-note-for={row.id} role="row">
+              <td colSpan={3} role="cell"><PriceNote note={row.note} /></td>
+            </tr>}
+          </Fragment>
         })}
       </tbody>
     </table>
+    <PriceNote note={group.note} />
     </div>
   </div>
 }

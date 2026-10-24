@@ -8,7 +8,7 @@
     "test": "node --test tests/*.test.mjs",
     "test:contact": "node --test tests/contact.test.mjs",
     "test:contact:layout": "node tests/contact-layout.browser.mjs",
-    "test:prices:browser": "npm run build && node tests/prices.browser.mjs",
+    "test:prices:browser": "npm run build && node tests/prices.browser.mjs && node tests/price-notes.browser.mjs",
     "dev": "vite",
     "images:optimize": "node scripts/optimize-images.mjs",
     "favicon:generate": "node scripts/generate-favicons.mjs",
@@ -23,7 +23,7 @@
     "test:about:browser": "npm run build && node tests/about.browser.mjs",
     "test:reviews:browser": "npm run build && node tests/reviews.browser.mjs",
     "test:services:browser": "npm run build && node tests/services.browser.mjs",
-    "test:browser": "npm run build && node tests/hero.browser.mjs && node tests/services.browser.mjs && node tests/prices.browser.mjs && node tests/about.browser.mjs && node tests/reviews.browser.mjs && node tests/readiness.browser.mjs && node tests/seo.browser.mjs && node tests/assets.browser.mjs",
+    "test:browser": "npm run build && node tests/hero.browser.mjs && node tests/services.browser.mjs && node tests/prices.browser.mjs && node tests/price-notes.browser.mjs && node tests/about.browser.mjs && node tests/reviews.browser.mjs && node tests/readiness.browser.mjs && node tests/seo.browser.mjs && node tests/assets.browser.mjs",
     "test:refactor:browser": "npm run build && node tests/refactor.browser.mjs"
   },
   "dependencies": {

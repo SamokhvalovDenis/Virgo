@@ -8,6 +8,7 @@ export type PriceRow = {
   label: string;
   women: PriceValue;
   men: PriceValue;
+  note?: string | null;
 };
 
 export type PriceAudience = 'women' | 'men';
@@ -16,7 +17,7 @@ export type CatalogRowBase = {
   id: string;
   label: string;
   detail?: string;
-  note?: string;
+  note?: string | null;
   sourceIds: string[];
 };
 
@@ -26,11 +27,11 @@ export type GenderPriceRow = CatalogRowBase & {
   men: PriceValue;
   womenDetail?: string;
   menDetail?: string;
-  womenNote?: string;
-  menNote?: string;
+  womenNote?: string | null;
+  menNote?: string | null;
 };
 
-export type CatalogPriceGroup<Row> = { id: string; title: string; rows: Row[] };
+export type CatalogPriceGroup<Row> = { id: string; title: string; note?: string | null; rows: Row[] };
 export type PriceCatalog = {
   id: ServiceCategoryId;
   title: string;
