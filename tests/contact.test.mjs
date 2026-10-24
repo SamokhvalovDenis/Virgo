@@ -284,9 +284,11 @@ test('production ignores mock, sends directly once under repeated clicks, and re
     await result(form, data.content.form.success)
     assert.equal(requests.length, 1)
     assert.deepEqual(requests[0], {
-      ...values, access_key: '2230598f-5e86-432e-8e9d-4a6651ab4b83',
+      access_key: '2230598f-5e86-432e-8e9d-4a6651ab4b83',
       subject: 'Nová zpráva z webu Beauty Studio Virgo', replyto: valid.email,
-      service: schema.contactServiceCategories[0].title, 'h-captcha-response': 'test-hcaptcha-token', botcheck: false,
+      'Jméno': values.name, 'E-mail': values.email, 'Telefon': values.phone,
+      'Služba': schema.contactServiceCategories[0].title, 'Zpráva': values.message,
+      'h-captcha-response': 'test-hcaptcha-token', botcheck: false,
     })
     for (const key of Object.keys(values)) assert.equal(await form.locator(`[name="${key}"]`).inputValue(), '')
     assert.equal(await page.evaluate(() => window.testCaptchaResets), 1)
@@ -322,7 +324,8 @@ test('production preserves every field for API errors, false success, bad JSON a
     await submit(form)
     await result(form, data.content.form.success)
     assert.equal(requests.length, 7)
-    assert.equal(requests[6].service, data.content.form.giftTopic)
+    assert.equal(requests[6]['Služba'], data.content.form.giftTopic)
+    assert.equal(Object.hasOwn(requests[6], 'serviceId'), false)
     assert.equal(await form.locator('select').inputValue(), '')
   } finally { await page.close() }
 })

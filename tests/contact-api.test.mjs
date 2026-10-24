@@ -30,7 +30,7 @@ async function mocked(response, run) {
   finally { globalThis.fetch = original }
 }
 
-test('Web3Forms receives all normalized fields, Czech subject, visitor Reply-To and free spam protection', async () => {
+test('Web3Forms receives Czech field names without internal service IDs, preserving values and Reply-To', async () => {
   for (const serviceId of ['', data.giftCertificates.contactFormTopic, ...schema.contactServiceCategories.map(category => category.id)]) {
     await mocked(Response.json({ success: true }), async calls => {
       assert.deepEqual(await submitContact({ ...valid, name: ' Test klient ', serviceId }, verification), { success: true, message: data.content.form.success })
@@ -41,14 +41,19 @@ test('Web3Forms receives all normalized fields, Czech subject, visitor Reply-To 
       assert.equal(call.credentials, 'omit')
       assert.equal(call.headers['Content-Type'], 'application/json')
       assert.deepEqual(call.body, {
-        ...valid, serviceId,
         access_key: '2230598f-5e86-432e-8e9d-4a6651ab4b83',
         subject: 'Nová zpráva z webu Beauty Studio Virgo',
-        replyto: valid.email,
-        service: serviceId === data.giftCertificates.contactFormTopic ? data.content.form.giftTopic
+        'Jméno': valid.name,
+        'E-mail': valid.email,
+        'Telefon': valid.phone,
+        'Služba': serviceId === data.giftCertificates.contactFormTopic ? data.content.form.giftTopic
           : schema.contactServiceCategories.find(category => category.id === serviceId)?.title ?? data.content.form.selectService,
+        'Zpráva': valid.message,
+        replyto: valid.email,
         'h-captcha-response': verification.hcaptchaToken, botcheck: false,
       })
+      assert.equal(Object.hasOwn(call.body, 'serviceId'), false)
+      assert.equal(schema.contactSchema.parse({ ...valid, serviceId }).serviceId, serviceId)
     })
   }
 })

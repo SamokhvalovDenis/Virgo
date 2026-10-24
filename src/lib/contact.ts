@@ -39,7 +39,14 @@ export async function submitContact(input: ContactInput, verification: { hcaptch
         body: JSON.stringify({
           access_key: settings.contact.accessKey,
           subject: settings.contact.subject,
-          name, email, replyto: email, phone: phone ?? '', serviceId, service, message,
+          // Custom field names appear in the email; keep React IDs internal.
+          'Jméno': name,
+          'E-mail': email,
+          'Telefon': phone ?? '',
+          'Služba': service,
+          'Zpráva': message,
+          // Explicit Reply-To is needed because the visible email field is Czech.
+          replyto: email,
           'h-captcha-response': hcaptchaToken,
           botcheck: false,
         }), signal: controller.signal,

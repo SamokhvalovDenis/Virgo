@@ -12,7 +12,7 @@
 - `VITE_CONTACT_PRIVACY_URL`: необов'язкова адреса наявної погодженої політики.
 - `VITE_SITE_URL`: поточний origin збережено — `https://virgo.beautycz.workers.dev`.
 
-Передаються ім'я, email, телефон, ID та чеська назва послуги, повідомлення, `replyto` з email відвідувача, тема «Nová zpráva z webu Beauty Studio Virgo», ключ, `h-captcha-response` та `botcheck: false`. Заповнений honeypot `website` блокує запит. Zod-валідацію полів і чеські повідомлення збережено.
+Поля листа мають чеські назви: `Jméno`, `E-mail`, `Telefon`, `Služba`, `Zpráva`. Передається лише чеська назва послуги; `serviceId` залишається всередині React і Zod та не потрапляє в запит. Окреме службове `replyto` містить email відвідувача, тому відповідь клієнту працює і з чеською назвою поля email. Також передаються тема «Nová zpráva z webu Beauty Studio Virgo», ключ, `h-captcha-response` та `botcheck: false`. Заповнений honeypot `website` блокує запит. Zod-валідацію полів і чеські повідомлення збережено. [Довільні назви полів і явний Reply-To підтримуються API Web3Forms](https://docs.web3forms.com/getting-started/api-reference).
 
 ## Безкоштовна hCaptcha
 
