@@ -165,6 +165,61 @@ test('services and price groups have valid references and unique identifiers', (
   for (const price of data.depilationPrices) assert.ok(data.priceGroups.some(group => group.id === price.groupId))
 })
 
+test('editing service titles once updates detail headings and linked price rows', async () => {
+  // Simulate edits in services.ts in memory, without changing the working tree.
+  const renamedServer = await createServer({
+    envFile: false, appType: 'custom', logLevel: 'error',
+    cacheDir: 'node_modules/.vite-service-titles-tests',
+    server: { middlewareMode: true, hmr: false, watch: null },
+    plugins: [{
+      name: 'rename-service-titles-for-test', enforce: 'pre',
+      transform(code, id) {
+        if (!id.replaceAll('\\', '/').endsWith('/src/data/services.ts')) return
+        return code.replace(/(\btitle:\s*)"([^"]+)"/g,
+          (_, prefix, title) => `${prefix}${JSON.stringify(`Test ${title}`)}`)
+      },
+    }],
+  })
+  try {
+    const renamed = await renamedServer.ssrLoadModule('/src/data/index.ts')
+    const { serviceDetailPages: pages } = await renamedServer.ssrLoadModule('/src/data/serviceDetails.ts')
+    const { ServiceDetailPage } = await renamedServer.ssrLoadModule('/src/pages/ServiceDetailPage.tsx')
+    const { getPriceGroups } = await renamedServer.ssrLoadModule('/src/lib/priceCatalog.ts')
+    const { PriceTable } = await renamedServer.ssrLoadModule('/src/components/ui/PriceTable.tsx')
+    let headings = 0
+    for (const page of pages) {
+      const markup = renderToStaticMarkup(createElement(ServiceDetailPage, { page }))
+      for (const block of page.blocks) {
+        const original = data.services.find(service => service.id === block.id)
+        if (!original) continue // Informational sections are not service names.
+        assert.equal(block.title, `Test ${original.title}`, block.id)
+        assert.ok(markup.includes(`id="${block.id}-title">Test ${original.title}</h2>`), block.id)
+        headings++
+      }
+    }
+    assert.equal(headings, 16)
+    let linkedPrices = 0
+    for (const row of data.massagePrices) {
+      const service = data.services.find(service => row.label.startsWith(service.title))
+      if (!service) continue
+      assert.equal(renamed.massagePrices.find(item => item.id === row.id).label, `Test ${row.label}`, row.id)
+      linkedPrices++
+    }
+    assert.equal(linkedPrices, 18)
+    const massageCatalog = renamed.priceCatalogs.find(catalog => catalog.id === 'massage')
+    assert.equal(massageCatalog.groups.find(group => group.id === 'madero').title, 'Test Maderoterapie')
+    assert.equal(renamed.browsLashesPrices.find(row => row.id === 'brow-price-both-lamination').label,
+      'Test Laminace obočí + řas')
+    const tables = getPriceGroups(massageCatalog, 'women')
+      .map(group => renderToStaticMarkup(createElement(PriceTable, { group, categoryId: 'massage' }))).join('')
+    assert.ok(tables.includes('Test Čokoládová masáž'))
+    assert.ok(tables.includes('Test Masáž proti celulitidě + ozonový zábal'))
+    assert.throws(() => renamed.getServiceTitle('missing-service'), /Unknown service/)
+  } finally {
+    await renamedServer.close()
+  }
+})
+
 test('all home anchors resolve and every service category links to its detail page', () => {
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]))
   const targets = [...html.matchAll(/\bhref="\/?#([^"]+)"/g)].map(match => match[1])
@@ -283,7 +338,13 @@ test('disabled contact client returns unavailability without sending a network r
 test('all new prices match the reviewed image transcription and have valid provenance', async () => {
   const source = JSON.parse(await readFile(new URL('../reports/price-audit/transcribed-prices.json', import.meta.url), 'utf8'))
   for (const key of ['additionalDepilationPrices', 'massagePrices', 'browsLashesPrices', 'deviceHairRemovalPrices', 'deviceHairRemovalPackages']) {
-    assert.deepEqual(JSON.parse(JSON.stringify(data[key])), source[key], key)
+    // Display names are editable independently of the historical transcription.
+    // Keep checking every amount, duration, note, identifier and source reference.
+    const withoutLabels = rows => rows.map(({ label, ...row }) => {
+      assert.ok(typeof label === 'string' && label.trim().length > 0)
+      return row
+    })
+    assert.deepEqual(JSON.parse(JSON.stringify(withoutLabels(data[key]))), withoutLabels(source[key]), key)
   }
   const inventory = JSON.parse(await readFile(new URL('../reports/virgo-images.json', import.meta.url), 'utf8'))
   for (const source of Object.values(data.priceSources)) assert.ok(inventory.images.some(image => image.file === source.file && image.status === 'downloaded'))

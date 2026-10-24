@@ -24,7 +24,7 @@ export const services: Service[] = [
     id: "massage-classic-group",
     image: { key: 'massage', alt: 'Masáž zad a ramen na masážním lehátku.' },
     categoryId: "massage",
-    title: "Sportovní, klasická, regenerační a rekondiční masáž",
+    title: "Sportovní, klasické, regenerační a rekondiční masáže",
     shortDescription: "Různé techniky masáží podle vašich potřeb.",
     details: [],
     isPublished: true,
@@ -74,7 +74,7 @@ export const services: Service[] = [
   {
     id: "massage-anticellulite",
     categoryId: "massage",
-    title: "Anticelulitidová masáž",
+    title: "Masáž proti celulitidě",
     shortDescription: "Masážní technika zaměřená na péči o pokožku.",
     details: [],
     isPublished: true,
@@ -195,3 +195,10 @@ export const services: Service[] = [
     priceListId: null,
   },
 ];
+
+/** Єдине джерело назв послуг для каталогу, сторінок і пов'язаних рядків прайсу. */
+export function getServiceTitle(id: string): string {
+  const service = services.find(item => item.id === id);
+  if (!service) throw new Error(`Unknown service: ${id}`);
+  return service.title;
+}

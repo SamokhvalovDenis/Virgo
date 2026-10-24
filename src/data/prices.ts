@@ -1,6 +1,7 @@
 import type { GenderPriceRow, PriceCatalog, PriceRow, PriceValue, SinglePriceRow } from "./prices.types";
 import { content } from './content';
 import { site } from './site';
+import { getServiceTitle } from './services';
 
 /**
  * Source: references/depilation-price-original.png (user-provided)
@@ -442,7 +443,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-cupping",
-    "label": "Baňkování",
+    "label": getServiceTitle('massage-cupping'),
     "price": 300,
     "detail": "20 min",
     "groupId": "special",
@@ -452,7 +453,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-honey",
-    "label": "Medová masáž",
+    "label": getServiceTitle('massage-honey'),
     "price": 500,
     "detail": "30 min",
     "groupId": "special",
@@ -462,7 +463,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-chocolate",
-    "label": "Čokoládová masáž",
+    "label": getServiceTitle('massage-chocolate'),
     "price": 900,
     "detail": "60 min",
     "groupId": "special",
@@ -472,7 +473,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-hot-stones",
-    "label": "Masáž lávovými kameny",
+    "label": getServiceTitle('massage-hot-stones'),
     "price": 900,
     "detail": "60 min",
     "groupId": "special",
@@ -482,7 +483,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-anticellulite-60",
-    "label": "Masáž proti celulitidě",
+    "label": getServiceTitle('massage-anticellulite'),
     "price": 1000,
     "detail": "60 min",
     "groupId": "special",
@@ -492,7 +493,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-anticellulite-90",
-    "label": "Masáž proti celulitidě",
+    "label": getServiceTitle('massage-anticellulite'),
     "price": 1400,
     "detail": "90 min",
     "groupId": "special",
@@ -502,7 +503,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-ozone",
-    "label": "Masáž proti celulitidě + ozonový zábal",
+    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
     "price": 1250,
     "detail": "50 + 25 min",
     "groupId": "ozone",
@@ -513,7 +514,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-ozone-5",
-    "label": "Masáž proti celulitidě + ozonový zábal",
+    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
     "price": 5649,
     "detail": "Balíček 5 ošetření",
     "groupId": "ozone",
@@ -524,7 +525,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-ozone-10",
-    "label": "Masáž proti celulitidě + ozonový zábal",
+    "label": `${getServiceTitle('massage-anticellulite')} + ozonový zábal`,
     "price": 11249,
     "detail": "Balíček 10 ošetření",
     "groupId": "ozone",
@@ -535,7 +536,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-60",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 1000,
     "detail": "60 min",
     "groupId": "madero",
@@ -545,7 +546,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-90",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 1500,
     "detail": "90 min",
     "groupId": "madero",
@@ -555,7 +556,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-3-60",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 2800,
     "detail": "3 × 60 min",
     "groupId": "madero",
@@ -565,7 +566,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-5-60",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 4500,
     "detail": "5 × 60 min",
     "groupId": "madero",
@@ -575,7 +576,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-3-90",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 4200,
     "detail": "3 × 90 min",
     "groupId": "madero",
@@ -585,7 +586,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-madero-5-90",
-    "label": "Maderoterapie",
+    "label": getServiceTitle('massage-maderotherapy'),
     "price": 6900,
     "detail": "5 × 90 min",
     "groupId": "madero",
@@ -662,7 +663,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-indian-head",
-    "label": "Indická masáž hlavy",
+    "label": getServiceTitle('massage-indian-head'),
     "price": 900,
     "detail": "60 min",
     "groupId": "relax",
@@ -672,7 +673,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-thai-feet",
-    "label": "Thajská masáž nohou",
+    "label": getServiceTitle('massage-thai-feet'),
     "price": 900,
     "detail": "60 min",
     "groupId": "relax",
@@ -682,7 +683,7 @@ export const massagePrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "massage-price-ayurveda",
-    "label": "Ájurvédská masáž",
+    "label": getServiceTitle('massage-ayurveda'),
     "price": 1800,
     "detail": "120 min",
     "groupId": "relax",
@@ -795,7 +796,7 @@ export const browsLashesPrices: (SinglePriceRow & { groupId: string })[] = [
   },
   {
     "id": "brow-price-both-lamination",
-    "label": "Laminace obočí + řas",
+    "label": `${getServiceTitle('brows-lamination')} + řas`,
     "price": 1100,
     "groupId": "combined",
     "sourceIds": [
@@ -1296,7 +1297,7 @@ export const priceCatalogs: PriceCatalog[] = [
     groups: [
       { id: 'body', title: 'Masáže jednotlivých partií' },
       { id: 'special', title: 'Speciální masáže' },
-      { id: 'madero', title: 'Maderoterapie' },
+      { id: 'madero', title: getServiceTitle('massage-maderotherapy') },
       { id: 'relax', title: 'Relaxační a lymfatické masáže' },
       { id: 'wraps', title: 'Zábaly' },
       { id: 'ozone', title: 'Masáž a ozonový zábal' },
