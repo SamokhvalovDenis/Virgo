@@ -7,7 +7,7 @@ import { settings } from '../../data/settings'
 import { contactSchema, contactServiceCategories } from '../../lib/contactSchema'
 import type { ContactInput } from '../../lib/contactSchema'
 import { isContactAvailable, isContactMockMode, submitContact } from '../../lib/contact'
-import { loadTurnstile } from '../../lib/turnstile'
+import { loadHCaptcha } from '../../lib/hcaptcha'
 
 type Errors = Partial<Record<keyof ContactInput, string>>
 export type ContactFormProps = { topic: string; onTopicChange: (value: string) => void }
@@ -21,7 +21,6 @@ export function ContactForm({ topic, onTopicChange }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [feedback, setFeedback] = useState('')
   const sending = useRef(false)
-  const pendingSubmission = useRef<{ input: string; id: string } | null>(null)
   const verificationContainer = useRef<HTMLDivElement>(null)
   const verificationWidget = useRef<string | undefined>(undefined)
   const [verificationToken, setVerificationToken] = useState('')
@@ -34,19 +33,20 @@ export function ContactForm({ topic, onTopicChange }: ContactFormProps) {
     let active = true
     let widgetId: string | undefined
     const container = verificationContainer.current
-    loadTurnstile().then(api => {
+    loadHCaptcha().then(api => {
       if (!active) return
       widgetId = api.render(container, {
-        sitekey: settings.contact.turnstileSiteKey, action: 'contact', language: 'cs', size: 'compact',
+        sitekey: settings.contact.hcaptchaSiteKey, hl: 'cs', size: 'compact',
         callback: token => { if (active) { setVerificationToken(token); setVerificationFailed(false) } },
         'expired-callback': () => { if (active) setVerificationToken('') },
+        'chalexpired-callback': () => { if (active) setVerificationToken('') },
         'error-callback': () => { if (active) { setVerificationToken(''); setVerificationFailed(true) } },
       })
       verificationWidget.current = widgetId
     }).catch(() => { if (active) setVerificationFailed(true) })
     return () => {
       active = false
-      if (widgetId) window.turnstile?.remove(widgetId)
+      if (widgetId !== undefined) window.hcaptcha?.remove(widgetId)
       verificationWidget.current = undefined
     }
   }, [needsVerification, verificationAttempt])
@@ -54,10 +54,6 @@ export function ContactForm({ topic, onTopicChange }: ContactFormProps) {
   function onChange(event: FormEvent<HTMLFormElement>) {
     if (sending.current) return
     if (status !== 'idle') { setStatus('idle'); setFeedback('') }
-    if (pendingSubmission.current) {
-      const current = validate(event.currentTarget)
-      if (!current.success || JSON.stringify(current.data) !== pendingSubmission.current.input) pendingSubmission.current = null
-    }
     if (Object.keys(errors).length === 0) return
     const parsed = validate(event.currentTarget)
     const nextErrors: Errors = {}
@@ -93,17 +89,11 @@ export function ContactForm({ topic, onTopicChange }: ContactFormProps) {
     }
     setErrors({}); setStatus('sending')
     try {
-      if (needsVerification) {
-        const normalizedInput = JSON.stringify(parsed.data)
-        if (pendingSubmission.current?.input !== normalizedInput) {
-          pendingSubmission.current = { input: normalizedInput, id: crypto.randomUUID() }
-        }
-      }
       const website = new FormData(form).get('website')
-      const result = await submitContact(parsed.data, { turnstileToken: verificationToken, website: typeof website === 'string' ? website : '', submissionId: pendingSubmission.current?.id ?? '' })
+      const result = await submitContact(parsed.data, { hcaptchaToken: verificationToken, website: typeof website === 'string' ? website : '' })
       setFeedback(result.message)
       setStatus(result.success ? 'success' : 'error')
-      if (result.success) { pendingSubmission.current = null; form.reset(); onTopicChange('') }
+      if (result.success) { form.reset(); onTopicChange('') }
     } catch {
       setFeedback(content.form.error)
       setStatus('error')
@@ -111,7 +101,7 @@ export function ContactForm({ topic, onTopicChange }: ContactFormProps) {
       sending.current = false
       if (needsVerification) {
         setVerificationToken('')
-        if (verificationWidget.current) window.turnstile?.reset(verificationWidget.current)
+        if (verificationWidget.current !== undefined) window.hcaptcha?.reset(verificationWidget.current)
       }
     }
   }

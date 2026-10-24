@@ -1,6 +1,7 @@
 import { content } from '../data/content'
 import { settings } from '../data/settings'
-import { contactSchema, contactSubmissionSchema } from './contactSchema'
+import { giftCertificates } from '../data/giftCertificates'
+import { contactSchema, contactServiceCategories, contactSubmissionSchema } from './contactSchema'
 import type { ContactInput } from './contactSchema'
 
 // A production build can never enable the mock, even with VITE_CONTACT_MODE=mock.
@@ -12,7 +13,7 @@ export type ContactResult =
   | { success: false; code: 'CONTACT_DISABLED' | 'INVALID_INPUT' | 'MOCK_ERROR' | 'CONTACT_ERROR'; message: string }
 
 /** A successful result means the provider accepted the message, not inbox delivery. */
-export async function submitContact(input: ContactInput, verification: { turnstileToken: string; website: string; submissionId: string } = { turnstileToken: '', website: '', submissionId: '' }): Promise<ContactResult> {
+export async function submitContact(input: ContactInput, verification: { hcaptchaToken: string; website: string } = { hcaptchaToken: '', website: '' }): Promise<ContactResult> {
   if (!isContactAvailable) {
     return { success: false, code: 'CONTACT_DISABLED', message: content.form.disabled }
   }
@@ -24,13 +25,24 @@ export async function submitContact(input: ContactInput, verification: { turnsti
   if (!isContactMockMode) {
     const submission = contactSubmissionSchema.safeParse({ ...parsed.data, ...verification })
     if (!submission.success) return { success: false, code: 'INVALID_INPUT', message: content.form.validation.token }
+    if (submission.data.website) return { success: false, code: 'INVALID_INPUT', message: content.form.invalid }
+    const { name, email, phone, serviceId, message, hcaptchaToken } = submission.data
+    const service = serviceId === giftCertificates.contactFormTopic
+      ? content.form.giftTopic
+      : contactServiceCategories.find(category => category.id === serviceId)?.title ?? content.form.selectService
     const controller = new AbortController()
     const timeout = setTimeout(() => controller.abort(), 20_000)
     try {
       const response = await fetch(settings.contact.endpoint, {
-        method: 'POST', credentials: 'same-origin', cache: 'no-store',
+        method: 'POST', credentials: 'omit', cache: 'no-store',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(submission.data), signal: controller.signal,
+        body: JSON.stringify({
+          access_key: settings.contact.accessKey,
+          subject: settings.contact.subject,
+          name, email, replyto: email, phone: phone ?? '', serviceId, service, message,
+          'h-captcha-response': hcaptchaToken,
+          botcheck: false,
+        }), signal: controller.signal,
       })
       const result: unknown = await response.json()
       if (response.ok && typeof result === 'object' && result !== null && 'success' in result && result.success === true) {

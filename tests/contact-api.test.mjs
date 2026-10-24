@@ -2,143 +2,96 @@ import test, { before, after } from 'node:test'
 import assert from 'node:assert/strict'
 import { createServer } from 'vite'
 
-let server, onRequest
-const valid = { name: 'Test klient', email: 'client@example.com', phone: '', serviceId: '', message: '<script>Test</script>\nDruhý řádek.', turnstileToken: 'test-token', website: '', submissionId: '9f3b01de-26c2-4d41-8b89-88a600b07c86' }
-const env = {
-  CONTACT_ENABLED: 'true', CONTACT_ALLOWED_ORIGIN: 'https://contact.test', CONTACT_PRIVACY_URL: '/test-privacy',
-  CONTACT_FROM: 'sender@example.com', CONTACT_TO: 'studio@example.com', RESEND_API_KEY: 'fake-test-key', TURNSTILE_SECRET_KEY: 'fake-test-secret',
-}
-const verification = { success: true, hostname: 'contact.test', action: 'contact' }
-function request(body = valid, headers = {}) {
-  return new Request('https://contact.test/api/contact', {
-    method: 'POST', headers: { Origin: env.CONTACT_ALLOWED_ORIGIN, 'Content-Type': 'application/json', ...headers },
-    body: typeof body === 'string' ? body : JSON.stringify(body),
-  })
-}
-
-async function mocked(responses, run) {
-  const original = globalThis.fetch
-  const calls = []
-  globalThis.fetch = async (url, init) => {
-    assert.ok(['https://challenges.cloudflare.com/turnstile/v0/siteverify', 'https://api.resend.com/emails'].includes(url))
-    calls.push({ url, ...init, body: JSON.parse(init.body) })
-    assert.ok(responses.length, 'Unexpected provider call')
-    const response = responses.shift()
-    if (response instanceof Error) throw response
-    return response instanceof Response ? response : Response.json(response)
-  }
-  try { return await run(calls) }
-  finally { globalThis.fetch = original }
-}
+let server, submitContact, data, schema
+const valid = { name: 'Test klient', email: 'client@example.com', phone: '+420 777 000 000', serviceId: '', message: 'Testovací dotaz.\nDruhý řádek.' }
+const verification = { hcaptchaToken: 'test-token', website: '' }
 
 before(async () => {
-  server = await createServer({ envFile: false, logLevel: 'error', appType: 'custom', server: { middlewareMode: true, hmr: false, watch: null } })
-  ;({ onRequest } = await server.ssrLoadModule('/functions/api/contact.ts'))
+  server = await createServer({
+    envFile: false, logLevel: 'error', appType: 'custom', cacheDir: 'node_modules/.vite-web3forms-tests',
+    define: { 'import.meta.env.VITE_CONTACT_MODE': JSON.stringify('production') },
+    server: { middlewareMode: true, hmr: false, watch: null },
+  })
+  ;({ submitContact } = await server.ssrLoadModule('/src/lib/contact.ts'))
+  data = await server.ssrLoadModule('/src/data/index.ts')
+  schema = await server.ssrLoadModule('/src/lib/contactSchema.ts')
 })
 after(async () => { await server?.close() })
 
-test('contact endpoint fails closed without every required runtime setting and never calls providers', async () => {
-  await mocked([], async calls => {
-    for (const key of Object.keys(env)) {
-      const configuration = { ...env, [key]: '' }
-      const response = await onRequest({ request: request(), env: configuration })
-      assert.equal(response.status, 503, key)
-      assert.deepEqual(await response.json(), { success: false, code: 'CONTACT_NOT_CONFIGURED' })
-      assert.equal(response.headers.get('cache-control'), 'no-store')
-      assert.equal(response.headers.get('x-content-type-options'), 'nosniff')
-      assert.equal(response.headers.get('access-control-allow-origin'), null)
-    }
-    for (const configuration of [{ ...env, CONTACT_ALLOWED_ORIGIN: 'http://contact.test' }, { ...env, CONTACT_ALLOWED_ORIGIN: 'https://contact.test/path' }, { ...env, CONTACT_FROM: 'sender@example.com\r\nBcc: x@example.com' }, { ...env, CONTACT_PRIVACY_URL: 'javascript:alert(1)' }]) {
-      assert.equal((await onRequest({ request: request(), env: configuration })).status, 503)
-    }
-    assert.equal((await onRequest({ request: request() })).status, 503)
-    assert.deepEqual(calls, [])
-  })
+async function mocked(response, run) {
+  const original = globalThis.fetch
+  const calls = []
+  globalThis.fetch = async (url, init) => {
+    calls.push({ url, ...init, body: JSON.parse(init.body) })
+    if (response instanceof Error) throw response
+    return response
+  }
+  try { await run(calls) }
+  finally { globalThis.fetch = original }
+}
+
+test('Web3Forms receives all normalized fields, Czech subject, visitor Reply-To and free spam protection', async () => {
+  for (const serviceId of ['', data.giftCertificates.contactFormTopic, ...schema.contactServiceCategories.map(category => category.id)]) {
+    await mocked(Response.json({ success: true }), async calls => {
+      assert.deepEqual(await submitContact({ ...valid, name: ' Test klient ', serviceId }, verification), { success: true, message: data.content.form.success })
+      assert.equal(calls.length, 1)
+      const call = calls[0]
+      assert.equal(call.url, 'https://api.web3forms.com/submit')
+      assert.equal(call.method, 'POST')
+      assert.equal(call.credentials, 'omit')
+      assert.equal(call.headers['Content-Type'], 'application/json')
+      assert.deepEqual(call.body, {
+        ...valid, serviceId,
+        access_key: '2230598f-5e86-432e-8e9d-4a6651ab4b83',
+        subject: 'Nová zpráva z webu Beauty Studio Virgo',
+        replyto: valid.email,
+        service: serviceId === data.giftCertificates.contactFormTopic ? data.content.form.giftTopic
+          : schema.contactServiceCategories.find(category => category.id === serviceId)?.title ?? data.content.form.selectService,
+        'h-captcha-response': verification.hcaptchaToken, botcheck: false,
+      })
+    })
+  }
 })
 
-test('methods, origin, JSON type, schema, honeypot and byte limits reject before provider requests', async () => {
-  await mocked([], async calls => {
-    const method = await onRequest({ request: new Request('https://contact.test/api/contact'), env })
-    assert.equal(method.status, 405)
-    assert.equal(method.headers.get('allow'), 'POST')
-    for (const [body, headers, status] of [
-      [valid, { Origin: 'https://attacker.test' }, 403],
-      [valid, { Origin: '' }, 403],
-      [valid, { 'Sec-Fetch-Site': 'cross-site' }, 403],
-      [valid, { 'Content-Type': 'text/plain' }, 415],
-      ['{invalid', {}, 400], [null, {}, 400],
-      [{ ...valid, email: 'invalid' }, {}, 400],
-      [{ ...valid, message: 'x'.repeat(2001) }, {}, 400],
-      [{ ...valid, serviceId: 'unknown' }, {}, 400],
-      [{ ...valid, turnstileToken: '' }, {}, 400],
-      [{ ...valid, turnstileToken: 'x'.repeat(2049) }, {}, 400],
-      [{ ...valid, submissionId: '' }, {}, 400],
-      [{ ...valid, submissionId: 'bad\r\nheader' }, {}, 400],
-      [{ ...valid, website: 'spam.example' }, {}, 400],
-      ['x'.repeat(16_385), {}, 413],
-      ['💜'.repeat(5000), {}, 413],
-      [valid, { 'Content-Length': '20000' }, 413],
-    ]) assert.equal((await onRequest({ request: request(body, headers), env })).status, status)
-    assert.deepEqual(calls, [])
-  })
-})
-
-test('Turnstile must accept a single-use token for the exact hostname and contact action', async () => {
-  for (const result of [{ success: false }, { ...verification, hostname: 'attacker.test' }, { ...verification, action: 'login' }, { hostname: 'contact.test', action: 'contact' }]) {
-    await mocked([result], async calls => {
-      const response = await onRequest({ request: request(), env })
-      assert.equal(response.status, 400)
-      assert.deepEqual(await response.json(), { success: false, code: 'VERIFICATION_FAILED' })
+test('only HTTP success AND boolean success:true acknowledge a submission', async () => {
+  const responses = [
+    Response.json({ success: false }), Response.json({ success: 'true' }), Response.json({}), Response.json(null),
+    Response.json({ success: true }, { status: 400 }), Response.json({ success: true }, { status: 503 }),
+    Response.json({ success: false }, { status: 403 }), Response.json({ success: false }, { status: 429 }),
+    new Response('<html>Bad gateway</html>', { status: 502 }), new Response(null, { status: 204 }), new TypeError('Network unavailable'),
+  ]
+  for (const response of responses) {
+    await mocked(response, async calls => {
+      assert.deepEqual(await submitContact(valid, verification), { success: false, code: 'CONTACT_ERROR', message: data.content.form.error })
       assert.equal(calls.length, 1)
     })
   }
 })
 
-test('only provider acceptance returns success; email is plain text with fixed sender, recipient and subject', async () => {
-  await mocked([verification, { id: 'mock-email-id' }], async calls => {
-    const response = await onRequest({ request: request(), env })
-    assert.equal(response.status, 200)
-    assert.deepEqual(await response.json(), { success: true })
-    assert.equal(calls.length, 2)
-    assert.deepEqual(calls[0].body, { secret: env.TURNSTILE_SECRET_KEY, response: valid.turnstileToken })
-    const email = calls[1].body
-    assert.equal(email.from, env.CONTACT_FROM)
-    assert.deepEqual(email.to, [env.CONTACT_TO])
-    assert.equal(email.reply_to, valid.email)
-    assert.equal(email.html, undefined)
-    assert.ok(email.text.endsWith(valid.message))
-    assert.ok(!email.subject.includes(valid.name))
-    assert.equal(calls[1].headers.Authorization, `Bearer ${env.RESEND_API_KEY}`)
-    assert.equal(calls[1].headers['Idempotency-Key'], `contact/${valid.submissionId}`)
+test('invalid fields, missing or oversized captcha, and a filled honeypot never make HTTP requests', async () => {
+  await mocked(undefined, async calls => {
+    for (const input of [{ ...valid, email: 'invalid' }, { ...valid, name: ' ' }, { ...valid, phone: 'abc' }, { ...valid, message: 'x'.repeat(2001) }, { ...valid, serviceId: 'unknown' }]) {
+      assert.equal((await submitContact(input, verification)).code, 'INVALID_INPUT')
+    }
+    for (const check of [undefined, { ...verification, hcaptchaToken: '' }, { ...verification, hcaptchaToken: 'x'.repeat(8193) }, { ...verification, website: 'spam' }]) {
+      assert.equal((await submitContact(valid, check)).code, 'INVALID_INPUT')
+    }
+    assert.deepEqual(calls, [])
   })
 })
 
-test('retrying an ambiguous provider failure reuses the same idempotency key with a fresh Turnstile token', async () => {
-  const providerKeys = []
-  for (const [token, delivery] of [['first-token', new TypeError('Response lost after acceptance')], ['fresh-token', { id: 'original-provider-id' }]]) {
-    await mocked([verification, delivery], async calls => {
-      const response = await onRequest({ request: request({ ...valid, turnstileToken: token }), env })
-      assert.equal(response.status, delivery instanceof Error ? 502 : 200)
-      providerKeys.push(calls[1].headers['Idempotency-Key'])
-      assert.equal(calls[0].body.response, token)
-    })
-  }
-  assert.deepEqual(providerKeys, [`contact/${valid.submissionId}`, `contact/${valid.submissionId}`])
-})
-
-test('provider HTTP errors, invalid responses and network failures never report success or leak data', async () => {
-  for (const responses of [
-    [new Response('unavailable', { status: 503 })],
-    [new TypeError('Network unavailable')],
-    [verification, Response.json({ message: 'private provider error' }, { status: 429 })],
-    [verification, {}],
-    [verification, new Response('not JSON')],
-    [verification, new TypeError('Timeout')],
-  ]) await mocked(responses, async () => {
-    const response = await onRequest({ request: request(), env })
-    assert.equal(response.status, 502)
-    const body = await response.json()
-    assert.equal(body.success, false)
-    assert.deepEqual(Object.keys(body).sort(), ['code', 'success'])
+test('a stalled request times out and returns the existing Czech error', async t => {
+  const original = globalThis.fetch
+  t.mock.timers.enable({ apis: ['setTimeout'] })
+  let signal
+  globalThis.fetch = async (_url, init) => new Promise((_resolve, reject) => {
+    signal = init.signal
+    signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')), { once: true })
   })
+  try {
+    const pending = submitContact(valid, verification)
+    t.mock.timers.tick(20_000)
+    assert.deepEqual(await pending, { success: false, code: 'CONTACT_ERROR', message: data.content.form.error })
+    assert.ok(signal.aborted)
+  } finally { globalThis.fetch = original; t.mock.timers.reset() }
 })

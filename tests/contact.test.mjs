@@ -14,7 +14,7 @@ let browser, successServer, errorServer, schema, data
 const browserErrors = []
 const submissions = []
 // Keep fixed site navigation out of screenshots of the form itself.
-const screenshotStyle = '.site-header, .mobile-booking { visibility: hidden; }'
+const screenshotStyle = '.site-header, .mobile-booking, .skip-link { visibility: hidden; }'
 const mockDefine = result => ({
   'import.meta.env.VITE_CONTACT_MODE': JSON.stringify('mock'),
   'import.meta.env.VITE_CONTACT_MOCK_RESULT': JSON.stringify(result),
@@ -205,109 +205,163 @@ test('keyboard navigation, focus and submission work at mobile and desktop width
   }
 })
 
-test('production ignores mock variables, omits test UI and never reports a false success', async () => {
+let productionServer
+async function productionPreview() {
+  if (productionServer) return productionServer
   const outDir = 'node_modules/.tmp/contact-production'
-  // Isolate NODE_ENV: the dev servers in this test process set it to development.
+  // Deliberately try to turn mock on: PROD must still use Web3Forms.
   const config = { envFile: false, define: mockDefine('success'), logLevel: 'error', build: { outDir, emptyOutDir: true } }
   await promisify(execFile)(process.execPath, ['--input-type=module', '-e', `import { build } from 'vite'; await build(${JSON.stringify(config)})`], {
     env: { ...process.env, NODE_ENV: 'production' }, windowsHide: true,
   })
-  const server = await preview({ envFile: false, logLevel: 'error', build: { outDir }, preview: { host: '127.0.0.1', port: 0, open: false } })
-  const { page, form } = await openForm(server)
-  try {
-    assert.equal(await form.getByRole('button').isDisabled(), true)
-    assert.equal(await form.locator('#form-availability').innerText(), data.content.form.disabled)
-    assert.equal(await form.locator('#form-mock-notice').count(), 0)
-    await fill(form)
-    await form.evaluate(element => element.requestSubmit())
-    assert.equal(await form.getByRole('status').innerText(), '')
-    assert.ok(!(await form.innerText()).includes(data.content.form.mockSuccess))
-    const manifest = await readFile(`${outDir}/index.html`, 'utf8')
-    assert.ok(manifest.includes('/assets/'))
-  } finally {
-    await page.close()
-    await new Promise((resolve, reject) => server.httpServer.close(error => error ? reject(error) : resolve()))
-  }
+  const manifest = await readFile(`${outDir}/index.html`, 'utf8')
+  assert.ok(manifest.includes('/assets/'))
+  productionServer = await preview({ envFile: false, logLevel: 'error', build: { outDir }, preview: { host: '127.0.0.1', port: 0, open: false } })
+  return productionServer
+}
+after(async () => {
+  if (productionServer) await new Promise((resolve, reject) => productionServer.httpServer.close(error => error ? reject(error) : resolve()))
 })
 
-test('configured production form uses Turnstile, preserves failed input and accepts only a successful API response', async () => {
-  const outDir = 'node_modules/.tmp/contact-real-production'
-  const config = {
-    envFile: false, logLevel: 'error', build: { outDir, emptyOutDir: true },
-    define: {
-      'import.meta.env.VITE_CONTACT_MODE': JSON.stringify('production'),
-      'import.meta.env.VITE_TURNSTILE_SITE_KEY': JSON.stringify('test-sitekey'),
-      'import.meta.env.VITE_CONTACT_PRIVACY_URL': JSON.stringify('/test-privacy'),
-    },
-  }
-  await promisify(execFile)(process.execPath, ['--input-type=module', '-e', `import { build } from 'vite'; await build(${JSON.stringify(config)})`], {
-    env: { ...process.env, NODE_ENV: 'production' }, windowsHide: true,
-  })
-  const server = await preview({ envFile: false, logLevel: 'error', build: { outDir }, preview: { host: '127.0.0.1', port: 0, open: false } })
-  const page = await browser.newPage({ viewport: { width: 390, height: 900 }, reducedMotion: 'reduce' })
-  page.on('pageerror', error => browserErrors.push(error.message))
+async function openProduction({ respond, failScript = false } = {}) {
+  const server = await productionPreview()
+  const page = await browser.newPage({ viewport: { width: 390, height: 950 }, reducedMotion: 'reduce' })
   const requests = []
-  let acceptsMessage = false
-  // All third-party verification and API requests are intercepted. No real tokens or email.
-  await page.route('https://challenges.cloudflare.com/**', route => route.fulfill({
-    contentType: 'text/javascript', body: `window.turnstile = {
-      render(element, options) { window.testVerification = options; element.textContent = 'Testovací ověření'; setTimeout(() => options.callback('test-token'), 50); return 'test-widget'; },
-      reset() { setTimeout(() => window.testVerification.callback('fresh-test-token'), 50); },
-      remove() {}
-    };`,
-  }))
-  await page.route('**/api/contact', async route => {
-    requests.push(route.request().postDataJSON())
-    await route.fulfill({ status: acceptsMessage ? 200 : 503, contentType: 'application/json', body: JSON.stringify({ success: acceptsMessage }) })
+  page.on('pageerror', error => browserErrors.push(error.message))
+  await page.route('https://js.hcaptcha.com/**', route => {
+    if (failScript) { failScript = false; return route.abort() }
+    return route.fulfill({ contentType: 'text/javascript', body: `
+      window.testCaptchaResets = 0;
+      window.hcaptcha = {
+        render(element, options) {
+          window.testVerification = options;
+          element.style.cssText = 'width:164px;height:144px';
+          element.textContent = 'Testovací ověření';
+          return '0';
+        },
+        reset() { window.testCaptchaResets++; },
+        remove() {}
+      };
+      window.virgoHCaptchaLoaded();
+    ` })
   })
+  // Never send real email or contact details from automated regression tests.
+  await page.route('https://api.web3forms.com/submit', async route => {
+    requests.push(route.request().postDataJSON())
+    await respond(route)
+  })
+  await page.route('**/api/contact', () => { throw new Error('Legacy contact endpoint must not be called') })
+  await page.goto(server.resolvedUrls.local[0], { waitUntil: 'networkidle' })
+  const form = page.getByRole('form', { name: data.content.sections.contactFormTitle })
+  await form.scrollIntoViewIfNeeded()
+  return { page, form, requests }
+}
+async function verify(page) {
+  await page.waitForFunction(() => Boolean(window.testVerification))
+  await page.evaluate(() => window.testVerification.callback('test-hcaptcha-token'))
+  await page.waitForFunction(() => !document.querySelector('.form-submit').disabled)
+}
+
+test('production ignores mock, sends directly once under repeated clicks, and resets only on confirmed success', async () => {
+  let release
+  const pending = new Promise(resolve => { release = resolve })
+  const { page, form, requests } = await openProduction({ respond: async route => {
+    await pending
+    await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ success: true }) })
+  } })
+  const values = { ...valid, phone: '+420 777 000 000', serviceId: schema.contactServiceCategories[0].id }
   try {
-    await page.goto(server.resolvedUrls.local[0], { waitUntil: 'networkidle' })
-    const form = page.getByRole('form', { name: data.content.sections.contactFormTitle })
-    await form.scrollIntoViewIfNeeded()
-    assert.equal(await form.locator('#form-mock-notice').count(), 0)
-    assert.equal(await form.locator('#form-availability').count(), 0)
-    assert.equal(await form.getByRole('link', { name: data.content.form.privacyLink }).getAttribute('href'), '/test-privacy')
-    await fill(form)
-    await submit(form)
-    await result(form, data.content.form.error)
-    assert.equal(await form.locator('[name="message"]').inputValue(), valid.message)
+    assert.equal(await form.locator('#form-mock-notice, #form-availability').count(), 0)
+    assert.equal(await form.locator('.form-submit').isDisabled(), true)
+    await fill(form, values)
+    await verify(page)
+    await form.evaluate(element => { element.requestSubmit(); element.requestSubmit(); element.requestSubmit() })
+    await page.waitForFunction(() => document.querySelector('.contact-form').getAttribute('aria-busy') === 'true')
+    assert.equal(await form.locator('.form-submit').isDisabled(), true)
+    assert.equal(await form.locator('[name="message"]').isDisabled(), true)
+    assert.equal(await form.locator('.form-spinner').count(), 1)
+    release()
+    await result(form, data.content.form.success)
     assert.equal(requests.length, 1)
-    assert.equal(requests[0].turnstileToken, 'test-token')
-    assert.equal(requests[0].website, '')
-    assert.match(requests[0].submissionId, /^[\da-f]{8}-[\da-f]{4}-[\da-f]{4}-[\da-f]{4}-[\da-f]{12}$/i)
-    acceptsMessage = true
+    assert.deepEqual(requests[0], {
+      ...values, access_key: '2230598f-5e86-432e-8e9d-4a6651ab4b83',
+      subject: 'Nová zpráva z webu Beauty Studio Virgo', replyto: valid.email,
+      service: schema.contactServiceCategories[0].title, 'h-captcha-response': 'test-hcaptcha-token', botcheck: false,
+    })
+    for (const key of Object.keys(values)) assert.equal(await form.locator(`[name="${key}"]`).inputValue(), '')
+    assert.equal(await page.evaluate(() => window.testCaptchaResets), 1)
+    assert.equal(await form.locator('.form-submit').isDisabled(), true, 'A consumed token must not be reused')
+    assert.equal(await page.evaluate(() => localStorage.length), 0)
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth))
+    await form.screenshot({ path: fileURLToPath(new URL('web3forms-production-success.png', output)), style: screenshotStyle })
+  } finally { release(); await page.close() }
+})
+
+test('production preserves every field for API errors, false success, bad JSON and network failure; retry succeeds', async () => {
+  let response
+  const { page, form, requests } = await openProduction({ respond: route => response === 'network'
+    ? route.abort()
+    : route.fulfill({ status: response.status, contentType: 'application/json', body: response.body }) })
+  const values = { ...valid, phone: '+420 777 000 000', serviceId: data.giftCertificates.contactFormTopic }
+  try {
+    await fill(form, values)
+    for (response of [
+      { status: 503, body: '{"success":true}' }, { status: 200, body: '{"success":false}' },
+      { status: 200, body: '{"success":"true"}' }, { status: 403, body: '{"success":false}' },
+      { status: 200, body: 'not-json' }, 'network',
+    ]) {
+      await verify(page)
+      await submit(form)
+      await result(form, data.content.form.error)
+      for (const [key, value] of Object.entries(values)) assert.equal(await form.locator(`[name="${key}"]`).inputValue(), value)
+      assert.equal(await form.locator('.form-submit').isDisabled(), true)
+    }
+    assert.equal(requests.length, 6)
+    response = { status: 200, body: '{"success":true}' }
+    await verify(page)
     await submit(form)
     await result(form, data.content.form.success)
-    assert.equal(requests.length, 2)
-    assert.equal(requests[1].turnstileToken, 'fresh-test-token')
-    assert.equal(requests[1].submissionId, requests[0].submissionId, 'An unchanged retry retains the provider idempotency key')
-    assert.equal(await form.locator('[name="message"]').inputValue(), '')
-    await page.waitForFunction(() => !document.querySelector('.form-submit').disabled)
-    await page.evaluate(() => window.testVerification['expired-callback']())
-    await page.waitForFunction(() => document.querySelector('.form-submit').disabled)
-    assert.equal(await form.getByRole('button', { name: data.content.common.send, exact: true }).isDisabled(), true)
-    await page.evaluate(() => window.testVerification['error-callback']())
-    await form.getByRole('button', { name: data.content.form.verificationRetry }).click()
-    await page.waitForFunction(() => !document.querySelector('.form-submit').disabled)
-    assert.equal(requests.length, 2)
-    acceptsMessage = false
-    await fill(form)
-    await submit(form)
-    await result(form, data.content.form.error)
-    assert.notEqual(requests[2].submissionId, requests[1].submissionId, 'A new message after success receives a new key')
-    const changed = { ...valid, message: 'Jiný testovací dotaz.' }
-    await fill(form, changed)
-    await submit(form)
-    await result(form, data.content.form.error)
-    assert.notEqual(requests[3].submissionId, requests[2].submissionId, 'Changed normalized input receives a new key')
-    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth))
-  } finally {
-    await page.close()
-    await new Promise((resolve, reject) => server.httpServer.close(error => error ? reject(error) : resolve()))
-  }
+    assert.equal(requests.length, 7)
+    assert.equal(requests[6].service, data.content.form.giftTopic)
+    assert.equal(await form.locator('select').inputValue(), '')
+  } finally { await page.close() }
 })
 
-test('all contact flows complete without browser errors or HTTP submissions', () => {
+test('production validates input and captcha, handles expiry and recovers from verification loading errors', async () => {
+  const { page, form, requests } = await openProduction({ failScript: true, respond: () => { throw new Error('Unexpected HTTP submission') } })
+  try {
+    await form.getByRole('button', { name: data.content.form.verificationRetry }).waitFor()
+    assert.ok((await form.innerText()).includes(data.content.form.verificationError))
+    await form.getByRole('button', { name: data.content.form.verificationRetry }).click()
+    await verify(page)
+    assert.equal(await page.evaluate(() => window.testVerification.sitekey), '50b2fe65-b00b-4b9e-ad62-3ba471098be2')
+    assert.equal(await page.evaluate(() => window.testVerification.hl), 'cs')
+    await submit(form)
+    assert.equal(await form.locator('.field-error').count(), 3)
+    await fill(form, { ...valid, email: 'invalid', phone: 'abc' })
+    await submit(form)
+    assert.equal(await form.locator('#error-email').count(), 1)
+    assert.equal(await form.locator('#error-phone').count(), 1)
+    await fill(form)
+    for (const callback of ['expired-callback', 'chalexpired-callback']) {
+      await page.evaluate(callback => window.testVerification[callback](), callback)
+      await page.waitForFunction(() => document.querySelector('.form-submit').disabled)
+      await form.evaluate(element => element.requestSubmit())
+      await result(form, data.content.form.validation.token)
+      await verify(page)
+    }
+    await page.evaluate(() => window.testVerification['error-callback']())
+    await form.getByRole('button', { name: data.content.form.verificationRetry }).click()
+    await verify(page)
+    for (const width of [320, 768, 1280]) {
+      await page.setViewportSize({ width, height: 950 })
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Captcha fits at ${width}`)
+    }
+    assert.deepEqual(requests, [])
+  } finally { await page.close() }
+})
+
+test('all contact flows complete without browser errors; mock never submits HTTP', () => {
   assert.deepEqual(browserErrors, [])
   assert.deepEqual(submissions, [])
 })

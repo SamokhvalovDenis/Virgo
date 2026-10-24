@@ -21,8 +21,7 @@ export const contactSchema = z.object({
   message: z.string().trim().min(2, messages.message).max(2000, messages.message),
 })
 export const contactSubmissionSchema = contactSchema.extend({
-  turnstileToken: z.string().trim().min(1, messages.token).max(2048, messages.token),
-  submissionId: z.uuid(),
+  hcaptchaToken: z.string().trim().min(1, messages.token).max(8192, messages.token),
   website: z.string().max(200).default(''),
 })
 export type ContactInput = z.infer<typeof contactSchema>

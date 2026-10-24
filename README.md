@@ -40,7 +40,7 @@ npm run test:seo:browser
 - `src/lib/seo.ts`, `src/entry-server.tsx`, `scripts/build.mjs` — спільні метадані й build-time prerender.
 - `src/styles/` — CSS-вхід, тема, базові й спільні правила, локальні шрифти та адаптивність.
 - `public/images/` — вибрані ресурси й збережені оригінали.
-- `functions/api/contact.ts` — серверна валідація, Turnstile та Resend; надсилання вимкнене до налаштування.
+- `src/lib/contact.ts`, `src/lib/hcaptcha.ts` — пряме клієнтське надсилання до Web3Forms і безкоштовна hCaptcha.
 - `tests/` — перевірки; `tests/helpers/preview.mjs` керує локальним production preview.
 - `reports/virgo-images.json` — збережений інвентар джерел; [історична інструкція збору](docs/image-extraction.md).
 - `scripts/optimize-images.mjs` — WebP-розміри зі збережених реальних фото; повторна генерація: `npm run images:optimize` (потрібний встановлений Chromium Playwright). Оригінали зберігаються.
@@ -48,9 +48,9 @@ npm run test:seo:browser
 
 ## Збірка й Cloudflare
 
-`npm run build` створює `dist/` із готовим HTML для головної, чотирьох сторінок послуг і справжньою `404.html`. React гідратує контент; prerender не потребує runtime SSR-сервера або нового фреймворку. Поточний production — `https://virgo.beautycz.workers.dev/`; `wrangler.json` задає Workers Static Assets з `dist`, URL без завершального `/` та `404-page` замість SPA fallback. `npm run preview` запускає локальний статичний перегляд із extensionless HTML та HTTP 404; Cloudflare API цей перегляд не виконує. `public/_redirects` містить лише точкові redirects завершального `/`. Наявні `functions/` та `public/_routes.json` призначені для Cloudflare Pages; Workers не запускає Pages Functions автоматично. Докладний порядок публікації — [DEPLOYMENT.md](DEPLOYMENT.md), результати SEO-аудиту — [docs/seo-audit.md](docs/seo-audit.md).
+`npm run build` створює `dist/` із готовим HTML для головної, чотирьох сторінок послуг і справжньою `404.html`. React гідратує контент; prerender не потребує runtime SSR-сервера або нового фреймворку. Поточний production — `https://virgo.beautycz.workers.dev/`; `wrangler.json` задає Workers Static Assets з `dist`, URL без завершального `/` та `404-page` замість SPA fallback. `npm run preview` запускає локальний статичний перегляд із extensionless HTML та HTTP 404; Cloudflare API цей перегляд не виконує. `public/_redirects` містить лише точкові redirects завершального `/`. Контактна форма працює через Web3Forms із браузера; серверний endpoint не потрібен. Докладний порядок публікації — [DEPLOYMENT.md](DEPLOYMENT.md), результати SEO-аудиту — [docs/seo-audit.md](docs/seo-audit.md).
 
-Форма у production вимкнена. Без повної конфігурації Functions повертає `503 CONTACT_NOT_CONFIGURED` для POST і `405` для інших методів. Реальне надсилання потребує погодженої privacy-інформації, Turnstile, Resend, серверних secrets та окремо дозволеного тесту доставки. Для локального mock скопіюйте `.env.example` у `.env.local`; mock працює лише у development. Локальні env-файли й Cloudflare secrets виключені з Git.
+Форма у production використовує Web3Forms із наданим публічним ключем. Чиста збірка має потрібні значення в коді; VITE-змінні можна перевизначити під час build. Приберіть старий `VITE_CONTACT_MODE=disabled` із Cloudflare Build variables. Безкоштовна hCaptcha потребує ввімкнення Block Spam у кабінеті Web3Forms. Для локального mock задайте `.env.local`: `VITE_CONTACT_MODE=mock`; mock діє лише у development. Детальні перевірки та обмеження live-тесту — [інструкція форми](docs/contact-form-testing.md).
 
 ## Дані та подальші інтеграції
 

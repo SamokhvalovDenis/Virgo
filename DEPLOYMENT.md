@@ -7,7 +7,7 @@
 - У підключеному до GitHub Worker `virgo` використовуйте build command **`npm run build`**, deploy command **`npx wrangler deploy`** з кореня репозиторію і конфігурацію **`wrangler.json`**. Публікується **`dist`**, зокрема п'ять HTML-сторінок і `404.html`. Не змінюйте ім'я Worker або hostname.
 - `assets.html_handling: "drop-trailing-slash"` зіставляє `/sluzby/masaze` з `dist/sluzby/masaze.html`; `assets.not_found_handling: "404-page"` повертає невідомим адресам справжній HTTP 404. Приберіть у налаштуваннях збірки альтернативну конфігурацію SPA fallback або CLI-параметри, що перекривають цей файл. [Офіційна конфігурація SSG для Workers](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/).
 - `VITE_SITE_URL` необов'язкова: у коді вже задано поточний production origin. Якщо змінна задана в Cloudflare Build variables, вона має дорівнювати `https://virgo.beautycz.workers.dev`. Canonical, `og:url`, robots і sitemap генеруються узгоджено під час build; deploy готового старого `dist` не застосує виправлення.
-- `functions/` і `_routes.json` належать до Pages Functions, Workers не запускає їх автоматично. Цей аудит не переносить контактний API, не змінює його конфігурацію або Resend; не використовуйте статичний preview як підтвердження роботи API.
+- Контактна форма надсилає дані прямо до Web3Forms із браузера. Старий Pages endpoint видалено; Workers runtime API та серверні secrets не потрібні.
 - Після deployment перевірте зовнішні відповіді всіх п'яти URL, `/robots.txt`, `/sitemap.xml` і `/sluzby/neexistuje`. Локальний preview перевіряє файли, але не доводить стан Dashboard/WAF/CDN. Не додавайте `/* /index.html 200`.
 
 Ця інструкція готує публікацію. Commit, push, створення Pages-проєкту, зміни DNS та реальний deploy у межах аудиту не виконуються.
@@ -16,7 +16,7 @@
 
 - Перегляньте `PRE_LAUNCH_REPORT.md`, усі локальні зміни та їхній diff. У робочій копії є зміни, створені до цього аудиту; не скидайте їх.
 - Власниця має затвердити основний домен і фактичні контактні дані, години роботи та описи процедур, позначені внутрішнім `needsApproval`.
-- Контактна форма потребує схваленої політики захисту даних, серверних налаштувань, Turnstile, сервісу Resend і погодженої перевірки реального надсилання. Поточний вимкнений стан не означає готову форму.
+- Контактна форма використовує Web3Forms і безкоштовну hCaptcha. Увімкніть hCaptcha / Block Spam у кабінеті сервісу; фактичну доставку та доступність workers.dev перевірте після самостійного розгортання за [інструкцією](docs/contact-form-testing.md).
 - Уточніть контролера персональних даних, реквізити оператора, строки зберігання, постачальників і порядок запитів користувачів за `docs/reviews-privacy.md` та звітом. Юридичні дані й публічна privacy-сторінка не вигадуються.
 
 ## GitHub і збірка
@@ -41,42 +41,26 @@ HTML-контент і метадані доступні до JavaScript для 
 | Build command | `npm run build` |
 | Build output directory | `dist` |
 | Node version | одна погоджена сумісна версія локально і в Cloudflare |
-| Pages Functions | папка `functions/` у корені репозиторію |
 
-Git integration збирає `functions/api/contact.ts` окремо від статичних файлів. Завантаження лише папки `dist` через drag-and-drop не підтверджує роботу цієї Function. Див. [Git integration](https://developers.cloudflare.com/pages/get-started/git-integration/) і [розташування Functions](https://developers.cloudflare.com/pages/functions/get-started/).
+Контактна форма не потребує Pages Functions; достатньо статичного `dist`.
 
 ## Змінні середовища
 
-Значення з `VITE_` є публічними і потрапляють у frontend bundle. Ключі сервісів зберігайте лише в runtime secrets Cloudflare. `.env.example` містить порожні приклади; локальний `.env.local` не копіюється в Dashboard автоматично. Після зміни build-змінних потрібна нова збірка.
+Публічні `VITE_*` вбудовуються під час build. Потрібні origin і Web3Forms access key вже задано в коді, тому чиста production-збірка не залежить від `.env.local`. Необов'язкові перевизначення: `VITE_SITE_URL`, `VITE_WEB3FORMS_ACCESS_KEY`, `VITE_CONTACT_PRIVACY_URL`. Після їх зміни перебудуйте сайт.
 
-| Змінна | Де | Призначення |
-|---|---|---|
-| `VITE_SITE_URL` | public build | Необов'язкове перевизначення HTTPS origin; поточне значення `https://virgo.beautycz.workers.dev` уже задане в коді. |
-| `VITE_CONTACT_MODE` | public build | `disabled` за замовчуванням; `mock` лише в development; `production` лише після готовності всіх інтеграцій. |
-| `VITE_CONTACT_MOCK_RESULT` | local development | `success` / `error`, не імітує production delivery. |
-| `VITE_CONTACT_PRIVACY_URL` | public build | Схвалена і реально доступна політика захисту даних. |
-| `VITE_TURNSTILE_SITE_KEY` | public build | Публічний ключ Turnstile для потрібних hostname. |
-| `CONTACT_ENABLED` | Functions runtime | `false` до готовності; явне `true` для ввімкнення. |
-| `CONTACT_ALLOWED_ORIGIN` | Functions runtime | Точний погоджений HTTPS origin без завершального `/`. |
-| `CONTACT_PRIVACY_URL` | Functions runtime | Схвалена HTTPS-адреса або шлях до політики. |
-| `CONTACT_FROM` | Functions runtime | Email на підтвердженому sending domain Resend. |
-| `CONTACT_TO` | Functions runtime | Адреса отримувача, затверджена власницею. |
-| `RESEND_API_KEY` | **encrypted Functions secret** | Приватний ключ Resend. |
-| `TURNSTILE_SECRET_KEY` | **encrypted Functions secret** | Приватний ключ Siteverify. |
+`VITE_CONTACT_MODE=production` використовує справжній API; `mock` діє лише в development і не вмикається у production build. `disabled` явно вимикає форму — приберіть старе значення в Cloudflare Build variables. `VITE_CONTACT_MOCK_RESULT=success|error` потрібна лише для development mock. Серверні CONTACT_*, RESEND_API_KEY та TURNSTILE_SECRET_KEY більше не використовуються.
 
-Не встановлюйте `VITE_CONTACT_MODE=production` або `CONTACT_ENABLED=true` у preview. Навіть із увімкненим frontend сервер повертає `503`, якщо конфігурація неповна. Ніколи не використовуйте `VITE_RESEND_API_KEY` чи інші публічні префікси для секретів.
-
-Для реальної форми налаштуйте Turnstile з дозволеним production hostname, підтвердіть sending domain у Resend, узгодьте privacy-інформацію і додайте WAF rate limiting для POST `/api/contact` на проксованому custom domain. Поріг підбирається після перевірки трафіку та можливостей тарифу; локального лічильника у Function немає. Без дозволу власниці реальні тестові листи не надсилайте. Успішна відповідь означає прийняття Resend з ID повідомлення, а доставку в скриньку перевіряйте окремим погодженим тестом.
+Безкоштовна hCaptcha використовує спільний ключ Web3Forms із коду. Увімкніть hCaptcha / Block Spam у кабінеті Web3Forms для обов'язкової перевірки токена на API. Деталі конфігурації та live-тесту: [docs/contact-form-testing.md](docs/contact-form-testing.md).
 
 ## Маршрути і preview
 
 Статичні сторінки послуг записуються як `dist/sluzby/slug.html`. Pages обслуговує їх за чинними URL без розширення; чотири точкові redirects прибирають завершальний `/`. Wildcard rewrite на `index.html` не потрібний: він приховав би справжні 404. Наявність top-level `404.html` вимикає стандартний SPA fallback Pages. [Поведінка статичних маршрутів і 404](https://developers.cloudflare.com/pages/configuration/serving-pages/).
 
-`public/_routes.json` обмежує виклики Functions шляхами `/api/*`; решта сторінок і ресурсів залишається статичною. `_redirects` та `_headers` застосовуються до статичних відповідей; API встановлює власні headers. [Functions routing](https://developers.cloudflare.com/pages/functions/routing/), [headers](https://developers.cloudflare.com/pages/configuration/headers/).
+`_redirects` та `_headers` застосовуються до статичних відповідей. Окремого контактного API немає.
 
-Локально `npm run preview` запускає статичний перегляд на `http://127.0.0.1:4173`. Він відтворює extensionless HTML, redirects і HTTP 404; **не виконує Pages Functions і не емулює всі Cloudflare headers**. Старий стандартний Vite preview використовував SPA fallback і не доводив правильний production HTTP-статус. Контактна Function покривається окремими локальними тестами; інтеграцію Cloudflare перевіряйте на Pages preview або через офіційний Wrangler Pages local workflow.
+Локально `npm run preview` запускає статичний перегляд на `http://127.0.0.1:4173`. Він відтворює extensionless HTML, redirects і HTTP 404; **не виконує Pages Functions і не емулює всі Cloudflare headers**. Старий стандартний Vite preview використовував SPA fallback і не доводив правильний production HTTP-статус. Web3Forms і hCaptcha перехоплюються в автоматичних тестах; реальну доставку перевіряйте вручну з production hostname після розгортання.
 
-Перед production перевірте preview deployment: усі п'ять маршрутів при прямому введенні і перезавантаженні, невідомий `/sluzby/neexistuje` з HTTP 404, картинки/шрифти, усі Termino-посилання, меню, прайс, галерею, дев'ять відгуків і вимкнений стан форми. Для мобільних перевірок: `npm run test:readiness:browser`; для prerender/SEO: `npm run test:seo:browser`. Cloudflare автоматично додає `X-Robots-Tag: noindex` до preview URL; перевірте це на реальній preview-відповіді.
+Перед production перевірте preview deployment: усі п'ять маршрутів при прямому введенні і перезавантаженні, невідомий `/sluzby/neexistuje` з HTTP 404, картинки/шрифти, усі Termino-посилання, меню, прайс, галерею, дев'ять відгуків і стани контактної форми. Для мобільних перевірок: `npm run test:readiness:browser`; для prerender/SEO: `npm run test:seo:browser`. Cloudflare автоматично додає `X-Robots-Tag: noindex` до preview URL; перевірте це на реальній preview-відповіді.
 
 ## Домен, HTTPS та індексація
 

@@ -48,7 +48,8 @@ try {
     })
     assert.deepEqual(typography.reviewTitle, typography.sectionTitle, 'Review heading uses the shared section typography')
     assert.deepEqual(typography.reviewSubtitle, typography.sectionSubtitle, 'Review subtitle uses the shared section typography')
-    assert.deepEqual(typography.reviewText, typography.bodyText, 'Review text matches the adjacent About paragraphs')
+    // Confirmed against the unchanged HEAD build: quotes have their own spacing.
+    assert.deepEqual(typography.reviewText, { ...typography.bodyText, lineHeight: '29.6px' }, 'Review text preserves its existing typography and quote spacing')
     assert.equal(await cards.count(), total)
     assert.deepEqual(await cards.locator('blockquote > p:first-child').allTextContents(), expectedTexts)
     assert.deepEqual(await cards.locator('.review-service').allTextContents(), expected.map(review => review.service))

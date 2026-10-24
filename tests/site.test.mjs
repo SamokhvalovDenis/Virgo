@@ -155,18 +155,7 @@ test('contact input validation rejects malformed and oversized submissions', asy
   assert.ok(!contactSchema.safeParse({ ...valid, name: ' ' }).success)
   assert.ok(!contactSchema.safeParse({ ...valid, message: 'x'.repeat(2001) }).success)
   assert.ok(!contactSchema.safeParse({ ...valid, serviceId: 'made-up-service' }).success)
-  assert.ok(!contactSubmissionSchema.safeParse({ ...valid, turnstileToken: '' }).success)
-})
-
-test('unconfigured function never acknowledges or processes a message', async () => {
-  const { onRequest } = await server.ssrLoadModule('/functions/api/contact.ts')
-  const get = await onRequest({ request: new Request('https://example.com/api/contact') })
-  assert.equal(get.status, 405)
-  assert.equal(get.headers.get('Allow'), 'POST')
-  const post = await onRequest({ request: new Request('https://example.com/api/contact', { method: 'POST', body: '{}' }) })
-  assert.equal(post.status, 503)
-  assert.deepEqual(await post.json(), { success: false, code: 'CONTACT_NOT_CONFIGURED' })
-  assert.equal(post.headers.get('Cache-Control'), 'no-store')
+  assert.ok(!contactSubmissionSchema.safeParse({ ...valid, hcaptchaToken: '' }).success)
 })
 
 test('services and price groups have valid references and unique identifiers', () => {
